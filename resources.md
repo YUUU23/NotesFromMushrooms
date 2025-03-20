@@ -31,6 +31,11 @@
 - [All Built-in Jupyter Commands for Jupyter Lab](https://jupyterlab.readthedocs.io/en/latest/user/commands.html#commands-list)
 - [Jupyter Lab Extension Tutorial](https://jupyterlab.readthedocs.io/en/stable/extension/extension_tutorial.html)
 
+## Jupyter Kernel Extension: 
+### Code: 
+- [Rust integration example: How it works](https://github.com/evcxr/evcxr/blob/main/evcxr/HOW_IT_WORKS.md)
+- [Rust integration example code](https://github.com/oovm/jupyter-protocol)
+
 ## Python Memory Related: 
 - [Memory management overview](https://docs.python.org/3/c-api/memory.html)
 - [Default Allocators](https://docs.python.org/3/c-api/memory.html#default-memory-allocators)
