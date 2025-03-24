@@ -30,6 +30,7 @@
 ### Documentations:
 - [All Built-in Jupyter Commands for Jupyter Lab](https://jupyterlab.readthedocs.io/en/latest/user/commands.html#commands-list)
 - [Jupyter Lab Extension Tutorial](https://jupyterlab.readthedocs.io/en/stable/extension/extension_tutorial.html)
+- [FULL API DOCUMENTATIONS!!](https://jupyterlab.readthedocs.io/en/latest/api/)
 
 ## Jupyter Kernel Extension: 
 ### Code: 
