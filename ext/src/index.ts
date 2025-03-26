@@ -14,8 +14,6 @@ import {
 
 import { ICodeCellModel, ICellModel, Cell, CodeCell } from '@jupyterlab/cells';
 
-// import { NotebookActions } from '@jupyterlab/notebook';
-
 let activeCellId: string = '';
 let rerunActive = false;
 let listenerOn = false;
@@ -201,5 +199,6 @@ const plugin: JupyterFrontEndPlugin<void> = {
     palette.addItem({ command, category, args: { origin: 'from palette' } });
   }
 };
+
 
 export default plugin;
