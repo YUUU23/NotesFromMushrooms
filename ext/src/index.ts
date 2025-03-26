@@ -14,8 +14,6 @@ import {
 
 import { ICodeCellModel, ICellModel, Cell, CodeCell } from '@jupyterlab/cells';
 
-// import { NotebookActions } from '@jupyterlab/notebook';
-
 let activeCellId: string = '';
 
 function currExecutionNums(
@@ -81,16 +79,6 @@ function listenCellChanges(
   idToExecCount: Map<string, number>
 ) {
   currExecutionNums(panel, idToCodeCell, idToExecCount);
-  // idToCodeCell.forEach((v, k) => {
-  //   console.log(
-  //     'CELL ID: ',
-  //     k,
-  //     'CELL MODEL: ',
-  //     v,
-  //     'EXEC NUM: ',
-  //     v.model.executionCount
-  //   );
-  // });
   let func = (nb: any, data: any) => {
     console.log(
       'cell executed based on nb actions: ',
@@ -157,6 +145,10 @@ const plugin: JupyterFrontEndPlugin<void> = {
             activeCellId = panel.content.activeCell.model.id;
           }
 
+          currExecutionNums(panel, idToCodeCell, idToExecCount);
+
+          console.log('Curr Map: ', idToCodeCell);
+
           listenCellChanges(
             panel,
             notebookTracker,
@@ -167,12 +159,6 @@ const plugin: JupyterFrontEndPlugin<void> = {
             console.log('active cell', cell?.model.id);
             if (cell && cell.model.id) {
               activeCellId = cell.model.id;
-              // listenCellChanges(
-              //   panel,
-              //   notebookTracker,
-              //   idToCodeCell,
-              //   idToExecCount
-              // );
             }
           });
         }
@@ -189,5 +175,18 @@ const plugin: JupyterFrontEndPlugin<void> = {
     palette.addItem({ command, category, args: { origin: 'from palette' } });
   }
 };
+
+function printIdToExec(idToCodeCell: Map<string, Cell<ICodeCellModel>>) {
+  idToCodeCell.forEach((v, k) => {
+    console.log(
+      'CELL ID: ',
+      k,
+      'CELL MODEL: ',
+      v,
+      'EXEC NUM: ',
+      v.model.executionCount
+    );
+  });
+}
 
 export default plugin;
