@@ -15,6 +15,25 @@ import {
 import { ICodeCellModel, ICellModel, Cell, CodeCell } from '@jupyterlab/cells';
 
 let activeCellId: string = '';
+let rerunActive = false;
+let listenerOn = false;
+
+function toggleRerunActive() {
+  rerunActive = !rerunActive;
+  console.log('rrActive', rerunActive);
+  let element = document.querySelector(
+    '[aria-label="✅ Activate Rerun"]'
+  ) as HTMLElement;
+  console.log(element);
+  if (element) {
+    if (rerunActive) {
+      element.textContent = '❌ Deactivate Rerun';
+    } else {
+      element.textContent = '✅ Activate Rerun';
+      element.style.color = 'white';
+    }
+  }
+}
 
 function currExecutionNums(
   panel: NotebookPanel,
@@ -80,6 +99,7 @@ function listenCellChanges(
 ) {
   currExecutionNums(panel, idToCodeCell, idToExecCount);
   let func = (nb: any, data: any) => {
+    console.log('MAP before rerun`: ', idToExecCount);
     console.log(
       'cell executed based on nb actions: ',
       data.cell,
@@ -102,9 +122,12 @@ function listenCellChanges(
             'newEC: ',
             newEC
           );
-          rerunCells(panel, oldEC, idToCodeCell, idToExecCount);
+          if (rerunActive) {
+            rerunCells(panel, oldEC, idToCodeCell, idToExecCount);
+          }
         }
       }
+      currExecutionNums(panel, idToCodeCell, idToExecCount);
     }
   };
 
@@ -132,10 +155,11 @@ const plugin: JupyterFrontEndPlugin<void> = {
     const command = 'Dependencies:get-all-execution';
 
     commands.addCommand(command, {
-      label: 'Activate Rerun',
+      label: '✅ Activate Rerun',
       caption: 'Listens and rerun cells when necessary',
       execute: (args: any) => {
-        // console.log('Getting all code cells and execution number');
+        console.log('starting rerun: ', rerunActive);
+        toggleRerunActive();
         if (app && app.shell && app.shell.currentWidget) {
           const panel = app.shell.currentWidget as NotebookPanel;
           let idToCodeCell = new Map<string, Cell<ICodeCellModel>>();
@@ -145,22 +169,22 @@ const plugin: JupyterFrontEndPlugin<void> = {
             activeCellId = panel.content.activeCell.model.id;
           }
 
-          currExecutionNums(panel, idToCodeCell, idToExecCount);
+          if (!listenerOn) {
+            listenerOn = true;
+            listenCellChanges(
+              panel,
+              notebookTracker,
+              idToCodeCell,
+              idToExecCount
+            );
 
-          console.log('Curr Map: ', idToCodeCell);
-
-          listenCellChanges(
-            panel,
-            notebookTracker,
-            idToCodeCell,
-            idToExecCount
-          );
-          notebookTracker.activeCellChanged.connect((_, cell) => {
-            console.log('active cell', cell?.model.id);
-            if (cell && cell.model.id) {
-              activeCellId = cell.model.id;
-            }
-          });
+            notebookTracker.activeCellChanged.connect((_, cell) => {
+              console.log('active cell', cell?.model.id);
+              if (cell && cell.model.id) {
+                activeCellId = cell.model.id;
+              }
+            });
+          }
         }
       }
     });
@@ -176,17 +200,5 @@ const plugin: JupyterFrontEndPlugin<void> = {
   }
 };
 
-function printIdToExec(idToCodeCell: Map<string, Cell<ICodeCellModel>>) {
-  idToCodeCell.forEach((v, k) => {
-    console.log(
-      'CELL ID: ',
-      k,
-      'CELL MODEL: ',
-      v,
-      'EXEC NUM: ',
-      v.model.executionCount
-    );
-  });
-}
 
 export default plugin;
