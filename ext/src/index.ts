@@ -42,6 +42,11 @@ class CellRerun {
   toggleRerunActive(): void {
     this.rerunActive = !this.rerunActive;
     console.log('rrActive', this.rerunActive);
+
+    // Sync with the global map before we start rerunning if activated.
+    this.currExecutionNums();
+    console.log('map on toggle: ', this.idToExecCount);
+
     let element = document.querySelector(
       '[aria-label="✅ Activate Rerun"]'
     ) as HTMLElement;
@@ -56,6 +61,7 @@ class CellRerun {
     }
   }
 
+  // ****** FUNCTIONS FOR RERUN ROUTINE ****** //
   // Update maps to get all current exec counts to cells.
   private currExecutionNums(): void {
     if (this.panel) {
@@ -128,8 +134,9 @@ class CellRerun {
   // Set up cell rerun listeners.
   listenCellExecuted(): void {
     // We need to keep track of cell and its execution number prior to a
-    // cell being executed. Therefore, we should call this once at the start.
-    this.currExecutionNums();
+    // cell being executed.
+    // Therefore, we should call this once at the start -- this is done in
+    // the toggle function as we activate the rerun functionality.
 
     // Function that will execute whenever a cell gets executed.
     let onExecuted = (nb: any, data: any) => {
@@ -151,6 +158,7 @@ class CellRerun {
         // Update the map whenever we have a cell executed to
         // track global data for rerun.
         this.currExecutionNums();
+        console.log('finished rerun routine: ', this.idToExecCount);
       }
     };
 
