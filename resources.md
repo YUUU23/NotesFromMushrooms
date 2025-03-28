@@ -37,6 +37,9 @@
 - [Rust integration example: How it works](https://github.com/evcxr/evcxr/blob/main/evcxr/HOW_IT_WORKS.md)
 - [Rust integration example code](https://github.com/oovm/jupyter-protocol)
 
+### Documentations: 
+- [List of Current Kernels Available](https://gist.github.com/chronitis/682c4e0d9f663e85e3d87e97cd7d1624)
+
 ## Python Memory Related: 
 - [Memory management overview](https://docs.python.org/3/c-api/memory.html)
 - [Default Allocators](https://docs.python.org/3/c-api/memory.html#default-memory-allocators)
