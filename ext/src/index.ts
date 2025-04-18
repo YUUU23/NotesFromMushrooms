@@ -2,7 +2,6 @@ import {
   JupyterFrontEnd,
   JupyterFrontEndPlugin
 } from '@jupyterlab/application';
-
 import { ICommandPalette } from '@jupyterlab/apputils';
 
 import {
@@ -14,6 +13,8 @@ import {
 
 import { ICodeCellModel, ICellModel, Cell, CodeCell } from '@jupyterlab/cells';
 
+import { perfLog } from './log';
+
 // On cell execution:
 //  1. Get execution number from global idToExec map before executing (using cell id)
 //  2. Get all cells that has an execution number higher than this
@@ -22,6 +23,7 @@ import { ICodeCellModel, ICellModel, Cell, CodeCell } from '@jupyterlab/cells';
 class CellRerun {
   idToCodeCell: Map<string, Cell<ICodeCellModel>>;
   idToExecCount: Map<string, number>;
+  curReRunSet: Set<string>; // For perf
   panel: NotebookPanel;
   rerunActive: boolean;
   listenerOn: boolean;
@@ -30,6 +32,7 @@ class CellRerun {
   constructor(panel: NotebookPanel) {
     this.idToCodeCell = new Map<string, Cell<ICodeCellModel>>();
     this.idToExecCount = new Map<string, number>();
+    this.curReRunSet = new Set<string>(); // For perf
     this.panel = panel;
     this.rerunActive = false;
     this.listenerOn = false;
@@ -95,7 +98,7 @@ class CellRerun {
   }
 
   // Rerun all cells needed based on the old EC of the cell to run.
-  private rerunCells(oldEC: number): Cell<ICellModel>[] {
+  private rerunCells(oldEC: number): string[] {
     let notebook = this.panel.content as Notebook;
     let idsToRR = this.getRerunIds(oldEC);
     let cellToRun: Cell<ICellModel>[] = [];
@@ -103,16 +106,19 @@ class CellRerun {
       let cell = this.idToCodeCell.get(id);
       if (cell) {
         cellToRun.push(cell);
+        // Add to global array to track the cells currently being reran.
+        this.curReRunSet.add(id);
       }
     });
     console.log('CELLS TO RERUN: ', idsToRR);
     NotebookActions.runCells(notebook, cellToRun, this.panel.sessionContext);
-    return cellToRun;
+    return idsToRR;
   }
 
   // Rerun all cells that has greater EC than the given cell.
-  private startRerun(c: Cell<ICodeCellModel>, cid: string): Cell<ICellModel>[] {
-    let cellsReran: Cell<ICellModel>[] = [];
+  private startRerun(c: Cell<ICodeCellModel>, cid: string): string[] {
+    const reRunStartTime = performance.now(); // Start timer for current rerun event.
+    let cellIdsReran: string[] = [];
     const oldEC = this.idToExecCount.get(cid) ?? 0;
     const newEC = c.model.executionCount ?? 0;
     if (oldEC != newEC && this.rerunActive) {
@@ -126,9 +132,15 @@ class CellRerun {
         'new: ',
         newEC
       );
-      cellsReran = this.rerunCells(oldEC);
+      cellIdsReran = this.rerunCells(oldEC);
     }
-    return cellsReran;
+
+    // Perf event to log the rerun start time.
+    perfLog('Rerun start=%d|Rerun cells=%s', [
+      reRunStartTime,
+      cellIdsReran.join(',')
+    ]);
+    return cellIdsReran;
   }
 
   // Set up cell rerun listeners.
@@ -140,15 +152,36 @@ class CellRerun {
 
     // Function that will execute whenever a cell gets executed.
     let onExecuted = (nb: any, data: any) => {
+      const executedTime = performance.now();
       const c = data.cell;
       if (c && c instanceof CodeCell) {
         const id = c.model.id;
+
+        // Perf event: We need to know whenver a cell finished executing --
+        // just in case it's the cells we have scheduled for reran.
+        perfLog('Executed time=%f|exec_id=%d|cell_id=%s', [
+          executedTime,
+          c.model.executionCount,
+          id
+        ]);
+
+        if (this.curReRunSet.has(id)) {
+          this.curReRunSet.delete(id); // The cell executed is a rerun cell -- remove this.
+          if (this.curReRunSet.size == 0) {
+            // Perf event: When the entire rerun task has completed.
+            // We assume that no 2 rerun tasks will happen at the same time.
+            const endTime = performance.now();
+            perfLog('Rerun end=%f', [endTime]);
+          }
+        }
+
         console.log(
           'ACTIVE CELL ID: ',
           this.activeCellId,
           'CELL ON EXECUTED: ',
           id
         );
+
         if (id == this.activeCellId) {
           // Only call the rerun routine if the cell on executed
           // is the current active cell.
@@ -167,6 +200,25 @@ class CellRerun {
     // is the current active cell.
     // If it is, we will call the rerun routine.
     NotebookActions.executed.connect(onExecuted);
+  }
+
+  listenCellExecutionScheduled(): void {
+    let onScheduled = (nb: any, data: any) => {
+      const c = data.cell;
+      if (c && c instanceof CodeCell) {
+        // Perf event to log when a cell is scheduled to execute. This event
+        // + the cell ID will help us determine when the first cell we want
+        // to rerun starts rerunning.
+        const scheduledTime = performance.now();
+        perfLog('Scheduled time=%f|exec id=%d|cell id=%s', [
+          scheduledTime,
+          c.model.executionCount,
+          c.model.id
+        ]);
+      }
+    };
+
+    NotebookActions.executionScheduled.connect(onScheduled);
   }
 
   updateActiveCell(): void {
@@ -212,8 +264,11 @@ const plugin: JupyterFrontEndPlugin<void> = {
           rerunCtrl.updateActiveCell();
 
           if (!rerunCtrl.listenerOn) {
+            // We don't need to attach another listener whenever we toggle the
+            // activate button.
             rerunCtrl.listenerOn = true;
             rerunCtrl.listenCellExecuted();
+            rerunCtrl.listenCellExecutionScheduled();
 
             notebookTracker.activeCellChanged.connect((_, cell) => {
               console.log('active cell', cell?.model.id);
