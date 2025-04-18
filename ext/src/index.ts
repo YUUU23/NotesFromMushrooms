@@ -13,7 +13,7 @@ import {
 
 import { ICodeCellModel, ICellModel, Cell, CodeCell } from '@jupyterlab/cells';
 
-import { perfLog } from './log';
+import { PERFLOG } from './log';
 
 // On cell execution:
 //  1. Get execution number from global idToExec map before executing (using cell id)
@@ -53,7 +53,6 @@ class CellRerun {
     let element = document.querySelector(
       '[aria-label="✅ Activate Rerun"]'
     ) as HTMLElement;
-    console.log(element);
     if (element) {
       if (this.rerunActive) {
         element.textContent = '❌ Deactivate Rerun';
@@ -136,7 +135,7 @@ class CellRerun {
     }
 
     // Perf event to log the rerun start time.
-    perfLog('Rerun start=%d|Rerun cells=%s', [
+    PERFLOG('Rerun start=%d|Rerun cells=%s', [
       reRunStartTime,
       cellIdsReran.join(',')
     ]);
@@ -159,7 +158,7 @@ class CellRerun {
 
         // Perf event: We need to know whenver a cell finished executing --
         // just in case it's the cells we have scheduled for reran.
-        perfLog('Executed time=%f|exec_id=%d|cell_id=%s', [
+        PERFLOG('Executed time=%f|exec_id=%d|cell_id=%s', [
           executedTime,
           c.model.executionCount,
           id
@@ -171,7 +170,7 @@ class CellRerun {
             // Perf event: When the entire rerun task has completed.
             // We assume that no 2 rerun tasks will happen at the same time.
             const endTime = performance.now();
-            perfLog('Rerun end=%f', [endTime]);
+            PERFLOG('Rerun end=%f', [endTime]);
           }
         }
 
@@ -210,7 +209,7 @@ class CellRerun {
         // + the cell ID will help us determine when the first cell we want
         // to rerun starts rerunning.
         const scheduledTime = performance.now();
-        perfLog('Scheduled time=%f|exec id=%d|cell id=%s', [
+        PERFLOG('Scheduled time=%f|exec id=%d|cell id=%s', [
           scheduledTime,
           c.model.executionCount,
           c.model.id
