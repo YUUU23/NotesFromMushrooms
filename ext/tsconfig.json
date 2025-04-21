@@ -21,5 +21,12 @@
     "target": "ES2018",
     "types": ["jest"]
   },
-  "include": ["src/*"]
+  "include": [
+    "src/*",
+    "src/util/log.ts",
+    "src/plugins/rerunECPlugin.ts",
+    "src/plugins/rerunAllPlugin.ts",
+    "src/rerunControllers/rerunAll.ts",
+    "src/rerunControllers/rerunExecutionCount.ts"
+  ]
 }
