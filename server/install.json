@@ -1,0 +1,5 @@
+{
+  "packageManager": "python",
+  "packageName": "rerun_server",
+  "uninstallInstructions": "Use your Python package manager (pip, conda, etc.) to uninstall the package rerun_server"
+}

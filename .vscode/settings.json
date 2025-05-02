@@ -1,0 +1,6 @@
+{
+  "python.analysis.extraPaths": [
+    "./server/rerun_server/performance",
+    "./server/rerun_server"
+  ]
+}
