@@ -4,6 +4,7 @@ from jupyter_server.base.handlers import APIHandler
 from jupyter_server.utils import url_path_join
 import tornado
 import subprocess
+import os
 
 class RouteHandler(APIHandler):
     # The following decorator should be present on all verb methods (head, get, post,
@@ -11,18 +12,24 @@ class RouteHandler(APIHandler):
     # Jupyter server
     @tornado.web.authenticated
     def get(self):
-        nb = self.get_argument('nb', default="")
+        # nb = self.get_argument('nb', default="")
+        nb = "performance/notebooks/simple.ipynb"
         print('notebook requested: ', nb)
         if len(nb) == 0:
             self.finish(json.dumps({
-                "data": "No notebook found"
+                "data": "No notebook found. Notebook sent in: " + nb + " | END"
             }))
         else: 
-            path_and_args = '../../performance/correctness.py' + nb
-            result = subprocess.run(['python3', path_and_args], capture_output=True, text=True)
+            script = 'performance/correctness.py'
+            if not script or not os.path.exists(script): 
+                self.finish(json.dumps({
+                    "data": "No paths found for the script"
+                }))
+                return 
+            result = subprocess.run(['python3', script, nb], capture_output=True, text=True)
             print('result:', result)
             self.finish(json.dumps({
-                "data": "hello"
+                "data": "hello. Notebook sent in: " + nb + " results: " + result.stderr + result.stdout
             }))
 
 

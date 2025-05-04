@@ -28,8 +28,9 @@ function establishServerConnection(
   console.log('service: ', service);
   console.log('nbPath, ', currentNotebookPath);
   console.log('cb: ', cb);
-  let enpointPath = `${service}?${currentNotebookPath}`;
-  requestAPI<any>(enpointPath).then(data => console.log('DATA Found: ', data));
+  let endpointPath = `${service}?nb=${currentNotebookPath}`;
+  console.log('endpoint path: ', endpointPath);
+  requestAPI<any>(endpointPath).then(data => console.log('DATA Found: ', data));
 }
 
 function processCorrectnessData() {}
