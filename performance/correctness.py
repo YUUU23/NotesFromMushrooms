@@ -140,11 +140,11 @@ def load_and_rerun_notebook(notebook_path: str) -> str:
     # 3. Preprocesses every cell => calls execute cell 
     ep.preprocess(nb_reran)
     rerun_all_end_time = time.perf_counter()
-    print(f'Rerun all: Total time: {(rerun_all_end_time - rerun_all_start_time) * 1000} ms')
+    print(f'PERF|RERUN ALL | Total time: {(rerun_all_end_time - rerun_all_start_time) * 1000} ms')
     return "\n".join(parse_and_compare(nb_orig, nb_reran))
 
 if __name__ == "__main__":
-    print('ENTERED CORRECTNESS')
+    # print('ENTERED CORRECTNESS')
     parser = argparse.ArgumentParser()
     parser.add_argument('notebookpath')
 

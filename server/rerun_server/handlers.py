@@ -12,8 +12,7 @@ class RouteHandler(APIHandler):
     # Jupyter server
     @tornado.web.authenticated
     def get(self):
-        # nb = self.get_argument('nb', default="")
-        nb = "performance/notebooks/simple.ipynb"
+        nb = self.get_argument('nb', default="")
         print('notebook requested: ', nb)
         if len(nb) == 0:
             self.finish(json.dumps({
@@ -29,7 +28,7 @@ class RouteHandler(APIHandler):
             result = subprocess.run(['python3', script, nb], capture_output=True, text=True)
             print('result:', result)
             self.finish(json.dumps({
-                "data": "hello. Notebook sent in: " + nb + " results: " + result.stderr + result.stdout
+                "data": "Notebook sent in: " + nb + " results: " + result.stderr + result.stdout
             }))
 
 

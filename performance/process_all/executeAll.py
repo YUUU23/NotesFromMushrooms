@@ -102,13 +102,13 @@ class ExecutePreprocessor(Preprocessor, NotebookClient):
             assert info_msg
             self.nb.metadata["language_info"] = info_msg["content"]["language_info"]
             rerun_all_setup_time_end = time.perf_counter()
-            print(f'Rerun all: Set-Up Kernel and Language Info. time: {(rerun_all_setup_time_end - rerun_all_setup_time_start) * 1000}ms')
+            print(f'PERF|RERUN ALL | Set-Up Kernel and Language Info. time: {(rerun_all_setup_time_end - rerun_all_setup_time_start) * 1000}ms')
             
             rerun_all_cells_execution_time_start = time.perf_counter()
             for index, cell in enumerate(self.nb.cells):
                 self.preprocess_cell(cell, resources, index)
             rerun_all_cells_execution_time_end = time.perf_counter()
-            print(f'Rerun all: Executing ({index + 1} cells) total time: {(rerun_all_cells_execution_time_end - rerun_all_cells_execution_time_start) * 1000}ms')
+            print(f'PERF|RERUN ALL | Executing ({index + 1} cells) total time: {(rerun_all_cells_execution_time_end - rerun_all_cells_execution_time_start) * 1000}ms')
         self.set_widgets_metadata()
 
         return self.nb, self.resources
