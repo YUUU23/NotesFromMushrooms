@@ -4,6 +4,8 @@ import { ICodeCellModel, ICellModel, Cell, CodeCell } from '@jupyterlab/cells';
 
 import { PERFLOG } from '../util/log';
 
+import { checkCellCorrectness } from '../rerunControllers/checkCorrectness';
+
 enum RerunOption {
   NONE,
   RERUNEC,
@@ -224,6 +226,8 @@ class CellRerun {
             PERFLOG('Rerun end=%f|rrId=%d', [endTime, this.rerunCounter]);
             this.rerunCounter += 1;
             this.doingRerun = false;
+            console.log('checking correctness');
+            checkCellCorrectness(this.panel);
           }
         }
 

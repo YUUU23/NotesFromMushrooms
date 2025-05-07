@@ -1,3 +1,6 @@
 {
-  "python.analysis.extraPaths": ["./ext/performance/notebooks"]
+  "python.analysis.extraPaths": [
+    "./server/rerun_server/performance",
+    "./server/rerun_server"
+  ]
 }

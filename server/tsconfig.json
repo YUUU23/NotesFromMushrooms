@@ -18,17 +18,7 @@
     "rootDir": "src",
     "strict": true,
     "strictNullChecks": true,
-    "target": "ES2018",
-    "types": ["jest"]
+    "target": "ES2018"
   },
-  "include": [
-    "src/*",
-    "src/util/log.ts",
-    "src/plugins/rerunECPlugin.ts",
-    "src/plugins/rerunAllPlugin.ts",
-    "src/rerunControllers/rerunAll.ts",
-    "src/rerunControllers/rerunExecutionCount.ts",
-    "src/rerunControllers/checkCorrectness.ts",
-    "src/rerunControllers/handler.ts"
-  ]
+  "include": ["src/*"]
 }

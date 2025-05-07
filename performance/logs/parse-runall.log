@@ -1,0 +1,56 @@
+index.ts:16 JupyterLab extension rerun-server is activated!
+index.ts:20 {data: 'No notebook found. Notebook sent in:  | END'}
+673.33e0289dbee089055fc1.js?v=33e0289dbee089055fc1:1 JupyterLab extension jupyterlab_autosave_on_focus_change is activated!
+
+                
+          
+          
+          
+         Chrome is moving towards a new experience that allows users to choose to browse without third-party cookies.
+rerunExecutionCount.ts:62 rrOption 1
+rerunExecutionCount.ts:288 ACTIVE CELL AFTER UPDATE:  fc503f40-677d-4df4-b715-6ee1ba67c0f9
+rerunECPlugin.ts:50 active cell 1ced0fb8-a56c-4823-9d56-ae9f9c1eda63
+rerunExecutionCount.ts:288 ACTIVE CELL AFTER UPDATE:  1ced0fb8-a56c-4823-9d56-ae9f9c1eda63
+rerunExecutionCount.ts:171 ACT. CELL EC CHANGED:  1ced0fb8-a56c-4823-9d56-ae9f9c1eda63 old:  12 new:  14
+rerunExecutionCount.ts:149 cells to rerun:  ['7c32c6a2-28cc-4f19-b92c-43266d1560d1']
+log.ts:3 PERF|Scheduled time=28589.79999998212|exec id=13|cell id=7c32c6a2-28cc-4f19-b92c-43266d1560d1|rrID=0
+log.ts:3 PERF|Rerun start=28589|Rerun cells=7c32c6a2-28cc-4f19-b92c-43266d1560d1|rrId=0
+rerunExecutionCount.ts:247 finished rerun routine:  Map(3) {'d051048c-fcee-462a-aff4-c0f2e38830b8' => 11, '1ced0fb8-a56c-4823-9d56-ae9f9c1eda63' => 14, '7c32c6a2-28cc-4f19-b92c-43266d1560d1' => 13}
+log.ts:3 PERF|Executed time=28607|exec_id=15|cell_id=7c32c6a2-28cc-4f19-b92c-43266d1560d1|rrId=0
+log.ts:3 PERF|Rerun end=28607.09999999404|rrId=0
+rerunExecutionCount.ts:229 checking correctness
+checkCorrectness.ts:9 RELATIVE:  performance/notebooks/simple.ipynb
+checkCorrectness.ts:28 service:  get-example
+checkCorrectness.ts:29 nbPath,  performance/notebooks/simple.ipynb
+checkCorrectness.ts:30 cb:  ƒ processCorrectnessData() { }
+checkCorrectness.ts:32 endpoint path:  get-example?nb=performance/notebooks/simple.ipynb
+rerunExecutionCount.ts:247 finished rerun routine:  Map(3) {'d051048c-fcee-462a-aff4-c0f2e38830b8' => 11, '1ced0fb8-a56c-4823-9d56-ae9f9c1eda63' => 14, '7c32c6a2-28cc-4f19-b92c-43266d1560d1' => 15}
+checkCorrectness.ts:34 DATA Found:  hello. Notebook sent in: performance/notebooks/simple.ipynb results: current working directory:  /Users/happy2na/Desktop/NotesFromMushrooms
+PERF|RERUN ALL | Set-Up Kernel and Language Info. time: 946.5008750266861ms
+PERF|RERUN ALL | Executing (4 cells) total time: 19.921791972592473ms
+PERF|RERUN ALL | Total time: 1181.629459024407 ms
+
+rerunECPlugin.ts:50 active cell d051048c-fcee-462a-aff4-c0f2e38830b8
+rerunExecutionCount.ts:288 ACTIVE CELL AFTER UPDATE:  d051048c-fcee-462a-aff4-c0f2e38830b8
+rerunExecutionCount.ts:171 ACT. CELL EC CHANGED:  d051048c-fcee-462a-aff4-c0f2e38830b8 old:  11 new:  16
+rerunExecutionCount.ts:149 cells to rerun:  (2) ['1ced0fb8-a56c-4823-9d56-ae9f9c1eda63', '7c32c6a2-28cc-4f19-b92c-43266d1560d1']
+log.ts:3 PERF|Scheduled time=37599.09999999404|exec id=14|cell id=1ced0fb8-a56c-4823-9d56-ae9f9c1eda63|rrID=1
+log.ts:3 PERF|Scheduled time=37600.39999997616|exec id=15|cell id=7c32c6a2-28cc-4f19-b92c-43266d1560d1|rrID=1
+log.ts:3 PERF|Rerun start=37598|Rerun cells=1ced0fb8-a56c-4823-9d56-ae9f9c1eda63,7c32c6a2-28cc-4f19-b92c-43266d1560d1|rrId=1
+rerunExecutionCount.ts:247 finished rerun routine:  Map(3) {'d051048c-fcee-462a-aff4-c0f2e38830b8' => 16, '1ced0fb8-a56c-4823-9d56-ae9f9c1eda63' => 14, '7c32c6a2-28cc-4f19-b92c-43266d1560d1' => 15}
+log.ts:3 PERF|Executed time=37611.69999998808|exec_id=17|cell_id=1ced0fb8-a56c-4823-9d56-ae9f9c1eda63|rrId=1
+rerunExecutionCount.ts:247 finished rerun routine:  Map(3) {'d051048c-fcee-462a-aff4-c0f2e38830b8' => 16, '1ced0fb8-a56c-4823-9d56-ae9f9c1eda63' => 17, '7c32c6a2-28cc-4f19-b92c-43266d1560d1' => 15}
+log.ts:3 PERF|Executed time=37622.19999998808|exec_id=18|cell_id=7c32c6a2-28cc-4f19-b92c-43266d1560d1|rrId=1
+log.ts:3 PERF|Rerun end=37622.19999998808|rrId=1
+rerunExecutionCount.ts:229 checking correctness
+checkCorrectness.ts:9 RELATIVE:  performance/notebooks/simple.ipynb
+checkCorrectness.ts:28 service:  get-example
+checkCorrectness.ts:29 nbPath,  performance/notebooks/simple.ipynb
+checkCorrectness.ts:30 cb:  ƒ processCorrectnessData() { }
+checkCorrectness.ts:32 endpoint path:  get-example?nb=performance/notebooks/simple.ipynb
+rerunExecutionCount.ts:247 finished rerun routine:  Map(3) {'d051048c-fcee-462a-aff4-c0f2e38830b8' => 16, '1ced0fb8-a56c-4823-9d56-ae9f9c1eda63' => 17, '7c32c6a2-28cc-4f19-b92c-43266d1560d1' => 18}
+checkCorrectness.ts:34 DATA Found:  hello. Notebook sent in: performance/notebooks/simple.ipynb results: current working directory:  /Users/happy2na/Desktop/NotesFromMushrooms
+PERF|RERUN ALL | Set-Up Kernel and Language Info. time: 883.4138330130372ms
+PERF|RERUN ALL | Executing (4 cells) total time: 19.99704199261032ms
+PERF|RERUN ALL | Total time: 1118.4850840072613 ms
+

@@ -6,7 +6,8 @@ from process_all.executeAll import ExecutePreprocessor
 from typing import Any
 from itertools import zip_longest
 from copy import deepcopy
-import time
+import time 
+import os
 
 def create_diff(orig: str, rerun: str) -> tuple[list[str], list[str]]:
     """
@@ -124,6 +125,7 @@ def parse_and_compare(nb_json_orig: dict[str, Any], nb_json_rerun: dict[str, Any
     return msg
 
 def load_and_rerun_notebook(notebook_path: str) -> str:
+    print("current working directory: ", os.getcwd())
     with open(notebook_path) as fd:
         nb_orig = nbformat.read(fd, as_version=4)
     
@@ -138,10 +140,11 @@ def load_and_rerun_notebook(notebook_path: str) -> str:
     # 3. Preprocesses every cell => calls execute cell 
     ep.preprocess(nb_reran)
     rerun_all_end_time = time.perf_counter()
-    print(f'Rerun all: Total time: {(rerun_all_end_time - rerun_all_start_time) * 1000} ms')
+    print(f'PERF|RERUN ALL | Total time: {(rerun_all_end_time - rerun_all_start_time) * 1000} ms')
     return "\n".join(parse_and_compare(nb_orig, nb_reran))
 
 if __name__ == "__main__":
+    # print('ENTERED CORRECTNESS')
     parser = argparse.ArgumentParser()
     parser.add_argument('notebookpath')
 
