@@ -1,0 +1,111 @@
+consumes:70 Unsatisfied version 4.4.6 from @jupyterlab/application-top of shared singleton module @jupyterlab/apputils (required ^4.5.1)
+warn @ consumes:70
+(anonymous) @ consumes:110
+(anonymous) @ consumes:77
+webpack/sharing/consume/default/@jupyterlab/apputils @ consumes:124
+(anonymous) @ consumes:158
+__webpack_require__.f.consumes @ consumes:139
+(anonymous) @ ensure chunk:6
+__webpack_require__.e @ ensure chunk:5
+./extension @ container-entry:6
+get @ container-entry:16
+$ @ 6180.344c80c0b5b0ee3721e0.js?v=344c80c0b5b0ee3721e0:1
+(anonymous) @ 6180.344c80c0b5b0ee3721e0.js?v=344c80c0b5b0ee3721e0:1
+H @ 6180.344c80c0b5b0ee3721e0.js?v=344c80c0b5b0ee3721e0:1
+consumes:70 Unsatisfied version 4.3.6 from @jupyterlab/application-top of shared singleton module @jupyterlab/notebook (required ^4.4.1)
+warn @ consumes:70
+(anonymous) @ consumes:110
+(anonymous) @ consumes:77
+webpack/sharing/consume/default/@jupyterlab/notebook @ consumes:125
+(anonymous) @ consumes:158
+__webpack_require__.f.consumes @ consumes:139
+(anonymous) @ ensure chunk:6
+__webpack_require__.e @ ensure chunk:5
+./extension @ container-entry:6
+get @ container-entry:16
+$ @ 6180.344c80c0b5b0ee3721e0.js?v=344c80c0b5b0ee3721e0:1
+(anonymous) @ 6180.344c80c0b5b0ee3721e0.js?v=344c80c0b5b0ee3721e0:1
+H @ 6180.344c80c0b5b0ee3721e0.js?v=344c80c0b5b0ee3721e0:1
+consumes:70 No satisfying version (^4.4.1) of shared module @jupyterlab/cells found in shared scope default.
+Available versions: 4.3.6 from @jupyterlab/application-top
+warn @ consumes:70
+(anonymous) @ consumes:91
+(anonymous) @ consumes:77
+webpack/sharing/consume/default/@jupyterlab/cells @ consumes:126
+(anonymous) @ consumes:158
+__webpack_require__.f.consumes @ consumes:139
+(anonymous) @ ensure chunk:6
+__webpack_require__.e @ ensure chunk:5
+./extension @ container-entry:6
+get @ container-entry:16
+$ @ 6180.344c80c0b5b0ee3721e0.js?v=344c80c0b5b0ee3721e0:1
+(anonymous) @ 6180.344c80c0b5b0ee3721e0.js?v=344c80c0b5b0ee3721e0:1
+H @ 6180.344c80c0b5b0ee3721e0.js?v=344c80c0b5b0ee3721e0:1
+remoteEntry.f4a64e687ab347206c17.js:1 Unsatisfied version 0.16.6 from @jupyterlab/application-top of shared singleton module @jupyter/web-components (required ~0.15.3)
+b @ remoteEntry.f4a64e687ab347206c17.js:1
+(anonymous) @ remoteEntry.f4a64e687ab347206c17.js:1
+(anonymous) @ remoteEntry.f4a64e687ab347206c17.js:1
+295 @ remoteEntry.f4a64e687ab347206c17.js:1
+(anonymous) @ remoteEntry.f4a64e687ab347206c17.js:1
+T.f.consumes @ remoteEntry.f4a64e687ab347206c17.js:1
+(anonymous) @ remoteEntry.f4a64e687ab347206c17.js:1
+T.e @ remoteEntry.f4a64e687ab347206c17.js:1
+./extension @ remoteEntry.f4a64e687ab347206c17.js:1
+n @ remoteEntry.f4a64e687ab347206c17.js:1
+$ @ 6180.344c80c0b5b0ee3721e0.js?v=344c80c0b5b0ee3721e0:1
+(anonymous) @ 6180.344c80c0b5b0ee3721e0.js?v=344c80c0b5b0ee3721e0:1
+H @ 6180.344c80c0b5b0ee3721e0.js?v=344c80c0b5b0ee3721e0:1
+jlab_core.a4c5e1f5bac9ba5dc7f6.js?v=a4c5e1f5bac9ba5dc7f6:1 Language pack 'en_US' not installed!
+fetch @ jlab_core.a4c5e1f5bac9ba5dc7f6.js?v=a4c5e1f5bac9ba5dc7f6:1
+498.9433196881674d20b32e.js?v=9433196881674d20b32e:1 JupyterLab extension @lckr/jupyterlab_variableinspector is activated!
+:8888/api/contents/ext/performance/notebooks/04_Destination%20Prediction.ipynb?content=0&hash=0&1746168200218:1 
+            
+            
+           Failed to load resource: the server responded with a status of 404 (Not Found)
+:8888/api/contents/ext/performance/notebooks/04_Destination%20Prediction.ipynb?content=0&hash=0&1746168200219:1 
+            
+            
+           Failed to load resource: the server responded with a status of 404 (Not Found)
+552.6d7597412aeadbbf15fe.js?v=6d7597412aeadbbf15fe:1 Language identifier en-us has a non-exact match, please update it to en_US
+getLanguageByIdentifier @ 552.6d7597412aeadbbf15fe.js?v=6d7597412aeadbbf15fe:1
+update_settings @ 552.6d7597412aeadbbf15fe.js?v=6d7597412aeadbbf15fe:1
+(anonymous) @ 552.6d7597412aeadbbf15fe.js?v=6d7597412aeadbbf15fe:1
+:8888/lab/api/extensions?query&page=1&per_page=30&refresh=0&1746168201495:1 
+            
+            
+           Failed to load resource: the server responded with a status of 500 (Internal Server Error)
+:8888/api/contents/ext/performance/notebooks/04_Destination%20Prediction.ipynb?content=0&hash=0&1746168201568:1 
+            
+            
+           Failed to load resource: the server responded with a status of 404 (Not Found)
+jlab_core.a4c5e1f5bac9ba5dc7f6.js?v=a4c5e1f5bac9ba5dc7f6:1 Showing error: i: Could not find path: ext/performance/notebooks/04_Destination Prediction.ipynb
+    at i.create (http://localhost:8888/static/lab/jlab_core.a4c5e1f5bac9ba5dc7f6.js?v=a4c5e1f5bac9ba5dc7f6:1:1434637)
+    at async m.get (http://localhost:8888/static/lab/jlab_core.a4c5e1f5bac9ba5dc7f6.js?v=a4c5e1f5bac9ba5dc7f6:1:1379426)
+    at async execute (http://localhost:8888/static/lab/jlab_core.a4c5e1f5bac9ba5dc7f6.js?v=a4c5e1f5bac9ba5dc7f6:1:750713)
+    at async a (http://localhost:8888/static/lab/jlab_core.a4c5e1f5bac9ba5dc7f6.js?v=a4c5e1f5bac9ba5dc7f6:1:757273)
+f @ jlab_core.a4c5e1f5bac9ba5dc7f6.js?v=a4c5e1f5bac9ba5dc7f6:1
+jlab_core.a4c5e1f5bac9ba5dc7f6.js?v=a4c5e1f5bac9ba5dc7f6:1 Connection lost, reconnecting in 0 seconds.
+_reconnect @ jlab_core.a4c5e1f5bac9ba5dc7f6.js?v=a4c5e1f5bac9ba5dc7f6:1
+jlab_core.a4c5e1f5bac9ba5dc7f6.js?v=a4c5e1f5bac9ba5dc7f6:1 Keeping old LSP connection as the new kernel uses the same langauge
+jlab_core.a4c5e1f5bac9ba5dc7f6.js?v=a4c5e1f5bac9ba5dc7f6:1 Different hash found for ext/performance/notebooks/taxi_dest_predict.ipynb
+(anonymous) @ jlab_core.a4c5e1f5bac9ba5dc7f6.js?v=a4c5e1f5bac9ba5dc7f6:1
+jlab_core.a4c5e1f5bac9ba5dc7f6.js?v=a4c5e1f5bac9ba5dc7f6:1 Different hash found for ext/performance/notebooks/taxi_dest_predict.ipynb
+(anonymous) @ jlab_core.a4c5e1f5bac9ba5dc7f6.js?v=a4c5e1f5bac9ba5dc7f6:1
+jlab_core.a4c5e1f5bac9ba5dc7f6.js?v=a4c5e1f5bac9ba5dc7f6:1 Different hash found for ext/performance/notebooks/taxi_dest_predict.ipynb
+(anonymous) @ jlab_core.a4c5e1f5bac9ba5dc7f6.js?v=a4c5e1f5bac9ba5dc7f6:1
+rerunExecutionCount.ts:60 rrOption 1
+rerunExecutionCount.ts:284 ACTIVE CELL AFTER UPDATE:  131f77ad-3396-46f5-9a72-79932ea9bb92
+rerunExecutionCount.ts:169 ACT. CELL EC CHANGED:  131f77ad-3396-46f5-9a72-79932ea9bb92 old:  8 new:  12
+rerunExecutionCount.ts:147 cells to rerun:  Array(3)
+log.ts:3 PERF|Scheduled time=506847.79999999993|exec id=9|cell id=1dd338ce-1a0b-4fe1-9bef-51b9d0412a6f|rrID=0
+log.ts:3 PERF|Scheduled time=506848.5000000001|exec id=10|cell id=e634e91d-dfd1-4b82-908a-4d72154e3472|rrID=0
+log.ts:3 PERF|Scheduled time=506848.79999999993|exec id=11|cell id=a6085ec9-98ad-408c-a2ee-3802fde0c433|rrID=0
+log.ts:3 PERF|Rerun start=506847|Rerun cells=1dd338ce-1a0b-4fe1-9bef-51b9d0412a6f,e634e91d-dfd1-4b82-908a-4d72154e3472,a6085ec9-98ad-408c-a2ee-3802fde0c433|rrId=0
+rerunExecutionCount.ts:243 finished rerun routine:  Map(12)
+log.ts:3 PERF|Executed time=506951.0000000001|exec_id=13|cell_id=1dd338ce-1a0b-4fe1-9bef-51b9d0412a6f|rrId=0
+rerunExecutionCount.ts:243 finished rerun routine:  Map(12)
+log.ts:3 PERF|Executed time=507008.9|exec_id=14|cell_id=e634e91d-dfd1-4b82-908a-4d72154e3472|rrId=0
+rerunExecutionCount.ts:243 finished rerun routine:  Map(12)
+log.ts:3 PERF|Executed time=530117.9|exec_id=15|cell_id=a6085ec9-98ad-408c-a2ee-3802fde0c433|rrId=0
+log.ts:3 PERF|Rerun end=530118.2999999999|rrId=0
+rerunExecutionCount.ts:243 finished rerun routine:  Map(12) {'c95b21af-eb42-47a0-88e8-e05f00d605ed' => 1, '49a2b6c0-1c1e-4efd-bd34-57ed20833209' => 2, '65960ed9-ac5e-4182-878b-a6035103be10' => 3, 'fd78769d-934f-476b-90d7-dbe014e8e7be' => 4, '75dd0b97-92b1-4955-94c4-5b318cc98fab' => 5, …}

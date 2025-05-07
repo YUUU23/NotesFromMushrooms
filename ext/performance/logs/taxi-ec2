@@ -1,0 +1,49 @@
+consumes:70 Unsatisfied version 4.4.6 from @jupyterlab/application-top of shared singleton module @jupyterlab/apputils (required ^4.5.1)
+warn @ consumes:70
+consumes:70 Unsatisfied version 4.3.6 from @jupyterlab/application-top of shared singleton module @jupyterlab/notebook (required ^4.4.1)
+warn @ consumes:70
+consumes:70 No satisfying version (^4.4.1) of shared module @jupyterlab/cells found in shared scope default.
+Available versions: 4.3.6 from @jupyterlab/application-top
+warn @ consumes:70
+remoteEntry.f4a64e687ab347206c17.js:1 Unsatisfied version 0.16.6 from @jupyterlab/application-top of shared singleton module @jupyter/web-components (required ~0.15.3)
+b @ remoteEntry.f4a64e687ab347206c17.js:1
+jlab_core.a4c5e1f5bac9ba5dc7f6.js?v=a4c5e1f5bac9ba5dc7f6:1 Language pack 'en_US' not installed!
+fetch @ jlab_core.a4c5e1f5bac9ba5dc7f6.js?v=a4c5e1f5bac9ba5dc7f6:1
+498.9433196881674d20b32e.js?v=9433196881674d20b32e:1 JupyterLab extension @lckr/jupyterlab_variableinspector is activated!
+552.6d7597412aeadbbf15fe.js?v=6d7597412aeadbbf15fe:1 Language identifier en-us has a non-exact match, please update it to en_US
+getLanguageByIdentifier @ 552.6d7597412aeadbbf15fe.js?v=6d7597412aeadbbf15fe:1
+:8888/lab/api/extensions?query&page=1&per_page=30&refresh=0&1746167393268:1 
+            
+            
+           Failed to load resource: the server responded with a status of 500 (Internal Server Error)
+jlab_core.a4c5e1f5bac9ba5dc7f6.js?v=a4c5e1f5bac9ba5dc7f6:1 Connection lost, reconnecting in 0 seconds.
+_reconnect @ jlab_core.a4c5e1f5bac9ba5dc7f6.js?v=a4c5e1f5bac9ba5dc7f6:1
+jlab_core.a4c5e1f5bac9ba5dc7f6.js?v=a4c5e1f5bac9ba5dc7f6:1 Keeping old LSP connection as the new kernel uses the same langauge
+rerunExecutionCount.ts:60 rrOption 1
+rerunExecutionCount.ts:284 ACTIVE CELL AFTER UPDATE:  77607b09-1bc1-439c-b3be-b826f4864fd6
+rerunECPlugin.ts:50 active cell 82dfdda4-fa7f-4693-85d5-1819d5e4c1e4
+rerunExecutionCount.ts:284 ACTIVE CELL AFTER UPDATE:  82dfdda4-fa7f-4693-85d5-1819d5e4c1e4
+rerunExecutionCount.ts:169 ACT. CELL EC CHANGED:  82dfdda4-fa7f-4693-85d5-1819d5e4c1e4 old:  8 new:  12
+rerunExecutionCount.ts:147 cells to rerun:  Array(3)
+log.ts:3 PERF|Scheduled time=100678.90000000002|exec id=9|cell id=0a9cd8ec-8584-4cd4-8678-f0045127b0f5|rrID=0
+log.ts:3 PERF|Scheduled time=100680|exec id=10|cell id=cf214b1a-db97-4ad3-b173-1a28318c9dc9|rrID=0
+log.ts:3 PERF|Scheduled time=100680.29999999999|exec id=11|cell id=2a293a8d-6ede-42d2-a0e1-cd1acc798f4e|rrID=0
+log.ts:3 PERF|Rerun start=100678|Rerun cells=0a9cd8ec-8584-4cd4-8678-f0045127b0f5,cf214b1a-db97-4ad3-b173-1a28318c9dc9,2a293a8d-6ede-42d2-a0e1-cd1acc798f4e|rrId=0
+rerunExecutionCount.ts:243 finished rerun routine:  Map(12)
+log.ts:3 PERF|Executed time=100760.5|exec_id=13|cell_id=0a9cd8ec-8584-4cd4-8678-f0045127b0f5|rrId=0
+rerunExecutionCount.ts:243 finished rerun routine:  Map(12)
+log.ts:3 PERF|Executed time=100809.79999999999|exec_id=14|cell_id=cf214b1a-db97-4ad3-b173-1a28318c9dc9|rrId=0
+rerunExecutionCount.ts:243 finished rerun routine:  Map(12)
+log.ts:3 PERF|Executed time=122935.5|exec_id=15|cell_id=2a293a8d-6ede-42d2-a0e1-cd1acc798f4e|rrId=0
+log.ts:3 PERF|Rerun end=122935.70000000001|rrId=0
+rerunExecutionCount.ts:243 finished rerun routine:  Map(12) {'756ac289-b5e1-4c29-8892-8d59f01b6ec3' => 1, '3c28bbf3-1785-445d-9899-56d50f1e162e' => 2, '382486c2-71de-49f1-ba23-58db42a68db4' => 3, 'e439d9b2-7da2-4f96-b69c-16b53e738cc7' => 4, 'b393cbbb-97e2-46e9-9c06-b403974ec8b0' => 5, …}
+jlab_core.a4c5e1f5bac9ba5dc7f6.js?v=a4c5e1f5bac9ba5dc7f6:1 Different hash found for ext/performance/notebooks/04_Destination Prediction.ipynb
+(anonymous) @ jlab_core.a4c5e1f5bac9ba5dc7f6.js?v=a4c5e1f5bac9ba5dc7f6:1
+Promise.then
+_maybeSave @ jlab_core.a4c5e1f5bac9ba5dc7f6.js?v=a4c5e1f5bac9ba5dc7f6:1
+_save @ jlab_core.a4c5e1f5bac9ba5dc7f6.js?v=a4c5e1f5bac9ba5dc7f6:1
+await in _save
+save @ jlab_core.a4c5e1f5bac9ba5dc7f6.js?v=a4c5e1f5bac9ba5dc7f6:1
+await in save
+_save @ jlab_core.a4c5e1f5bac9ba5dc7f6.js?v=a4c5e1f5bac9ba5dc7f6:1
+(anonymous) @ jlab_core.a4c5e1f5bac9ba5dc7f6.js?v=a4c5e1f5bac9ba5dc7f6:1
