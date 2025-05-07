@@ -314,6 +314,41 @@ class PerfStat:
             overhead = rerun.first_cell_schedule_time - rerun.rerun_start_time
             ret[rerun_id] = [overhead, n_cells] 
         return ret
+    
+def plot_average_runtime_chart(rerun: RerunPerfStat) -> None:
+        processes = [
+            {
+                "name": "Handling Rerun Signal",
+                "start": 0,
+                "stop": rerun.first_cell_schedule_time - rerun.rerun_start_time,
+            }, 
+            {
+                "name": "Cells executing (Rerun)",
+                "start": rerun.first_cell_schedule_time - rerun.rerun_start_time,
+                "stop": rerun.last_cell_executed_time - rerun.first_cell_schedule_time,
+            },
+        ]
+
+        process_names = [p["name"] for p in processes]
+        start_times = [p["start"] for p in processes]
+        durations = [p["stop"] - p["start"] for p in processes]
+        y_positions = np.arange(len(processes))
+        
+        # Create a figure and axis
+        plt.figure(figsize=(10, 6))
+        
+        # Plot horizontal bars (Gantt chart)
+        plt.barh(y_positions, durations, left=start_times, height=0.4, color='skyblue', edgecolor='black')
+        
+        # Customize the plot
+        plt.yticks(y_positions, process_names)
+        plt.xlabel('Time (milliseconds)')
+        plt.ylabel('Processes')
+        plt.title('Process Latency (Start and Stop Times)')
+        plt.grid(True, axis='x', linestyle='--', alpha=0.7)
+        
+        # Adjust layout to prevent label clipping
+        plt.tight_layout()
 
 if __name__ == "__main__": 
     stat = PerfStat(perf_log_file) # Defined up there ^^
@@ -331,5 +366,8 @@ if __name__ == "__main__":
     print('\n')
     print('RERUN ALL TIMES: ')
     stat.print_rerun_all_stats()
+    
+    # Print out stats information in a bar chart. 
+    # plot_average_runtime_chart(stat.rerun_perf_stats[-1])
 
 

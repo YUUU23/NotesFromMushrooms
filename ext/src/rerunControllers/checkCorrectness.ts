@@ -27,9 +27,7 @@ function establishServerConnection(
 ) {
   console.log('service: ', service);
   console.log('nbPath, ', currentNotebookPath);
-  console.log('cb: ', cb);
   let endpointPath = `${service}?nb=${currentNotebookPath}`;
-  console.log('endpoint path: ', endpointPath);
   requestAPI<any>(endpointPath).then(data =>
     console.log('DATA Found: ', data.data)
   );
@@ -50,7 +48,11 @@ function checkCellCorrectness(panel: NotebookPanel): void {
     } else {
       // 2. Establish HTTP connection with the backend to run python correctness
       //    script.
-      establishServerConnection('get-example', nbPath, processCorrectnessData);
+      establishServerConnection(
+        'get-correctness',
+        nbPath,
+        processCorrectnessData
+      );
     }
   });
 }
