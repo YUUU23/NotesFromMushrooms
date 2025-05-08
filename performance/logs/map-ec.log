@@ -1,0 +1,362 @@
+VM2661:1 Console was cleared
+undefined
+rerunExecutionCount.ts:171 ACT. CELL EC CHANGED:  648f933f-0e39-4ebd-8c2b-4cb1171a3643 old:  55 new:  59
+rerunExecutionCount.ts:149 cells to rerun:  (3) ['27af3c7e-7df8-434f-bc79-1658849c5339', '887871f4-6ef6-488b-aaa1-b3fc039feacf', '6a7f44b9-970c-44f5-84b6-24d5be52c255']
+log.ts:3 PERF|Scheduled time=1145429.700000003|exec id=56|cell id=27af3c7e-7df8-434f-bc79-1658849c5339|rrID=12
+log.ts:3 PERF|Scheduled time=1145431.1000000015|exec id=57|cell id=887871f4-6ef6-488b-aaa1-b3fc039feacf|rrID=12
+log.ts:3 PERF|Scheduled time=1145432.799999997|exec id=58|cell id=6a7f44b9-970c-44f5-84b6-24d5be52c255|rrID=12
+log.ts:3 PERF|Rerun start=1145429|Rerun cells=27af3c7e-7df8-434f-bc79-1658849c5339,887871f4-6ef6-488b-aaa1-b3fc039feacf,6a7f44b9-970c-44f5-84b6-24d5be52c255|rrId=12
+rerunExecutionCount.ts:249 finished rerun routine:  Map(10) {'6140ddc7-3c2d-4023-8cb0-2f828aaf0f0a' => 1, '8f6d6529-c3a7-491c-9f9c-bc0872172ccf' => 2, 'd5111bb8-68be-4331-946a-6c40a92946ac' => 3, '18c5bbac-f958-409e-80a1-a1b7080000e8' => 4, 'a6ee3105-8a41-4b96-9ee0-aaa0ab5fdcb8' => 5, …}
+log.ts:3 PERF|Executed time=1145467.6000000015|exec_id=60|cell_id=27af3c7e-7df8-434f-bc79-1658849c5339|rrId=12
+rerunExecutionCount.ts:249 finished rerun routine:  Map(10) {'6140ddc7-3c2d-4023-8cb0-2f828aaf0f0a' => 1, '8f6d6529-c3a7-491c-9f9c-bc0872172ccf' => 2, 'd5111bb8-68be-4331-946a-6c40a92946ac' => 3, '18c5bbac-f958-409e-80a1-a1b7080000e8' => 4, 'a6ee3105-8a41-4b96-9ee0-aaa0ab5fdcb8' => 5, …}
+log.ts:3 PERF|Executed time=1145477|exec_id=61|cell_id=887871f4-6ef6-488b-aaa1-b3fc039feacf|rrId=12
+rerunExecutionCount.ts:249 finished rerun routine:  Map(10) {'6140ddc7-3c2d-4023-8cb0-2f828aaf0f0a' => 1, '8f6d6529-c3a7-491c-9f9c-bc0872172ccf' => 2, 'd5111bb8-68be-4331-946a-6c40a92946ac' => 3, '18c5bbac-f958-409e-80a1-a1b7080000e8' => 4, 'a6ee3105-8a41-4b96-9ee0-aaa0ab5fdcb8' => 5, …}
+log.ts:3 PERF|Executed time=1146320.299999997|exec_id=62|cell_id=6a7f44b9-970c-44f5-84b6-24d5be52c255|rrId=12
+log.ts:3 PERF|Rerun end=1146320.5|rrId=12
+rerunExecutionCount.ts:231 checking correctness
+checkCorrectness.ts:9 RELATIVE:  performance/notebooks/map_plotting.ipynb
+checkCorrectness.ts:28 service:  get-correctness
+checkCorrectness.ts:29 nbPath,  performance/notebooks/map_plotting.ipynb
+rerunExecutionCount.ts:249 finished rerun routine:  Map(10) {'6140ddc7-3c2d-4023-8cb0-2f828aaf0f0a' => 1, '8f6d6529-c3a7-491c-9f9c-bc0872172ccf' => 2, 'd5111bb8-68be-4331-946a-6c40a92946ac' => 3, '18c5bbac-f958-409e-80a1-a1b7080000e8' => 4, 'a6ee3105-8a41-4b96-9ee0-aaa0ab5fdcb8' => 5, …}
+checkCorrectness.ts:32 DATA Found:  Notebook sent in: performance/notebooks/map_plotting.ipynb results: Traceback (most recent call last):
+  File "/Users/happy2na/Desktop/NotesFromMushrooms/performance/notebooks/correctness.py", line 153, in <module>
+    diffs = load_and_rerun_notebook(args.notebookpath)
+  File "/Users/happy2na/Desktop/NotesFromMushrooms/performance/notebooks/correctness.py", line 142, in load_and_rerun_notebook
+    ep.preprocess(nb_reran)
+    ~~~~~~~~~~~~~^^^^^^^^^^
+  File "/Users/happy2na/Desktop/NotesFromMushrooms/performance/notebooks/process_all/executeAll.py", line 112, in preprocess
+    self.preprocess_cell(cell, resources, index)
+    ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/happy2na/Desktop/NotesFromMushrooms/performance/notebooks/process_all/executeAll.py", line 136, in preprocess_cell
+    cell = self.execute_cell(cell, index, store_history=True)
+  File "/opt/anaconda3/envs/jlab-e/lib/python3.13/site-packages/jupyter_core/utils/__init__.py", line 165, in wrapped
+    return loop.run_until_complete(inner)
+           ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^
+  File "/opt/anaconda3/envs/jlab-e/lib/python3.13/asyncio/base_events.py", line 725, in run_until_complete
+    return future.result()
+           ~~~~~~~~~~~~~^^
+  File "/opt/anaconda3/envs/jlab-e/lib/python3.13/site-packages/nbclient/client.py", line 1062, in async_execute_cell
+    await self._check_raise_for_error(cell, cell_index, exec_reply)
+  File "/opt/anaconda3/envs/jlab-e/lib/python3.13/site-packages/nbclient/client.py", line 918, in _check_raise_for_error
+    raise CellExecutionError.from_cell_and_msg(cell, exec_reply_content)
+nbclient.exceptions.CellExecutionError: An error occurred while executing the following cell:
+------------------
+img = plt.imread("img/mercator.png")
+fig, ax = plt.subplots(figsize=(10, 8))
+ax.imshow(img, extent=[-180, 180, -90, 90])
+scatter = ax.scatter(country_df['longitude'], country_df['latitude'], c=country_df['elevation'], cmap='viridis', s=100)
+
+# Add a colorbar to show the elevation scale
+fig.colorbar(scatter, label='Elevation (m)')
+
+# Set plot labels and title
+plt.xlabel('Longitude')
+plt.ylabel('Latitude')
+plt.title('Elevation Map')
+plt.xlim(-180, 180)
+plt.ylim(-90, 90)
+# Show the plot
+plt.show()
+------------------
+
+
+[31m---------------------------------------------------------------------------[39m
+[31mNameError[39m                                 Traceback (most recent call last)
+[36mCell[39m[36m [39m[32mIn[10][39m[32m, line 1[39m
+[32m----> [39m[32m1[39m img = [43mplt[49m.imread([33m"[39m[33mimg/mercator.png[39m[33m"[39m)
+[32m      2[39m fig, ax = plt.subplots(figsize=([32m10[39m, [32m8[39m))
+[32m      3[39m ax.imshow(img, extent=[-[32m180[39m, [32m180[39m, -[32m90[39m, [32m90[39m])
+
+[31mNameError[39m: name 'plt' is not defined
+
+current working directory:  /Users/happy2na/Desktop/NotesFromMushrooms
+PERF|RERUN ALL | Set-Up Kernel and Language Info. time: 992.1038749962463ms
+
+rerunExecutionCount.ts:171 ACT. CELL EC CHANGED:  648f933f-0e39-4ebd-8c2b-4cb1171a3643 old:  59 new:  63
+rerunExecutionCount.ts:149 cells to rerun:  (3) ['27af3c7e-7df8-434f-bc79-1658849c5339', '887871f4-6ef6-488b-aaa1-b3fc039feacf', '6a7f44b9-970c-44f5-84b6-24d5be52c255']
+log.ts:3 PERF|Scheduled time=1154389.799999997|exec id=60|cell id=27af3c7e-7df8-434f-bc79-1658849c5339|rrID=13
+log.ts:3 PERF|Scheduled time=1154391.200000003|exec id=61|cell id=887871f4-6ef6-488b-aaa1-b3fc039feacf|rrID=13
+log.ts:3 PERF|Scheduled time=1154392.200000003|exec id=62|cell id=6a7f44b9-970c-44f5-84b6-24d5be52c255|rrID=13
+log.ts:3 PERF|Rerun start=1154389|Rerun cells=27af3c7e-7df8-434f-bc79-1658849c5339,887871f4-6ef6-488b-aaa1-b3fc039feacf,6a7f44b9-970c-44f5-84b6-24d5be52c255|rrId=13
+rerunExecutionCount.ts:249 finished rerun routine:  Map(10) {'6140ddc7-3c2d-4023-8cb0-2f828aaf0f0a' => 1, '8f6d6529-c3a7-491c-9f9c-bc0872172ccf' => 2, 'd5111bb8-68be-4331-946a-6c40a92946ac' => 3, '18c5bbac-f958-409e-80a1-a1b7080000e8' => 4, 'a6ee3105-8a41-4b96-9ee0-aaa0ab5fdcb8' => 5, …}
+log.ts:3 PERF|Executed time=1154401.3999999985|exec_id=64|cell_id=27af3c7e-7df8-434f-bc79-1658849c5339|rrId=13
+rerunExecutionCount.ts:249 finished rerun routine:  Map(10) {'6140ddc7-3c2d-4023-8cb0-2f828aaf0f0a' => 1, '8f6d6529-c3a7-491c-9f9c-bc0872172ccf' => 2, 'd5111bb8-68be-4331-946a-6c40a92946ac' => 3, '18c5bbac-f958-409e-80a1-a1b7080000e8' => 4, 'a6ee3105-8a41-4b96-9ee0-aaa0ab5fdcb8' => 5, …}
+log.ts:3 PERF|Executed time=1154413.700000003|exec_id=65|cell_id=887871f4-6ef6-488b-aaa1-b3fc039feacf|rrId=13
+rerunExecutionCount.ts:249 finished rerun routine:  Map(10) {'6140ddc7-3c2d-4023-8cb0-2f828aaf0f0a' => 1, '8f6d6529-c3a7-491c-9f9c-bc0872172ccf' => 2, 'd5111bb8-68be-4331-946a-6c40a92946ac' => 3, '18c5bbac-f958-409e-80a1-a1b7080000e8' => 4, 'a6ee3105-8a41-4b96-9ee0-aaa0ab5fdcb8' => 5, …}
+log.ts:3 PERF|Executed time=1155190.700000003|exec_id=66|cell_id=6a7f44b9-970c-44f5-84b6-24d5be52c255|rrId=13
+log.ts:3 PERF|Rerun end=1155190.799999997|rrId=13
+rerunExecutionCount.ts:231 checking correctness
+checkCorrectness.ts:9 RELATIVE:  performance/notebooks/map_plotting.ipynb
+checkCorrectness.ts:28 service:  get-correctness
+checkCorrectness.ts:29 nbPath,  performance/notebooks/map_plotting.ipynb
+rerunExecutionCount.ts:249 finished rerun routine:  Map(10) {'6140ddc7-3c2d-4023-8cb0-2f828aaf0f0a' => 1, '8f6d6529-c3a7-491c-9f9c-bc0872172ccf' => 2, 'd5111bb8-68be-4331-946a-6c40a92946ac' => 3, '18c5bbac-f958-409e-80a1-a1b7080000e8' => 4, 'a6ee3105-8a41-4b96-9ee0-aaa0ab5fdcb8' => 5, …}
+checkCorrectness.ts:32 DATA Found:  Notebook sent in: performance/notebooks/map_plotting.ipynb results: Traceback (most recent call last):
+  File "/Users/happy2na/Desktop/NotesFromMushrooms/performance/notebooks/correctness.py", line 153, in <module>
+    diffs = load_and_rerun_notebook(args.notebookpath)
+  File "/Users/happy2na/Desktop/NotesFromMushrooms/performance/notebooks/correctness.py", line 142, in load_and_rerun_notebook
+    ep.preprocess(nb_reran)
+    ~~~~~~~~~~~~~^^^^^^^^^^
+  File "/Users/happy2na/Desktop/NotesFromMushrooms/performance/notebooks/process_all/executeAll.py", line 112, in preprocess
+    self.preprocess_cell(cell, resources, index)
+    ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/happy2na/Desktop/NotesFromMushrooms/performance/notebooks/process_all/executeAll.py", line 136, in preprocess_cell
+    cell = self.execute_cell(cell, index, store_history=True)
+  File "/opt/anaconda3/envs/jlab-e/lib/python3.13/site-packages/jupyter_core/utils/__init__.py", line 165, in wrapped
+    return loop.run_until_complete(inner)
+           ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^
+  File "/opt/anaconda3/envs/jlab-e/lib/python3.13/asyncio/base_events.py", line 725, in run_until_complete
+    return future.result()
+           ~~~~~~~~~~~~~^^
+  File "/opt/anaconda3/envs/jlab-e/lib/python3.13/site-packages/nbclient/client.py", line 1062, in async_execute_cell
+    await self._check_raise_for_error(cell, cell_index, exec_reply)
+  File "/opt/anaconda3/envs/jlab-e/lib/python3.13/site-packages/nbclient/client.py", line 918, in _check_raise_for_error
+    raise CellExecutionError.from_cell_and_msg(cell, exec_reply_content)
+nbclient.exceptions.CellExecutionError: An error occurred while executing the following cell:
+------------------
+img = plt.imread("img/mercator.png")
+fig, ax = plt.subplots(figsize=(10, 8))
+ax.imshow(img, extent=[-180, 180, -90, 90])
+scatter = ax.scatter(country_df['longitude'], country_df['latitude'], c=country_df['elevation'], cmap='viridis', s=100)
+
+# Add a colorbar to show the elevation scale
+fig.colorbar(scatter, label='Elevation (m)')
+
+# Set plot labels and title
+plt.xlabel('Longitude')
+plt.ylabel('Latitude')
+plt.title('Elevation Map')
+plt.xlim(-180, 180)
+plt.ylim(-90, 90)
+# Show the plot
+plt.show()
+------------------
+
+
+[31m---------------------------------------------------------------------------[39m
+[31mNameError[39m                                 Traceback (most recent call last)
+[36mCell[39m[36m [39m[32mIn[10][39m[32m, line 1[39m
+[32m----> [39m[32m1[39m img = [43mplt[49m.imread([33m"[39m[33mimg/mercator.png[39m[33m"[39m)
+[32m      2[39m fig, ax = plt.subplots(figsize=([32m10[39m, [32m8[39m))
+[32m      3[39m ax.imshow(img, extent=[-[32m180[39m, [32m180[39m, -[32m90[39m, [32m90[39m])
+
+[31mNameError[39m: name 'plt' is not defined
+
+current working directory:  /Users/happy2na/Desktop/NotesFromMushrooms
+PERF|RERUN ALL | Set-Up Kernel and Language Info. time: 982.526791995042ms
+
+rerunExecutionCount.ts:171 ACT. CELL EC CHANGED:  648f933f-0e39-4ebd-8c2b-4cb1171a3643 old:  63 new:  67
+rerunExecutionCount.ts:149 cells to rerun:  (3) ['27af3c7e-7df8-434f-bc79-1658849c5339', '887871f4-6ef6-488b-aaa1-b3fc039feacf', '6a7f44b9-970c-44f5-84b6-24d5be52c255']
+log.ts:3 PERF|Scheduled time=1157570.200000003|exec id=64|cell id=27af3c7e-7df8-434f-bc79-1658849c5339|rrID=14
+log.ts:3 PERF|Scheduled time=1157571.299999997|exec id=65|cell id=887871f4-6ef6-488b-aaa1-b3fc039feacf|rrID=14
+log.ts:3 PERF|Scheduled time=1157572|exec id=66|cell id=6a7f44b9-970c-44f5-84b6-24d5be52c255|rrID=14
+log.ts:3 PERF|Rerun start=1157569|Rerun cells=27af3c7e-7df8-434f-bc79-1658849c5339,887871f4-6ef6-488b-aaa1-b3fc039feacf,6a7f44b9-970c-44f5-84b6-24d5be52c255|rrId=14
+rerunExecutionCount.ts:249 finished rerun routine:  Map(10) {'6140ddc7-3c2d-4023-8cb0-2f828aaf0f0a' => 1, '8f6d6529-c3a7-491c-9f9c-bc0872172ccf' => 2, 'd5111bb8-68be-4331-946a-6c40a92946ac' => 3, '18c5bbac-f958-409e-80a1-a1b7080000e8' => 4, 'a6ee3105-8a41-4b96-9ee0-aaa0ab5fdcb8' => 5, …}
+log.ts:3 PERF|Executed time=1157585|exec_id=68|cell_id=27af3c7e-7df8-434f-bc79-1658849c5339|rrId=14
+rerunExecutionCount.ts:249 finished rerun routine:  Map(10) {'6140ddc7-3c2d-4023-8cb0-2f828aaf0f0a' => 1, '8f6d6529-c3a7-491c-9f9c-bc0872172ccf' => 2, 'd5111bb8-68be-4331-946a-6c40a92946ac' => 3, '18c5bbac-f958-409e-80a1-a1b7080000e8' => 4, 'a6ee3105-8a41-4b96-9ee0-aaa0ab5fdcb8' => 5, …}
+log.ts:3 PERF|Executed time=1157596|exec_id=69|cell_id=887871f4-6ef6-488b-aaa1-b3fc039feacf|rrId=14
+rerunExecutionCount.ts:249 finished rerun routine:  Map(10) {'6140ddc7-3c2d-4023-8cb0-2f828aaf0f0a' => 1, '8f6d6529-c3a7-491c-9f9c-bc0872172ccf' => 2, 'd5111bb8-68be-4331-946a-6c40a92946ac' => 3, '18c5bbac-f958-409e-80a1-a1b7080000e8' => 4, 'a6ee3105-8a41-4b96-9ee0-aaa0ab5fdcb8' => 5, …}
+log.ts:3 PERF|Executed time=1158362.3999999985|exec_id=70|cell_id=6a7f44b9-970c-44f5-84b6-24d5be52c255|rrId=14
+log.ts:3 PERF|Rerun end=1158362.5|rrId=14
+rerunExecutionCount.ts:231 checking correctness
+checkCorrectness.ts:9 RELATIVE:  performance/notebooks/map_plotting.ipynb
+checkCorrectness.ts:28 service:  get-correctness
+checkCorrectness.ts:29 nbPath,  performance/notebooks/map_plotting.ipynb
+rerunExecutionCount.ts:249 finished rerun routine:  Map(10) {'6140ddc7-3c2d-4023-8cb0-2f828aaf0f0a' => 1, '8f6d6529-c3a7-491c-9f9c-bc0872172ccf' => 2, 'd5111bb8-68be-4331-946a-6c40a92946ac' => 3, '18c5bbac-f958-409e-80a1-a1b7080000e8' => 4, 'a6ee3105-8a41-4b96-9ee0-aaa0ab5fdcb8' => 5, …}
+checkCorrectness.ts:32 DATA Found:  Notebook sent in: performance/notebooks/map_plotting.ipynb results: Traceback (most recent call last):
+  File "/Users/happy2na/Desktop/NotesFromMushrooms/performance/notebooks/correctness.py", line 153, in <module>
+    diffs = load_and_rerun_notebook(args.notebookpath)
+  File "/Users/happy2na/Desktop/NotesFromMushrooms/performance/notebooks/correctness.py", line 142, in load_and_rerun_notebook
+    ep.preprocess(nb_reran)
+    ~~~~~~~~~~~~~^^^^^^^^^^
+  File "/Users/happy2na/Desktop/NotesFromMushrooms/performance/notebooks/process_all/executeAll.py", line 112, in preprocess
+    self.preprocess_cell(cell, resources, index)
+    ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/happy2na/Desktop/NotesFromMushrooms/performance/notebooks/process_all/executeAll.py", line 136, in preprocess_cell
+    cell = self.execute_cell(cell, index, store_history=True)
+  File "/opt/anaconda3/envs/jlab-e/lib/python3.13/site-packages/jupyter_core/utils/__init__.py", line 165, in wrapped
+    return loop.run_until_complete(inner)
+           ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^
+  File "/opt/anaconda3/envs/jlab-e/lib/python3.13/asyncio/base_events.py", line 725, in run_until_complete
+    return future.result()
+           ~~~~~~~~~~~~~^^
+  File "/opt/anaconda3/envs/jlab-e/lib/python3.13/site-packages/nbclient/client.py", line 1062, in async_execute_cell
+    await self._check_raise_for_error(cell, cell_index, exec_reply)
+  File "/opt/anaconda3/envs/jlab-e/lib/python3.13/site-packages/nbclient/client.py", line 918, in _check_raise_for_error
+    raise CellExecutionError.from_cell_and_msg(cell, exec_reply_content)
+nbclient.exceptions.CellExecutionError: An error occurred while executing the following cell:
+------------------
+img = plt.imread("img/mercator.png")
+fig, ax = plt.subplots(figsize=(10, 8))
+ax.imshow(img, extent=[-180, 180, -90, 90])
+scatter = ax.scatter(country_df['longitude'], country_df['latitude'], c=country_df['elevation'], cmap='viridis', s=100)
+
+# Add a colorbar to show the elevation scale
+fig.colorbar(scatter, label='Elevation (m)')
+
+# Set plot labels and title
+plt.xlabel('Longitude')
+plt.ylabel('Latitude')
+plt.title('Elevation Map')
+plt.xlim(-180, 180)
+plt.ylim(-90, 90)
+# Show the plot
+plt.show()
+------------------
+
+
+[31m---------------------------------------------------------------------------[39m
+[31mNameError[39m                                 Traceback (most recent call last)
+[36mCell[39m[36m [39m[32mIn[10][39m[32m, line 1[39m
+[32m----> [39m[32m1[39m img = [43mplt[49m.imread([33m"[39m[33mimg/mercator.png[39m[33m"[39m)
+[32m      2[39m fig, ax = plt.subplots(figsize=([32m10[39m, [32m8[39m))
+[32m      3[39m ax.imshow(img, extent=[-[32m180[39m, [32m180[39m, -[32m90[39m, [32m90[39m])
+
+[31mNameError[39m: name 'plt' is not defined
+
+current working directory:  /Users/happy2na/Desktop/NotesFromMushrooms
+PERF|RERUN ALL | Set-Up Kernel and Language Info. time: 877.2233750059968ms
+
+rerunExecutionCount.ts:171 ACT. CELL EC CHANGED:  648f933f-0e39-4ebd-8c2b-4cb1171a3643 old:  67 new:  71
+rerunExecutionCount.ts:149 cells to rerun:  (3) ['27af3c7e-7df8-434f-bc79-1658849c5339', '887871f4-6ef6-488b-aaa1-b3fc039feacf', '6a7f44b9-970c-44f5-84b6-24d5be52c255']
+log.ts:3 PERF|Scheduled time=1160562.6000000015|exec id=68|cell id=27af3c7e-7df8-434f-bc79-1658849c5339|rrID=15
+log.ts:3 PERF|Scheduled time=1160563.700000003|exec id=69|cell id=887871f4-6ef6-488b-aaa1-b3fc039feacf|rrID=15
+log.ts:3 PERF|Scheduled time=1160564.3999999985|exec id=70|cell id=6a7f44b9-970c-44f5-84b6-24d5be52c255|rrID=15
+log.ts:3 PERF|Rerun start=1160562|Rerun cells=27af3c7e-7df8-434f-bc79-1658849c5339,887871f4-6ef6-488b-aaa1-b3fc039feacf,6a7f44b9-970c-44f5-84b6-24d5be52c255|rrId=15
+rerunExecutionCount.ts:249 finished rerun routine:  Map(10) {'6140ddc7-3c2d-4023-8cb0-2f828aaf0f0a' => 1, '8f6d6529-c3a7-491c-9f9c-bc0872172ccf' => 2, 'd5111bb8-68be-4331-946a-6c40a92946ac' => 3, '18c5bbac-f958-409e-80a1-a1b7080000e8' => 4, 'a6ee3105-8a41-4b96-9ee0-aaa0ab5fdcb8' => 5, …}
+log.ts:3 PERF|Executed time=1160610.299999997|exec_id=72|cell_id=27af3c7e-7df8-434f-bc79-1658849c5339|rrId=15
+rerunExecutionCount.ts:249 finished rerun routine:  Map(10) {'6140ddc7-3c2d-4023-8cb0-2f828aaf0f0a' => 1, '8f6d6529-c3a7-491c-9f9c-bc0872172ccf' => 2, 'd5111bb8-68be-4331-946a-6c40a92946ac' => 3, '18c5bbac-f958-409e-80a1-a1b7080000e8' => 4, 'a6ee3105-8a41-4b96-9ee0-aaa0ab5fdcb8' => 5, …}
+log.ts:3 PERF|Executed time=1160625|exec_id=73|cell_id=887871f4-6ef6-488b-aaa1-b3fc039feacf|rrId=15
+rerunExecutionCount.ts:249 finished rerun routine:  Map(10) {'6140ddc7-3c2d-4023-8cb0-2f828aaf0f0a' => 1, '8f6d6529-c3a7-491c-9f9c-bc0872172ccf' => 2, 'd5111bb8-68be-4331-946a-6c40a92946ac' => 3, '18c5bbac-f958-409e-80a1-a1b7080000e8' => 4, 'a6ee3105-8a41-4b96-9ee0-aaa0ab5fdcb8' => 5, …}
+log.ts:3 PERF|Executed time=1161391.299999997|exec_id=74|cell_id=6a7f44b9-970c-44f5-84b6-24d5be52c255|rrId=15
+log.ts:3 PERF|Rerun end=1161391.3999999985|rrId=15
+rerunExecutionCount.ts:231 checking correctness
+checkCorrectness.ts:9 RELATIVE:  performance/notebooks/map_plotting.ipynb
+checkCorrectness.ts:28 service:  get-correctness
+checkCorrectness.ts:29 nbPath,  performance/notebooks/map_plotting.ipynb
+rerunExecutionCount.ts:249 finished rerun routine:  Map(10) {'6140ddc7-3c2d-4023-8cb0-2f828aaf0f0a' => 1, '8f6d6529-c3a7-491c-9f9c-bc0872172ccf' => 2, 'd5111bb8-68be-4331-946a-6c40a92946ac' => 3, '18c5bbac-f958-409e-80a1-a1b7080000e8' => 4, 'a6ee3105-8a41-4b96-9ee0-aaa0ab5fdcb8' => 5, …}
+checkCorrectness.ts:32 DATA Found:  Notebook sent in: performance/notebooks/map_plotting.ipynb results: Traceback (most recent call last):
+  File "/Users/happy2na/Desktop/NotesFromMushrooms/performance/notebooks/correctness.py", line 153, in <module>
+    diffs = load_and_rerun_notebook(args.notebookpath)
+  File "/Users/happy2na/Desktop/NotesFromMushrooms/performance/notebooks/correctness.py", line 142, in load_and_rerun_notebook
+    ep.preprocess(nb_reran)
+    ~~~~~~~~~~~~~^^^^^^^^^^
+  File "/Users/happy2na/Desktop/NotesFromMushrooms/performance/notebooks/process_all/executeAll.py", line 112, in preprocess
+    self.preprocess_cell(cell, resources, index)
+    ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/happy2na/Desktop/NotesFromMushrooms/performance/notebooks/process_all/executeAll.py", line 136, in preprocess_cell
+    cell = self.execute_cell(cell, index, store_history=True)
+  File "/opt/anaconda3/envs/jlab-e/lib/python3.13/site-packages/jupyter_core/utils/__init__.py", line 165, in wrapped
+    return loop.run_until_complete(inner)
+           ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^
+  File "/opt/anaconda3/envs/jlab-e/lib/python3.13/asyncio/base_events.py", line 725, in run_until_complete
+    return future.result()
+           ~~~~~~~~~~~~~^^
+  File "/opt/anaconda3/envs/jlab-e/lib/python3.13/site-packages/nbclient/client.py", line 1062, in async_execute_cell
+    await self._check_raise_for_error(cell, cell_index, exec_reply)
+  File "/opt/anaconda3/envs/jlab-e/lib/python3.13/site-packages/nbclient/client.py", line 918, in _check_raise_for_error
+    raise CellExecutionError.from_cell_and_msg(cell, exec_reply_content)
+nbclient.exceptions.CellExecutionError: An error occurred while executing the following cell:
+------------------
+img = plt.imread("img/mercator.png")
+fig, ax = plt.subplots(figsize=(10, 8))
+ax.imshow(img, extent=[-180, 180, -90, 90])
+scatter = ax.scatter(country_df['longitude'], country_df['latitude'], c=country_df['elevation'], cmap='viridis', s=100)
+
+# Add a colorbar to show the elevation scale
+fig.colorbar(scatter, label='Elevation (m)')
+
+# Set plot labels and title
+plt.xlabel('Longitude')
+plt.ylabel('Latitude')
+plt.title('Elevation Map')
+plt.xlim(-180, 180)
+plt.ylim(-90, 90)
+# Show the plot
+plt.show()
+------------------
+
+
+[31m---------------------------------------------------------------------------[39m
+[31mNameError[39m                                 Traceback (most recent call last)
+[36mCell[39m[36m [39m[32mIn[10][39m[32m, line 1[39m
+[32m----> [39m[32m1[39m img = [43mplt[49m.imread([33m"[39m[33mimg/mercator.png[39m[33m"[39m)
+[32m      2[39m fig, ax = plt.subplots(figsize=([32m10[39m, [32m8[39m))
+[32m      3[39m ax.imshow(img, extent=[-[32m180[39m, [32m180[39m, -[32m90[39m, [32m90[39m])
+
+[31mNameError[39m: name 'plt' is not defined
+
+current working directory:  /Users/happy2na/Desktop/NotesFromMushrooms
+PERF|RERUN ALL | Set-Up Kernel and Language Info. time: 877.7544999975362ms
+
+rerunExecutionCount.ts:171 ACT. CELL EC CHANGED:  648f933f-0e39-4ebd-8c2b-4cb1171a3643 old:  71 new:  75
+rerunExecutionCount.ts:149 cells to rerun:  (3) ['27af3c7e-7df8-434f-bc79-1658849c5339', '887871f4-6ef6-488b-aaa1-b3fc039feacf', '6a7f44b9-970c-44f5-84b6-24d5be52c255']
+log.ts:3 PERF|Scheduled time=1163592.5|exec id=72|cell id=27af3c7e-7df8-434f-bc79-1658849c5339|rrID=16
+log.ts:3 PERF|Scheduled time=1163593.6000000015|exec id=73|cell id=887871f4-6ef6-488b-aaa1-b3fc039feacf|rrID=16
+log.ts:3 PERF|Scheduled time=1163594.3999999985|exec id=74|cell id=6a7f44b9-970c-44f5-84b6-24d5be52c255|rrID=16
+log.ts:3 PERF|Rerun start=1163592|Rerun cells=27af3c7e-7df8-434f-bc79-1658849c5339,887871f4-6ef6-488b-aaa1-b3fc039feacf,6a7f44b9-970c-44f5-84b6-24d5be52c255|rrId=16
+rerunExecutionCount.ts:249 finished rerun routine:  Map(10) {'6140ddc7-3c2d-4023-8cb0-2f828aaf0f0a' => 1, '8f6d6529-c3a7-491c-9f9c-bc0872172ccf' => 2, 'd5111bb8-68be-4331-946a-6c40a92946ac' => 3, '18c5bbac-f958-409e-80a1-a1b7080000e8' => 4, 'a6ee3105-8a41-4b96-9ee0-aaa0ab5fdcb8' => 5, …}
+log.ts:3 PERF|Executed time=1163617.700000003|exec_id=76|cell_id=27af3c7e-7df8-434f-bc79-1658849c5339|rrId=16
+rerunExecutionCount.ts:249 finished rerun routine:  Map(10) {'6140ddc7-3c2d-4023-8cb0-2f828aaf0f0a' => 1, '8f6d6529-c3a7-491c-9f9c-bc0872172ccf' => 2, 'd5111bb8-68be-4331-946a-6c40a92946ac' => 3, '18c5bbac-f958-409e-80a1-a1b7080000e8' => 4, 'a6ee3105-8a41-4b96-9ee0-aaa0ab5fdcb8' => 5, …}
+log.ts:3 PERF|Executed time=1163622.799999997|exec_id=77|cell_id=887871f4-6ef6-488b-aaa1-b3fc039feacf|rrId=16
+rerunExecutionCount.ts:249 finished rerun routine:  Map(10) {'6140ddc7-3c2d-4023-8cb0-2f828aaf0f0a' => 1, '8f6d6529-c3a7-491c-9f9c-bc0872172ccf' => 2, 'd5111bb8-68be-4331-946a-6c40a92946ac' => 3, '18c5bbac-f958-409e-80a1-a1b7080000e8' => 4, 'a6ee3105-8a41-4b96-9ee0-aaa0ab5fdcb8' => 5, …}
+log.ts:3 PERF|Executed time=1164393.3999999985|exec_id=78|cell_id=6a7f44b9-970c-44f5-84b6-24d5be52c255|rrId=16
+log.ts:3 PERF|Rerun end=1164393.5|rrId=16
+rerunExecutionCount.ts:231 checking correctness
+checkCorrectness.ts:9 RELATIVE:  performance/notebooks/map_plotting.ipynb
+checkCorrectness.ts:28 service:  get-correctness
+checkCorrectness.ts:29 nbPath,  performance/notebooks/map_plotting.ipynb
+rerunExecutionCount.ts:249 finished rerun routine:  Map(10) {'6140ddc7-3c2d-4023-8cb0-2f828aaf0f0a' => 1, '8f6d6529-c3a7-491c-9f9c-bc0872172ccf' => 2, 'd5111bb8-68be-4331-946a-6c40a92946ac' => 3, '18c5bbac-f958-409e-80a1-a1b7080000e8' => 4, 'a6ee3105-8a41-4b96-9ee0-aaa0ab5fdcb8' => 5, …}
+checkCorrectness.ts:32 DATA Found:  Notebook sent in: performance/notebooks/map_plotting.ipynb results: Traceback (most recent call last):
+  File "/Users/happy2na/Desktop/NotesFromMushrooms/performance/notebooks/correctness.py", line 153, in <module>
+    diffs = load_and_rerun_notebook(args.notebookpath)
+  File "/Users/happy2na/Desktop/NotesFromMushrooms/performance/notebooks/correctness.py", line 142, in load_and_rerun_notebook
+    ep.preprocess(nb_reran)
+    ~~~~~~~~~~~~~^^^^^^^^^^
+  File "/Users/happy2na/Desktop/NotesFromMushrooms/performance/notebooks/process_all/executeAll.py", line 112, in preprocess
+    self.preprocess_cell(cell, resources, index)
+    ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/happy2na/Desktop/NotesFromMushrooms/performance/notebooks/process_all/executeAll.py", line 136, in preprocess_cell
+    cell = self.execute_cell(cell, index, store_history=True)
+  File "/opt/anaconda3/envs/jlab-e/lib/python3.13/site-packages/jupyter_core/utils/__init__.py", line 165, in wrapped
+    return loop.run_until_complete(inner)
+           ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^
+  File "/opt/anaconda3/envs/jlab-e/lib/python3.13/asyncio/base_events.py", line 725, in run_until_complete
+    return future.result()
+           ~~~~~~~~~~~~~^^
+  File "/opt/anaconda3/envs/jlab-e/lib/python3.13/site-packages/nbclient/client.py", line 1062, in async_execute_cell
+    await self._check_raise_for_error(cell, cell_index, exec_reply)
+  File "/opt/anaconda3/envs/jlab-e/lib/python3.13/site-packages/nbclient/client.py", line 918, in _check_raise_for_error
+    raise CellExecutionError.from_cell_and_msg(cell, exec_reply_content)
+nbclient.exceptions.CellExecutionError: An error occurred while executing the following cell:
+------------------
+img = plt.imread("img/mercator.png")
+fig, ax = plt.subplots(figsize=(10, 8))
+ax.imshow(img, extent=[-180, 180, -90, 90])
+scatter = ax.scatter(country_df['longitude'], country_df['latitude'], c=country_df['elevation'], cmap='viridis', s=100)
+
+# Add a colorbar to show the elevation scale
+fig.colorbar(scatter, label='Elevation (m)')
+
+# Set plot labels and title
+plt.xlabel('Longitude')
+plt.ylabel('Latitude')
+plt.title('Elevation Map')
+plt.xlim(-180, 180)
+plt.ylim(-90, 90)
+# Show the plot
+plt.show()
+------------------
+
+
+[31m---------------------------------------------------------------------------[39m
+[31mNameError[39m                                 Traceback (most recent call last)
+[36mCell[39m[36m [39m[32mIn[10][39m[32m, line 1[39m
+[32m----> [39m[32m1[39m img = [43mplt[49m.imread([33m"[39m[33mimg/mercator.png[39m[33m"[39m)
+[32m      2[39m fig, ax = plt.subplots(figsize=([32m10[39m, [32m8[39m))
+[32m      3[39m ax.imshow(img, extent=[-[32m180[39m, [32m180[39m, -[32m90[39m, [32m90[39m])
+
+[31mNameError[39m: name 'plt' is not defined
+
+current working directory:  /Users/happy2na/Desktop/NotesFromMushrooms
+PERF|RERUN ALL | Set-Up Kernel and Language Info. time: 880.1090830020257ms
+

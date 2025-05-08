@@ -1,0 +1,385 @@
+673.33e0289dbee089055fc1.js?v=33e0289dbee089055fc1:1 JupyterLab extension jupyterlab_autosave_on_focus_change is activated!
+
+                
+          
+          
+          
+         Chrome is moving towards a new experience that allows users to choose to browse without third-party cookies.
+rerunExecutionCount.ts:62 rrOption 1
+rerunExecutionCount.ts:290 ACTIVE CELL AFTER UPDATE:  9071ff82-9264-4859-8303-20d7694011f4
+rerunExecutionCount.ts:171 ACT. CELL EC CHANGED:  9071ff82-9264-4859-8303-20d7694011f4 old:  46 new:  14
+rerunExecutionCount.ts:149 cells to rerun:  (5) ['3250cc06-12e7-4261-ac1e-c6fb6adb5dc9', '4f05520a-f332-44c8-a644-bf83559bcbd3', '1bb453fa-881b-4ab5-8c42-64c62af3cd27', '99415c35-db98-4a23-8fab-e31e2805da30', '48e16295-40ff-4ef1-9077-f09299587579']
+log.ts:3 PERF|Scheduled time=21443.59999999404|exec id=47|cell id=3250cc06-12e7-4261-ac1e-c6fb6adb5dc9|rrID=0
+log.ts:3 PERF|Scheduled time=21445.09999999404|exec id=48|cell id=4f05520a-f332-44c8-a644-bf83559bcbd3|rrID=0
+log.ts:3 PERF|Scheduled time=21447.19999999553|exec id=49|cell id=1bb453fa-881b-4ab5-8c42-64c62af3cd27|rrID=0
+log.ts:3 PERF|Scheduled time=21448|exec id=50|cell id=99415c35-db98-4a23-8fab-e31e2805da30|rrID=0
+log.ts:3 PERF|Scheduled time=21448.79999999702|exec id=51|cell id=48e16295-40ff-4ef1-9077-f09299587579|rrID=0
+log.ts:3 PERF|Rerun start=21443|Rerun cells=3250cc06-12e7-4261-ac1e-c6fb6adb5dc9,4f05520a-f332-44c8-a644-bf83559bcbd3,1bb453fa-881b-4ab5-8c42-64c62af3cd27,99415c35-db98-4a23-8fab-e31e2805da30,48e16295-40ff-4ef1-9077-f09299587579|rrId=0
+rerunExecutionCount.ts:249 finished rerun routine:  Map(15) {'262ee03f-cfd6-47db-bf0c-72da4ee4f324' => 1, '533f5a8b-2e87-47d7-8e34-deefb6c88f1d' => 2, 'a71b96b0-e13f-4ab8-b54d-b9b8e0a8ba04' => 3, '1015da1e-c085-4db8-8361-cfdf0bbd2c25' => 4, 'cbfa516c-288a-4fd4-9a05-6540de6f8775' => 5, …}
+log.ts:3 PERF|Executed time=21457.19999999553|exec_id=15|cell_id=3250cc06-12e7-4261-ac1e-c6fb6adb5dc9|rrId=0
+rerunExecutionCount.ts:249 finished rerun routine:  Map(15) {'262ee03f-cfd6-47db-bf0c-72da4ee4f324' => 1, '533f5a8b-2e87-47d7-8e34-deefb6c88f1d' => 2, 'a71b96b0-e13f-4ab8-b54d-b9b8e0a8ba04' => 3, '1015da1e-c085-4db8-8361-cfdf0bbd2c25' => 4, 'cbfa516c-288a-4fd4-9a05-6540de6f8775' => 5, …}
+log.ts:3 PERF|Executed time=23036.29999999702|exec_id=16|cell_id=4f05520a-f332-44c8-a644-bf83559bcbd3|rrId=0
+rerunExecutionCount.ts:249 finished rerun routine:  Map(15) {'262ee03f-cfd6-47db-bf0c-72da4ee4f324' => 1, '533f5a8b-2e87-47d7-8e34-deefb6c88f1d' => 2, 'a71b96b0-e13f-4ab8-b54d-b9b8e0a8ba04' => 3, '1015da1e-c085-4db8-8361-cfdf0bbd2c25' => 4, 'cbfa516c-288a-4fd4-9a05-6540de6f8775' => 5, …}
+log.ts:3 PERF|Executed time=23361.29999999702|exec_id=17|cell_id=1bb453fa-881b-4ab5-8c42-64c62af3cd27|rrId=0
+rerunExecutionCount.ts:249 finished rerun routine:  Map(15) {'262ee03f-cfd6-47db-bf0c-72da4ee4f324' => 1, '533f5a8b-2e87-47d7-8e34-deefb6c88f1d' => 2, 'a71b96b0-e13f-4ab8-b54d-b9b8e0a8ba04' => 3, '1015da1e-c085-4db8-8361-cfdf0bbd2c25' => 4, 'cbfa516c-288a-4fd4-9a05-6540de6f8775' => 5, …}
+log.ts:3 PERF|Executed time=69698.09999999404|exec_id=18|cell_id=99415c35-db98-4a23-8fab-e31e2805da30|rrId=0
+rerunExecutionCount.ts:249 finished rerun routine:  Map(15) {'262ee03f-cfd6-47db-bf0c-72da4ee4f324' => 1, '533f5a8b-2e87-47d7-8e34-deefb6c88f1d' => 2, 'a71b96b0-e13f-4ab8-b54d-b9b8e0a8ba04' => 3, '1015da1e-c085-4db8-8361-cfdf0bbd2c25' => 4, 'cbfa516c-288a-4fd4-9a05-6540de6f8775' => 5, …}
+log.ts:3 PERF|Executed time=75908.19999999553|exec_id=19|cell_id=48e16295-40ff-4ef1-9077-f09299587579|rrId=0
+log.ts:3 PERF|Rerun end=75908.59999999404|rrId=0
+rerunExecutionCount.ts:231 checking correctness
+checkCorrectness.ts:9 RELATIVE:  performance/notebooks/taxi_dest_predict.ipynb
+checkCorrectness.ts:28 service:  get-correctness
+checkCorrectness.ts:29 nbPath,  performance/notebooks/taxi_dest_predict.ipynb
+rerunExecutionCount.ts:249 finished rerun routine:  Map(15) {'262ee03f-cfd6-47db-bf0c-72da4ee4f324' => 1, '533f5a8b-2e87-47d7-8e34-deefb6c88f1d' => 2, 'a71b96b0-e13f-4ab8-b54d-b9b8e0a8ba04' => 3, '1015da1e-c085-4db8-8361-cfdf0bbd2c25' => 4, 'cbfa516c-288a-4fd4-9a05-6540de6f8775' => 5, …}
+checkCorrectness.ts:32 DATA Found:  Notebook sent in: performance/notebooks/taxi_dest_predict.ipynb results: Traceback (most recent call last):
+  File "/Users/happy2na/Desktop/NotesFromMushrooms/performance/notebooks/correctness.py", line 153, in <module>
+    diffs = load_and_rerun_notebook(args.notebookpath)
+  File "/Users/happy2na/Desktop/NotesFromMushrooms/performance/notebooks/correctness.py", line 145, in load_and_rerun_notebook
+    return "\n".join(parse_and_compare(nb_orig, nb_reran))
+                     ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^
+  File "/Users/happy2na/Desktop/NotesFromMushrooms/performance/notebooks/correctness.py", line 111, in parse_and_compare
+    raise ValueError(f"Reran cell does not have id, cell val: {reran_cell}")
+ValueError: Reran cell does not have id, cell val: {'cell_type': 'code', 'execution_count': 1, 'metadata': {'scrolled': True, 'execution': {'iopub.status.busy': '2025-05-08T07:12:30.396183Z', 'iopub.execute_input': '2025-05-08T07:12:30.396539Z', 'iopub.status.idle': '2025-05-08T07:12:31.655689Z', 'shell.execute_reply': '2025-05-08T07:12:31.655128Z'}}, 'outputs': [{'output_type': 'stream', 'name': 'stdout', 'text': 'Requirement already satisfied: pygeohash in /opt/anaconda3/envs/jlab-e/lib/python3.13/site-packages (3.0.1)\r\n'}], 'source': '!pip install pygeohash'}
+current working directory:  /Users/happy2na/Desktop/NotesFromMushrooms
+PERF|RERUN ALL | Set-Up Kernel and Language Info. time: 991.7870409990428ms
+PERF|RERUN ALL | Executing (15 cells) total time: 62828.467834006005ms
+PERF|RERUN ALL | Total time: 64339.905708002334 ms
+
+jlab_core.5aa373b4d2384b44ed86.js?v=5aa373b4d2384b44ed86:1 Different hash found for performance/notebooks/taxi_dest_predict.ipynb
+(anonymous) @ jlab_core.5aa373b4d2384b44ed86.js?v=5aa373b4d2384b44ed86:1
+Promise.then
+_maybeSave @ jlab_core.5aa373b4d2384b44ed86.js?v=5aa373b4d2384b44ed86:1
+_save @ jlab_core.5aa373b4d2384b44ed86.js?v=5aa373b4d2384b44ed86:1
+await in _save
+save @ jlab_core.5aa373b4d2384b44ed86.js?v=5aa373b4d2384b44ed86:1
+await in save
+_save @ jlab_core.5aa373b4d2384b44ed86.js?v=5aa373b4d2384b44ed86:1
+(anonymous) @ jlab_core.5aa373b4d2384b44ed86.js?v=5aa373b4d2384b44ed86:1
+jlab_core.5aa373b4d2384b44ed86.js?v=5aa373b4d2384b44ed86:1 Different hash found for performance/notebooks/taxi_dest_predict.ipynb
+(anonymous) @ jlab_core.5aa373b4d2384b44ed86.js?v=5aa373b4d2384b44ed86:1
+Promise.then
+_maybeSave @ jlab_core.5aa373b4d2384b44ed86.js?v=5aa373b4d2384b44ed86:1
+_save @ jlab_core.5aa373b4d2384b44ed86.js?v=5aa373b4d2384b44ed86:1
+await in _save
+save @ jlab_core.5aa373b4d2384b44ed86.js?v=5aa373b4d2384b44ed86:1
+await in save
+saveDocumentWidget @ 673.33e0289dbee089055fc1.js?v=33e0289dbee089055fc1:1
+handleEvent @ 673.33e0289dbee089055fc1.js?v=33e0289dbee089055fc1:1
+n @ jlab_core.5aa373b4d2384b44ed86.js?v=5aa373b4d2384b44ed86:1
+onAfterAttach @ jlab_core.5aa373b4d2384b44ed86.js?v=5aa373b4d2384b44ed86:1
+processMessage @ jlab_core.5aa373b4d2384b44ed86.js?v=5aa373b4d2384b44ed86:1
+b @ jlab_core.5aa373b4d2384b44ed86.js?v=5aa373b4d2384b44ed86:1
+o @ jlab_core.5aa373b4d2384b44ed86.js?v=5aa373b4d2384b44ed86:1
+i @ jlab_core.5aa373b4d2384b44ed86.js?v=5aa373b4d2384b44ed86:1
+(anonymous) @ jlab_core.5aa373b4d2384b44ed86.js?v=5aa373b4d2384b44ed86:1
+Promise.then
+launch @ jlab_core.5aa373b4d2384b44ed86.js?v=5aa373b4d2384b44ed86:1
+g @ jlab_core.5aa373b4d2384b44ed86.js?v=5aa373b4d2384b44ed86:1
+_raiseConflict @ jlab_core.5aa373b4d2384b44ed86.js?v=5aa373b4d2384b44ed86:1
+(anonymous) @ jlab_core.5aa373b4d2384b44ed86.js?v=5aa373b4d2384b44ed86:1
+Promise.then
+_maybeSave @ jlab_core.5aa373b4d2384b44ed86.js?v=5aa373b4d2384b44ed86:1
+_save @ jlab_core.5aa373b4d2384b44ed86.js?v=5aa373b4d2384b44ed86:1
+await in _save
+save @ jlab_core.5aa373b4d2384b44ed86.js?v=5aa373b4d2384b44ed86:1
+await in save
+_save @ jlab_core.5aa373b4d2384b44ed86.js?v=5aa373b4d2384b44ed86:1
+(anonymous) @ jlab_core.5aa373b4d2384b44ed86.js?v=5aa373b4d2384b44ed86:1
+rerunExecutionCount.ts:171 ACT. CELL EC CHANGED:  9071ff82-9264-4859-8303-20d7694011f4 old:  46 new:  20
+rerunExecutionCount.ts:149 cells to rerun:  (5) ['3250cc06-12e7-4261-ac1e-c6fb6adb5dc9', '4f05520a-f332-44c8-a644-bf83559bcbd3', '1bb453fa-881b-4ab5-8c42-64c62af3cd27', '99415c35-db98-4a23-8fab-e31e2805da30', '48e16295-40ff-4ef1-9077-f09299587579']
+log.ts:3 PERF|Scheduled time=307314.299999997|exec id=15|cell id=3250cc06-12e7-4261-ac1e-c6fb6adb5dc9|rrID=1
+log.ts:3 PERF|Scheduled time=307315.299999997|exec id=16|cell id=4f05520a-f332-44c8-a644-bf83559bcbd3|rrID=1
+log.ts:3 PERF|Scheduled time=307316.09999999404|exec id=17|cell id=1bb453fa-881b-4ab5-8c42-64c62af3cd27|rrID=1
+log.ts:3 PERF|Scheduled time=307316.799999997|exec id=18|cell id=99415c35-db98-4a23-8fab-e31e2805da30|rrID=1
+log.ts:3 PERF|Scheduled time=307317.3999999985|exec id=19|cell id=48e16295-40ff-4ef1-9077-f09299587579|rrID=1
+log.ts:3 PERF|Rerun start=307313|Rerun cells=3250cc06-12e7-4261-ac1e-c6fb6adb5dc9,4f05520a-f332-44c8-a644-bf83559bcbd3,1bb453fa-881b-4ab5-8c42-64c62af3cd27,99415c35-db98-4a23-8fab-e31e2805da30,48e16295-40ff-4ef1-9077-f09299587579|rrId=1
+rerunExecutionCount.ts:249 finished rerun routine:  Map(15) {'262ee03f-cfd6-47db-bf0c-72da4ee4f324' => 1, '533f5a8b-2e87-47d7-8e34-deefb6c88f1d' => 2, 'a71b96b0-e13f-4ab8-b54d-b9b8e0a8ba04' => 3, '1015da1e-c085-4db8-8361-cfdf0bbd2c25' => 4, 'cbfa516c-288a-4fd4-9a05-6540de6f8775' => 5, …}
+log.ts:3 PERF|Executed time=307333.299999997|exec_id=21|cell_id=3250cc06-12e7-4261-ac1e-c6fb6adb5dc9|rrId=1
+rerunExecutionCount.ts:249 finished rerun routine:  Map(15) {'262ee03f-cfd6-47db-bf0c-72da4ee4f324' => 1, '533f5a8b-2e87-47d7-8e34-deefb6c88f1d' => 2, 'a71b96b0-e13f-4ab8-b54d-b9b8e0a8ba04' => 3, '1015da1e-c085-4db8-8361-cfdf0bbd2c25' => 4, 'cbfa516c-288a-4fd4-9a05-6540de6f8775' => 5, …}
+log.ts:3 PERF|Executed time=308839.59999999404|exec_id=22|cell_id=4f05520a-f332-44c8-a644-bf83559bcbd3|rrId=1
+rerunExecutionCount.ts:249 finished rerun routine:  Map(15) {'262ee03f-cfd6-47db-bf0c-72da4ee4f324' => 1, '533f5a8b-2e87-47d7-8e34-deefb6c88f1d' => 2, 'a71b96b0-e13f-4ab8-b54d-b9b8e0a8ba04' => 3, '1015da1e-c085-4db8-8361-cfdf0bbd2c25' => 4, 'cbfa516c-288a-4fd4-9a05-6540de6f8775' => 5, …}
+log.ts:3 PERF|Executed time=309180.09999999404|exec_id=23|cell_id=1bb453fa-881b-4ab5-8c42-64c62af3cd27|rrId=1
+rerunExecutionCount.ts:249 finished rerun routine:  Map(15) {'262ee03f-cfd6-47db-bf0c-72da4ee4f324' => 1, '533f5a8b-2e87-47d7-8e34-deefb6c88f1d' => 2, 'a71b96b0-e13f-4ab8-b54d-b9b8e0a8ba04' => 3, '1015da1e-c085-4db8-8361-cfdf0bbd2c25' => 4, 'cbfa516c-288a-4fd4-9a05-6540de6f8775' => 5, …}
+log.ts:3 PERF|Executed time=356127.5|exec_id=24|cell_id=99415c35-db98-4a23-8fab-e31e2805da30|rrId=1
+rerunExecutionCount.ts:249 finished rerun routine:  Map(15) {'262ee03f-cfd6-47db-bf0c-72da4ee4f324' => 1, '533f5a8b-2e87-47d7-8e34-deefb6c88f1d' => 2, 'a71b96b0-e13f-4ab8-b54d-b9b8e0a8ba04' => 3, '1015da1e-c085-4db8-8361-cfdf0bbd2c25' => 4, 'cbfa516c-288a-4fd4-9a05-6540de6f8775' => 5, …}
+log.ts:3 PERF|Executed time=362168.09999999404|exec_id=25|cell_id=48e16295-40ff-4ef1-9077-f09299587579|rrId=1
+log.ts:3 PERF|Rerun end=362168.3999999985|rrId=1
+rerunExecutionCount.ts:231 checking correctness
+checkCorrectness.ts:9 RELATIVE:  performance/notebooks/taxi_dest_predict.ipynb
+checkCorrectness.ts:28 service:  get-correctness
+checkCorrectness.ts:29 nbPath,  performance/notebooks/taxi_dest_predict.ipynb
+rerunExecutionCount.ts:249 finished rerun routine:  Map(15) {'262ee03f-cfd6-47db-bf0c-72da4ee4f324' => 1, '533f5a8b-2e87-47d7-8e34-deefb6c88f1d' => 2, 'a71b96b0-e13f-4ab8-b54d-b9b8e0a8ba04' => 3, '1015da1e-c085-4db8-8361-cfdf0bbd2c25' => 4, 'cbfa516c-288a-4fd4-9a05-6540de6f8775' => 5, …}
+checkCorrectness.ts:32 DATA Found:  Notebook sent in: performance/notebooks/taxi_dest_predict.ipynb results: Traceback (most recent call last):
+  File "/Users/happy2na/Desktop/NotesFromMushrooms/performance/notebooks/correctness.py", line 153, in <module>
+    diffs = load_and_rerun_notebook(args.notebookpath)
+  File "/Users/happy2na/Desktop/NotesFromMushrooms/performance/notebooks/correctness.py", line 145, in load_and_rerun_notebook
+    return "\n".join(parse_and_compare(nb_orig, nb_reran))
+                     ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^
+  File "/Users/happy2na/Desktop/NotesFromMushrooms/performance/notebooks/correctness.py", line 111, in parse_and_compare
+    raise ValueError(f"Reran cell does not have id, cell val: {reran_cell}")
+ValueError: Reran cell does not have id, cell val: {'cell_type': 'code', 'execution_count': 1, 'metadata': {'scrolled': True, 'execution': {'iopub.status.busy': '2025-05-08T07:17:16.618875Z', 'iopub.execute_input': '2025-05-08T07:17:16.619510Z', 'iopub.status.idle': '2025-05-08T07:17:17.880143Z', 'shell.execute_reply': '2025-05-08T07:17:17.879557Z'}}, 'outputs': [{'output_type': 'stream', 'name': 'stdout', 'text': 'Requirement already satisfied: pygeohash in /opt/anaconda3/envs/jlab-e/lib/python3.13/site-packages (3.0.1)\r\n'}], 'source': '!pip install pygeohash'}
+current working directory:  /Users/happy2na/Desktop/NotesFromMushrooms
+PERF|RERUN ALL | Set-Up Kernel and Language Info. time: 996.8369170019287ms
+PERF|RERUN ALL | Executing (15 cells) total time: 62068.71791699814ms
+PERF|RERUN ALL | Total time: 63583.732375002 ms
+
+rerunECPlugin.ts:50 active cell 99415c35-db98-4a23-8fab-e31e2805da30
+rerunExecutionCount.ts:290 ACTIVE CELL AFTER UPDATE:  99415c35-db98-4a23-8fab-e31e2805da30
+rerunECPlugin.ts:50 active cell 4f05520a-f332-44c8-a644-bf83559bcbd3
+rerunExecutionCount.ts:290 ACTIVE CELL AFTER UPDATE:  4f05520a-f332-44c8-a644-bf83559bcbd3
+rerunECPlugin.ts:50 active cell fc503f40-677d-4df4-b715-6ee1ba67c0f9
+rerunExecutionCount.ts:290 ACTIVE CELL AFTER UPDATE:  4f05520a-f332-44c8-a644-bf83559bcbd3
+rerunECPlugin.ts:50 active cell 4f05520a-f332-44c8-a644-bf83559bcbd3
+rerunExecutionCount.ts:290 ACTIVE CELL AFTER UPDATE:  4f05520a-f332-44c8-a644-bf83559bcbd3
+rerunECPlugin.ts:50 active cell 9071ff82-9264-4859-8303-20d7694011f4
+rerunExecutionCount.ts:290 ACTIVE CELL AFTER UPDATE:  9071ff82-9264-4859-8303-20d7694011f4
+rerunECPlugin.ts:50 active cell 4f05520a-f332-44c8-a644-bf83559bcbd3
+rerunExecutionCount.ts:290 ACTIVE CELL AFTER UPDATE:  4f05520a-f332-44c8-a644-bf83559bcbd3
+rerunECPlugin.ts:50 active cell 99415c35-db98-4a23-8fab-e31e2805da30
+rerunExecutionCount.ts:290 ACTIVE CELL AFTER UPDATE:  99415c35-db98-4a23-8fab-e31e2805da30
+rerunECPlugin.ts:50 active cell 4f05520a-f332-44c8-a644-bf83559bcbd3
+rerunExecutionCount.ts:290 ACTIVE CELL AFTER UPDATE:  4f05520a-f332-44c8-a644-bf83559bcbd3
+rerunECPlugin.ts:50 active cell 3250cc06-12e7-4261-ac1e-c6fb6adb5dc9
+rerunExecutionCount.ts:290 ACTIVE CELL AFTER UPDATE:  3250cc06-12e7-4261-ac1e-c6fb6adb5dc9
+rerunECPlugin.ts:50 active cell 9071ff82-9264-4859-8303-20d7694011f4
+rerunExecutionCount.ts:290 ACTIVE CELL AFTER UPDATE:  9071ff82-9264-4859-8303-20d7694011f4
+rerunExecutionCount.ts:171 ACT. CELL EC CHANGED:  9071ff82-9264-4859-8303-20d7694011f4 old:  46 new:  26
+rerunExecutionCount.ts:149 cells to rerun:  (5) ['3250cc06-12e7-4261-ac1e-c6fb6adb5dc9', '4f05520a-f332-44c8-a644-bf83559bcbd3', '1bb453fa-881b-4ab5-8c42-64c62af3cd27', '99415c35-db98-4a23-8fab-e31e2805da30', '48e16295-40ff-4ef1-9077-f09299587579']
+log.ts:3 PERF|Scheduled time=955469.5|exec id=21|cell id=3250cc06-12e7-4261-ac1e-c6fb6adb5dc9|rrID=2
+log.ts:3 PERF|Scheduled time=955470.5|exec id=22|cell id=4f05520a-f332-44c8-a644-bf83559bcbd3|rrID=2
+log.ts:3 PERF|Scheduled time=955472.299999997|exec id=23|cell id=1bb453fa-881b-4ab5-8c42-64c62af3cd27|rrID=2
+log.ts:3 PERF|Scheduled time=955473.299999997|exec id=24|cell id=99415c35-db98-4a23-8fab-e31e2805da30|rrID=2
+log.ts:3 PERF|Scheduled time=955474|exec id=25|cell id=48e16295-40ff-4ef1-9077-f09299587579|rrID=2
+log.ts:3 PERF|Rerun start=955468|Rerun cells=3250cc06-12e7-4261-ac1e-c6fb6adb5dc9,4f05520a-f332-44c8-a644-bf83559bcbd3,1bb453fa-881b-4ab5-8c42-64c62af3cd27,99415c35-db98-4a23-8fab-e31e2805da30,48e16295-40ff-4ef1-9077-f09299587579|rrId=2
+rerunExecutionCount.ts:249 finished rerun routine:  Map(15) {'262ee03f-cfd6-47db-bf0c-72da4ee4f324' => 1, '533f5a8b-2e87-47d7-8e34-deefb6c88f1d' => 2, 'a71b96b0-e13f-4ab8-b54d-b9b8e0a8ba04' => 3, '1015da1e-c085-4db8-8361-cfdf0bbd2c25' => 4, 'cbfa516c-288a-4fd4-9a05-6540de6f8775' => 5, …}
+log.ts:3 PERF|Executed time=955482.1999999955|exec_id=27|cell_id=3250cc06-12e7-4261-ac1e-c6fb6adb5dc9|rrId=2
+rerunExecutionCount.ts:249 finished rerun routine:  Map(15) {'262ee03f-cfd6-47db-bf0c-72da4ee4f324' => 1, '533f5a8b-2e87-47d7-8e34-deefb6c88f1d' => 2, 'a71b96b0-e13f-4ab8-b54d-b9b8e0a8ba04' => 3, '1015da1e-c085-4db8-8361-cfdf0bbd2c25' => 4, 'cbfa516c-288a-4fd4-9a05-6540de6f8775' => 5, …}
+log.ts:3 PERF|Executed time=955490.3999999985|exec_id=28|cell_id=4f05520a-f332-44c8-a644-bf83559bcbd3|rrId=2
+rerunExecutionCount.ts:249 finished rerun routine:  Map(15) {'262ee03f-cfd6-47db-bf0c-72da4ee4f324' => 1, '533f5a8b-2e87-47d7-8e34-deefb6c88f1d' => 2, 'a71b96b0-e13f-4ab8-b54d-b9b8e0a8ba04' => 3, '1015da1e-c085-4db8-8361-cfdf0bbd2c25' => 4, 'cbfa516c-288a-4fd4-9a05-6540de6f8775' => 5, …}
+log.ts:3 PERF|Executed time=955842.8999999985|exec_id=29|cell_id=1bb453fa-881b-4ab5-8c42-64c62af3cd27|rrId=2
+rerunExecutionCount.ts:249 finished rerun routine:  Map(15) {'262ee03f-cfd6-47db-bf0c-72da4ee4f324' => 1, '533f5a8b-2e87-47d7-8e34-deefb6c88f1d' => 2, 'a71b96b0-e13f-4ab8-b54d-b9b8e0a8ba04' => 3, '1015da1e-c085-4db8-8361-cfdf0bbd2c25' => 4, 'cbfa516c-288a-4fd4-9a05-6540de6f8775' => 5, …}
+log.ts:3 PERF|Executed time=955850.099999994|exec_id=30|cell_id=99415c35-db98-4a23-8fab-e31e2805da30|rrId=2
+rerunExecutionCount.ts:249 finished rerun routine:  Map(15) {'262ee03f-cfd6-47db-bf0c-72da4ee4f324' => 1, '533f5a8b-2e87-47d7-8e34-deefb6c88f1d' => 2, 'a71b96b0-e13f-4ab8-b54d-b9b8e0a8ba04' => 3, '1015da1e-c085-4db8-8361-cfdf0bbd2c25' => 4, 'cbfa516c-288a-4fd4-9a05-6540de6f8775' => 5, …}
+log.ts:3 PERF|Executed time=961935.1999999955|exec_id=31|cell_id=48e16295-40ff-4ef1-9077-f09299587579|rrId=2
+log.ts:3 PERF|Rerun end=961935.299999997|rrId=2
+rerunExecutionCount.ts:231 checking correctness
+checkCorrectness.ts:9 RELATIVE:  performance/notebooks/taxi_dest_predict.ipynb
+checkCorrectness.ts:28 service:  get-correctness
+checkCorrectness.ts:29 nbPath,  performance/notebooks/taxi_dest_predict.ipynb
+rerunExecutionCount.ts:249 finished rerun routine:  Map(15) {'262ee03f-cfd6-47db-bf0c-72da4ee4f324' => 1, '533f5a8b-2e87-47d7-8e34-deefb6c88f1d' => 2, 'a71b96b0-e13f-4ab8-b54d-b9b8e0a8ba04' => 3, '1015da1e-c085-4db8-8361-cfdf0bbd2c25' => 4, 'cbfa516c-288a-4fd4-9a05-6540de6f8775' => 5, …}
+checkCorrectness.ts:32 DATA Found:  Notebook sent in: performance/notebooks/taxi_dest_predict.ipynb results: Traceback (most recent call last):
+  File "/Users/happy2na/Desktop/NotesFromMushrooms/performance/notebooks/correctness.py", line 153, in <module>
+    diffs = load_and_rerun_notebook(args.notebookpath)
+  File "/Users/happy2na/Desktop/NotesFromMushrooms/performance/notebooks/correctness.py", line 142, in load_and_rerun_notebook
+    ep.preprocess(nb_reran)
+    ~~~~~~~~~~~~~^^^^^^^^^^
+  File "/Users/happy2na/Desktop/NotesFromMushrooms/performance/notebooks/process_all/executeAll.py", line 112, in preprocess
+    self.preprocess_cell(cell, resources, index)
+    ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/happy2na/Desktop/NotesFromMushrooms/performance/notebooks/process_all/executeAll.py", line 136, in preprocess_cell
+    cell = self.execute_cell(cell, index, store_history=True)
+  File "/opt/anaconda3/envs/jlab-e/lib/python3.13/site-packages/jupyter_core/utils/__init__.py", line 165, in wrapped
+    return loop.run_until_complete(inner)
+           ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^
+  File "/opt/anaconda3/envs/jlab-e/lib/python3.13/asyncio/base_events.py", line 725, in run_until_complete
+    return future.result()
+           ~~~~~~~~~~~~~^^
+  File "/opt/anaconda3/envs/jlab-e/lib/python3.13/site-packages/nbclient/client.py", line 1062, in async_execute_cell
+    await self._check_raise_for_error(cell, cell_index, exec_reply)
+  File "/opt/anaconda3/envs/jlab-e/lib/python3.13/site-packages/nbclient/client.py", line 918, in _check_raise_for_error
+    raise CellExecutionError.from_cell_and_msg(cell, exec_reply_content)
+nbclient.exceptions.CellExecutionError: An error occurred while executing the following cell:
+------------------
+print(os.getcwd())
+df = pd.read_csv('data/data.csv')
+------------------
+
+----- stdout -----
+/Users/happy2na/Desktop/NotesFromMushrooms
+------------------
+
+[31m---------------------------------------------------------------------------[39m
+[31mFileNotFoundError[39m                         Traceback (most recent call last)
+[36mCell[39m[36m [39m[32mIn[3][39m[32m, line 2[39m
+[32m      1[39m [38;5;28mprint[39m(os.getcwd())
+[32m----> [39m[32m2[39m df = [43mpd[49m[43m.[49m[43mread_csv[49m[43m([49m[33;43m'[39;49m[33;43mdata/data.csv[39;49m[33;43m'[39;49m[43m)[49m
+
+[36mFile [39m[32m/opt/anaconda3/envs/jlab-e/lib/python3.13/site-packages/pandas/io/parsers/readers.py:1026[39m, in [36mread_csv[39m[34m(filepath_or_buffer, sep, delimiter, header, names, index_col, usecols, dtype, engine, converters, true_values, false_values, skipinitialspace, skiprows, skipfooter, nrows, na_values, keep_default_na, na_filter, verbose, skip_blank_lines, parse_dates, infer_datetime_format, keep_date_col, date_parser, date_format, dayfirst, cache_dates, iterator, chunksize, compression, thousands, decimal, lineterminator, quotechar, quoting, doublequote, escapechar, comment, encoding, encoding_errors, dialect, on_bad_lines, delim_whitespace, low_memory, memory_map, float_precision, storage_options, dtype_backend)[39m
+[32m   1013[39m kwds_defaults = _refine_defaults_read(
+[32m   1014[39m     dialect,
+[32m   1015[39m     delimiter,
+[32m   (...)[39m[32m   1022[39m     dtype_backend=dtype_backend,
+[32m   1023[39m )
+[32m   1024[39m kwds.update(kwds_defaults)
+[32m-> [39m[32m1026[39m [38;5;28;01mreturn[39;00m [43m_read[49m[43m([49m[43mfilepath_or_buffer[49m[43m,[49m[43m [49m[43mkwds[49m[43m)[49m
+
+[36mFile [39m[32m/opt/anaconda3/envs/jlab-e/lib/python3.13/site-packages/pandas/io/parsers/readers.py:620[39m, in [36m_read[39m[34m(filepath_or_buffer, kwds)[39m
+[32m    617[39m _validate_names(kwds.get([33m"[39m[33mnames[39m[33m"[39m, [38;5;28;01mNone[39;00m))
+[32m    619[39m [38;5;66;03m# Create the parser.[39;00m
+[32m--> [39m[32m620[39m parser = [43mTextFileReader[49m[43m([49m[43mfilepath_or_buffer[49m[43m,[49m[43m [49m[43m*[49m[43m*[49m[43mkwds[49m[43m)[49m
+[32m    622[39m [38;5;28;01mif[39;00m chunksize [38;5;129;01mor[39;00m iterator:
+[32m    623[39m     [38;5;28;01mreturn[39;00m parser
+
+[36mFile [39m[32m/opt/anaconda3/envs/jlab-e/lib/python3.13/site-packages/pandas/io/parsers/readers.py:1620[39m, in [36mTextFileReader.__init__[39m[34m(self, f, engine, **kwds)[39m
+[32m   1617[39m     [38;5;28mself[39m.options[[33m"[39m[33mhas_index_names[39m[33m"[39m] = kwds[[33m"[39m[33mhas_index_names[39m[33m"[39m]
+[32m   1619[39m [38;5;28mself[39m.handles: IOHandles | [38;5;28;01mNone[39;00m = [38;5;28;01mNone[39;00m
+[32m-> [39m[32m1620[39m [38;5;28mself[39m._engine = [38;5;28;43mself[39;49m[43m.[49m[43m_make_engine[49m[43m([49m[43mf[49m[43m,[49m[43m [49m[38;5;28;43mself[39;49m[43m.[49m[43mengine[49m[43m)[49m
+
+[36mFile [39m[32m/opt/anaconda3/envs/jlab-e/lib/python3.13/site-packages/pandas/io/parsers/readers.py:1880[39m, in [36mTextFileReader._make_engine[39m[34m(self, f, engine)[39m
+[32m   1878[39m     [38;5;28;01mif[39;00m [33m"[39m[33mb[39m[33m"[39m [38;5;129;01mnot[39;00m [38;5;129;01min[39;00m mode:
+[32m   1879[39m         mode += [33m"[39m[33mb[39m[33m"[39m
+[32m-> [39m[32m1880[39m [38;5;28mself[39m.handles = [43mget_handle[49m[43m([49m
+[32m   1881[39m [43m    [49m[43mf[49m[43m,[49m
+[32m   1882[39m [43m    [49m[43mmode[49m[43m,[49m
+[32m   1883[39m [43m    [49m[43mencoding[49m[43m=[49m[38;5;28;43mself[39;49m[43m.[49m[43moptions[49m[43m.[49m[43mget[49m[43m([49m[33;43m"[39;49m[33;43mencoding[39;49m[33;43m"[39;49m[43m,[49m[43m [49m[38;5;28;43;01mNone[39;49;00m[43m)[49m[43m,[49m
+[32m   1884[39m [43m    [49m[43mcompression[49m[43m=[49m[38;5;28;43mself[39;49m[43m.[49m[43moptions[49m[43m.[49m[43mget[49m[43m([49m[33;43m"[39;49m[33;43mcompression[39;49m[33;43m"[39;49m[43m,[49m[43m [49m[38;5;28;43;01mNone[39;49;00m[43m)[49m[43m,[49m
+[32m   1885[39m [43m    [49m[43mmemory_map[49m[43m=[49m[38;5;28;43mself[39;49m[43m.[49m[43moptions[49m[43m.[49m[43mget[49m[43m([49m[33;43m"[39;49m[33;43mmemory_map[39;49m[33;43m"[39;49m[43m,[49m[43m [49m[38;5;28;43;01mFalse[39;49;00m[43m)[49m[43m,[49m
+[32m   1886[39m [43m    [49m[43mis_text[49m[43m=[49m[43mis_text[49m[43m,[49m
+[32m   1887[39m [43m    [49m[43merrors[49m[43m=[49m[38;5;28;43mself[39;49m[43m.[49m[43moptions[49m[43m.[49m[43mget[49m[43m([49m[33;43m"[39;49m[33;43mencoding_errors[39;49m[33;43m"[39;49m[43m,[49m[43m [49m[33;43m"[39;49m[33;43mstrict[39;49m[33;43m"[39;49m[43m)[49m[43m,[49m
+[32m   1888[39m [43m    [49m[43mstorage_options[49m[43m=[49m[38;5;28;43mself[39;49m[43m.[49m[43moptions[49m[43m.[49m[43mget[49m[43m([49m[33;43m"[39;49m[33;43mstorage_options[39;49m[33;43m"[39;49m[43m,[49m[43m [49m[38;5;28;43;01mNone[39;49;00m[43m)[49m[43m,[49m
+[32m   1889[39m [43m[49m[43m)[49m
+[32m   1890[39m [38;5;28;01massert[39;00m [38;5;28mself[39m.handles [38;5;129;01mis[39;00m [38;5;129;01mnot[39;00m [38;5;28;01mNone[39;00m
+[32m   1891[39m f = [38;5;28mself[39m.handles.handle
+
+[36mFile [39m[32m/opt/anaconda3/envs/jlab-e/lib/python3.13/site-packages/pandas/io/common.py:873[39m, in [36mget_handle[39m[34m(path_or_buf, mode, encoding, compression, memory_map, is_text, errors, storage_options)[39m
+[32m    868[39m [38;5;28;01melif[39;00m [38;5;28misinstance[39m(handle, [38;5;28mstr[39m):
+[32m    869[39m     [38;5;66;03m# Check whether the filename is to be opened in binary mode.[39;00m
+[32m    870[39m     [38;5;66;03m# Binary mode does not support 'encoding' and 'newline'.[39;00m
+[32m    871[39m     [38;5;28;01mif[39;00m ioargs.encoding [38;5;129;01mand[39;00m [33m"[39m[33mb[39m[33m"[39m [38;5;129;01mnot[39;00m [38;5;129;01min[39;00m ioargs.mode:
+[32m    872[39m         [38;5;66;03m# Encoding[39;00m
+[32m--> [39m[32m873[39m         handle = [38;5;28;43mopen[39;49m[43m([49m
+[32m    874[39m [43m            [49m[43mhandle[49m[43m,[49m
+[32m    875[39m [43m            [49m[43mioargs[49m[43m.[49m[43mmode[49m[43m,[49m
+[32m    876[39m [43m            [49m[43mencoding[49m[43m=[49m[43mioargs[49m[43m.[49m[43mencoding[49m[43m,[49m
+[32m    877[39m [43m            [49m[43merrors[49m[43m=[49m[43merrors[49m[43m,[49m
+[32m    878[39m [43m            [49m[43mnewline[49m[43m=[49m[33;43m"[39;49m[33;43m"[39;49m[43m,[49m
+[32m    879[39m [43m        [49m[43m)[49m
+[32m    880[39m     [38;5;28;01melse[39;00m:
+[32m    881[39m         [38;5;66;03m# Binary mode[39;00m
+[32m    882[39m         handle = [38;5;28mopen[39m(handle, ioargs.mode)
+
+[31mFileNotFoundError[39m: [Errno 2] No such file or directory: 'data/data.csv'
+
+current working directory:  /Users/happy2na/Desktop/NotesFromMushrooms
+PERF|RERUN ALL | Set-Up Kernel and Language Info. time: 987.4857079994399ms
+
+rerunExecutionCount.ts:171 ACT. CELL EC CHANGED:  9071ff82-9264-4859-8303-20d7694011f4 old:  46 new:  32
+rerunExecutionCount.ts:149 cells to rerun:  (5) ['3250cc06-12e7-4261-ac1e-c6fb6adb5dc9', '4f05520a-f332-44c8-a644-bf83559bcbd3', '1bb453fa-881b-4ab5-8c42-64c62af3cd27', '99415c35-db98-4a23-8fab-e31e2805da30', '48e16295-40ff-4ef1-9077-f09299587579']
+log.ts:3 PERF|Scheduled time=985614.1999999955|exec id=27|cell id=3250cc06-12e7-4261-ac1e-c6fb6adb5dc9|rrID=3
+log.ts:3 PERF|Scheduled time=985615.1999999955|exec id=28|cell id=4f05520a-f332-44c8-a644-bf83559bcbd3|rrID=3
+log.ts:3 PERF|Scheduled time=985615.8999999985|exec id=29|cell id=1bb453fa-881b-4ab5-8c42-64c62af3cd27|rrID=3
+log.ts:3 PERF|Scheduled time=985617|exec id=30|cell id=99415c35-db98-4a23-8fab-e31e2805da30|rrID=3
+log.ts:3 PERF|Scheduled time=985617.3999999985|exec id=31|cell id=48e16295-40ff-4ef1-9077-f09299587579|rrID=3
+log.ts:3 PERF|Rerun start=985614|Rerun cells=3250cc06-12e7-4261-ac1e-c6fb6adb5dc9,4f05520a-f332-44c8-a644-bf83559bcbd3,1bb453fa-881b-4ab5-8c42-64c62af3cd27,99415c35-db98-4a23-8fab-e31e2805da30,48e16295-40ff-4ef1-9077-f09299587579|rrId=3
+rerunExecutionCount.ts:249 finished rerun routine:  Map(15) {'262ee03f-cfd6-47db-bf0c-72da4ee4f324' => 1, '533f5a8b-2e87-47d7-8e34-deefb6c88f1d' => 2, 'a71b96b0-e13f-4ab8-b54d-b9b8e0a8ba04' => 3, '1015da1e-c085-4db8-8361-cfdf0bbd2c25' => 4, 'cbfa516c-288a-4fd4-9a05-6540de6f8775' => 5, …}
+log.ts:3 PERF|Executed time=985627.1999999955|exec_id=33|cell_id=3250cc06-12e7-4261-ac1e-c6fb6adb5dc9|rrId=3
+rerunExecutionCount.ts:249 finished rerun routine:  Map(15) {'262ee03f-cfd6-47db-bf0c-72da4ee4f324' => 1, '533f5a8b-2e87-47d7-8e34-deefb6c88f1d' => 2, 'a71b96b0-e13f-4ab8-b54d-b9b8e0a8ba04' => 3, '1015da1e-c085-4db8-8361-cfdf0bbd2c25' => 4, 'cbfa516c-288a-4fd4-9a05-6540de6f8775' => 5, …}
+log.ts:3 PERF|Executed time=985636.6999999955|exec_id=34|cell_id=4f05520a-f332-44c8-a644-bf83559bcbd3|rrId=3
+rerunExecutionCount.ts:249 finished rerun routine:  Map(15) {'262ee03f-cfd6-47db-bf0c-72da4ee4f324' => 1, '533f5a8b-2e87-47d7-8e34-deefb6c88f1d' => 2, 'a71b96b0-e13f-4ab8-b54d-b9b8e0a8ba04' => 3, '1015da1e-c085-4db8-8361-cfdf0bbd2c25' => 4, 'cbfa516c-288a-4fd4-9a05-6540de6f8775' => 5, …}
+log.ts:3 PERF|Executed time=985969.8999999985|exec_id=35|cell_id=1bb453fa-881b-4ab5-8c42-64c62af3cd27|rrId=3
+rerunExecutionCount.ts:249 finished rerun routine:  Map(15) {'262ee03f-cfd6-47db-bf0c-72da4ee4f324' => 1, '533f5a8b-2e87-47d7-8e34-deefb6c88f1d' => 2, 'a71b96b0-e13f-4ab8-b54d-b9b8e0a8ba04' => 3, '1015da1e-c085-4db8-8361-cfdf0bbd2c25' => 4, 'cbfa516c-288a-4fd4-9a05-6540de6f8775' => 5, …}
+log.ts:3 PERF|Executed time=985975.5|exec_id=36|cell_id=99415c35-db98-4a23-8fab-e31e2805da30|rrId=3
+rerunExecutionCount.ts:249 finished rerun routine:  Map(15) {'262ee03f-cfd6-47db-bf0c-72da4ee4f324' => 1, '533f5a8b-2e87-47d7-8e34-deefb6c88f1d' => 2, 'a71b96b0-e13f-4ab8-b54d-b9b8e0a8ba04' => 3, '1015da1e-c085-4db8-8361-cfdf0bbd2c25' => 4, 'cbfa516c-288a-4fd4-9a05-6540de6f8775' => 5, …}
+log.ts:3 PERF|Executed time=992280.3999999985|exec_id=37|cell_id=48e16295-40ff-4ef1-9077-f09299587579|rrId=3
+log.ts:3 PERF|Rerun end=992280.599999994|rrId=3
+rerunExecutionCount.ts:231 checking correctness
+checkCorrectness.ts:9 RELATIVE:  performance/notebooks/taxi_dest_predict.ipynb
+checkCorrectness.ts:28 service:  get-correctness
+checkCorrectness.ts:29 nbPath,  performance/notebooks/taxi_dest_predict.ipynb
+rerunExecutionCount.ts:249 finished rerun routine:  Map(15) {'262ee03f-cfd6-47db-bf0c-72da4ee4f324' => 1, '533f5a8b-2e87-47d7-8e34-deefb6c88f1d' => 2, 'a71b96b0-e13f-4ab8-b54d-b9b8e0a8ba04' => 3, '1015da1e-c085-4db8-8361-cfdf0bbd2c25' => 4, 'cbfa516c-288a-4fd4-9a05-6540de6f8775' => 5, …}
+checkCorrectness.ts:32 DATA Found:  Notebook sent in: performance/notebooks/taxi_dest_predict.ipynb results: Traceback (most recent call last):
+  File "/Users/happy2na/Desktop/NotesFromMushrooms/performance/notebooks/correctness.py", line 153, in <module>
+    diffs = load_and_rerun_notebook(args.notebookpath)
+  File "/Users/happy2na/Desktop/NotesFromMushrooms/performance/notebooks/correctness.py", line 142, in load_and_rerun_notebook
+    ep.preprocess(nb_reran)
+    ~~~~~~~~~~~~~^^^^^^^^^^
+  File "/Users/happy2na/Desktop/NotesFromMushrooms/performance/notebooks/process_all/executeAll.py", line 112, in preprocess
+    self.preprocess_cell(cell, resources, index)
+    ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/happy2na/Desktop/NotesFromMushrooms/performance/notebooks/process_all/executeAll.py", line 136, in preprocess_cell
+    cell = self.execute_cell(cell, index, store_history=True)
+  File "/opt/anaconda3/envs/jlab-e/lib/python3.13/site-packages/jupyter_core/utils/__init__.py", line 165, in wrapped
+    return loop.run_until_complete(inner)
+           ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^
+  File "/opt/anaconda3/envs/jlab-e/lib/python3.13/asyncio/base_events.py", line 725, in run_until_complete
+    return future.result()
+           ~~~~~~~~~~~~~^^
+  File "/opt/anaconda3/envs/jlab-e/lib/python3.13/site-packages/nbclient/client.py", line 1062, in async_execute_cell
+    await self._check_raise_for_error(cell, cell_index, exec_reply)
+  File "/opt/anaconda3/envs/jlab-e/lib/python3.13/site-packages/nbclient/client.py", line 918, in _check_raise_for_error
+    raise CellExecutionError.from_cell_and_msg(cell, exec_reply_content)
+nbclient.exceptions.CellExecutionError: An error occurred while executing the following cell:
+------------------
+print(os.getcwd())
+df = pd.read_csv('data/data.csv')
+------------------
+
+----- stdout -----
+/Users/happy2na/Desktop/NotesFromMushrooms
+------------------
+
+[31m---------------------------------------------------------------------------[39m
+[31mFileNotFoundError[39m                         Traceback (most recent call last)
+[36mCell[39m[36m [39m[32mIn[3][39m[32m, line 2[39m
+[32m      1[39m [38;5;28mprint[39m(os.getcwd())
+[32m----> [39m[32m2[39m df = [43mpd[49m[43m.[49m[43mread_csv[49m[43m([49m[33;43m'[39;49m[33;43mdata/data.csv[39;49m[33;43m'[39;49m[43m)[49m
+
+[36mFile [39m[32m/opt/anaconda3/envs/jlab-e/lib/python3.13/site-packages/pandas/io/parsers/readers.py:1026[39m, in [36mread_csv[39m[34m(filepath_or_buffer, sep, delimiter, header, names, index_col, usecols, dtype, engine, converters, true_values, false_values, skipinitialspace, skiprows, skipfooter, nrows, na_values, keep_default_na, na_filter, verbose, skip_blank_lines, parse_dates, infer_datetime_format, keep_date_col, date_parser, date_format, dayfirst, cache_dates, iterator, chunksize, compression, thousands, decimal, lineterminator, quotechar, quoting, doublequote, escapechar, comment, encoding, encoding_errors, dialect, on_bad_lines, delim_whitespace, low_memory, memory_map, float_precision, storage_options, dtype_backend)[39m
+[32m   1013[39m kwds_defaults = _refine_defaults_read(
+[32m   1014[39m     dialect,
+[32m   1015[39m     delimiter,
+[32m   (...)[39m[32m   1022[39m     dtype_backend=dtype_backend,
+[32m   1023[39m )
+[32m   1024[39m kwds.update(kwds_defaults)
+[32m-> [39m[32m1026[39m [38;5;28;01mreturn[39;00m [43m_read[49m[43m([49m[43mfilepath_or_buffer[49m[43m,[49m[43m [49m[43mkwds[49m[43m)[49m
+
+[36mFile [39m[32m/opt/anaconda3/envs/jlab-e/lib/python3.13/site-packages/pandas/io/parsers/readers.py:620[39m, in [36m_read[39m[34m(filepath_or_buffer, kwds)[39m
+[32m    617[39m _validate_names(kwds.get([33m"[39m[33mnames[39m[33m"[39m, [38;5;28;01mNone[39;00m))
+[32m    619[39m [38;5;66;03m# Create the parser.[39;00m
+[32m--> [39m[32m620[39m parser = [43mTextFileReader[49m[43m([49m[43mfilepath_or_buffer[49m[43m,[49m[43m [49m[43m*[49m[43m*[49m[43mkwds[49m[43m)[49m
+[32m    622[39m [38;5;28;01mif[39;00m chunksize [38;5;129;01mor[39;00m iterator:
+[32m    623[39m     [38;5;28;01mreturn[39;00m parser
+
+[36mFile [39m[32m/opt/anaconda3/envs/jlab-e/lib/python3.13/site-packages/pandas/io/parsers/readers.py:1620[39m, in [36mTextFileReader.__init__[39m[34m(self, f, engine, **kwds)[39m
+[32m   1617[39m     [38;5;28mself[39m.options[[33m"[39m[33mhas_index_names[39m[33m"[39m] = kwds[[33m"[39m[33mhas_index_names[39m[33m"[39m]
+[32m   1619[39m [38;5;28mself[39m.handles: IOHandles | [38;5;28;01mNone[39;00m = [38;5;28;01mNone[39;00m
+[32m-> [39m[32m1620[39m [38;5;28mself[39m._engine = [38;5;28;43mself[39;49m[43m.[49m[43m_make_engine[49m[43m([49m[43mf[49m[43m,[49m[43m [49m[38;5;28;43mself[39;49m[43m.[49m[43mengine[49m[43m)[49m
+
+[36mFile [39m[32m/opt/anaconda3/envs/jlab-e/lib/python3.13/site-packages/pandas/io/parsers/readers.py:1880[39m, in [36mTextFileReader._make_engine[39m[34m(self, f, engine)[39m
+[32m   1878[39m     [38;5;28;01mif[39;00m [33m"[39m[33mb[39m[33m"[39m [38;5;129;01mnot[39;00m [38;5;129;01min[39;00m mode:
+[32m   1879[39m         mode += [33m"[39m[33mb[39m[33m"[39m
+[32m-> [39m[32m1880[39m [38;5;28mself[39m.handles = [43mget_handle[49m[43m([49m
+[32m   1881[39m [43m    [49m[43mf[49m[43m,[49m
+[32m   1882[39m [43m    [49m[43mmode[49m[43m,[49m
+[32m   1883[39m [43m    [49m[43mencoding[49m[43m=[49m[38;5;28;43mself[39;49m[43m.[49m[43moptions[49m[43m.[49m[43mget[49m[43m([49m[33;43m"[39;49m[33;43mencoding[39;49m[33;43m"[39;49m[43m,[49m[43m [49m[38;5;28;43;01mNone[39;49;00m[43m)[49m[43m,[49m
+[32m   1884[39m [43m    [49m[43mcompression[49m[43m=[49m[38;5;28;43mself[39;49m[43m.[49m[43moptions[49m[43m.[49m[43mget[49m[43m([49m[33;43m"[39;49m[33;43mcompression[39;49m[33;43m"[39;49m[43m,[49m[43m [49m[38;5;28;43;01mNone[39;49;00m[43m)[49m[43m,[49m
+[32m   1885[39m [43m    [49m[43mmemory_map[49m[43m=[49m[38;5;28;43mself[39;49m[43m.[49m[43moptions[49m[43m.[49m[43mget[49m[43m([49m[33;43m"[39;49m[33;43mmemory_map[39;49m[33;43m"[39;49m[43m,[49m[43m [49m[38;5;28;43;01mFalse[39;49;00m[43m)[49m[43m,[49m
+[32m   1886[39m [43m    [49m[43mis_text[49m[43m=[49m[43mis_text[49m[43m,[49m
+[32m   1887[39m [43m    [49m[43merrors[49m[43m=[49m[38;5;28;43mself[39;49m[43m.[49m[43moptions[49m[43m.[49m[43mget[49m[43m([49m[33;43m"[39;49m[33;43mencoding_errors[39;49m[33;43m"[39;49m[43m,[49m[43m [49m[33;43m"[39;49m[33;43mstrict[39;49m[33;43m"[39;49m[43m)[49m[43m,[49m
+[32m   1888[39m [43m    [49m[43mstorage_options[49m[43m=[49m[38;5;28;43mself[39;49m[43m.[49m[43moptions[49m[43m.[49m[43mget[49m[43m([49m[33;43m"[39;49m[33;43mstorage_options[39;49m[33;43m"[39;49m[43m,[49m[43m [49m[38;5;28;43;01mNone[39;49;00m[43m)[49m[43m,[49m
+[32m   1889[39m [43m[49m[43m)[49m
+[32m   1890[39m [38;5;28;01massert[39;00m [38;5;28mself[39m.handles [38;5;129;01mis[39;00m [38;5;129;01mnot[39;00m [38;5;28;01mNone[39;00m
+[32m   1891[39m f = [38;5;28mself[39m.handles.handle
+
+[36mFile [39m[32m/opt/anaconda3/envs/jlab-e/lib/python3.13/site-packages/pandas/io/common.py:873[39m, in [36mget_handle[39m[34m(path_or_buf, mode, encoding, compression, memory_map, is_text, errors, storage_options)[39m
+[32m    868[39m [38;5;28;01melif[39;00m [38;5;28misinstance[39m(handle, [38;5;28mstr[39m):
+[32m    869[39m     [38;5;66;03m# Check whether the filename is to be opened in binary mode.[39;00m
+[32m    870[39m     [38;5;66;03m# Binary mode does not support 'encoding' and 'newline'.[39;00m
+[32m    871[39m     [38;5;28;01mif[39;00m ioargs.encoding [38;5;129;01mand[39;00m [33m"[39m[33mb[39m[33m"[39m [38;5;129;01mnot[39;00m [38;5;129;01min[39;00m ioargs.mode:
+[32m    872[39m         [38;5;66;03m# Encoding[39;00m
+[32m--> [39m[32m873[39m         handle = [38;5;28;43mopen[39;49m[43m([49m
+[32m    874[39m [43m            [49m[43mhandle[49m[43m,[49m
+[32m    875[39m [43m            [49m[43mioargs[49m[43m.[49m[43mmode[49m[43m,[49m
+[32m    876[39m [43m            [49m[43mencoding[49m[43m=[49m[43mioargs[49m[43m.[49m[43mencoding[49m[43m,[49m
+[32m    877[39m [43m            [49m[43merrors[49m[43m=[49m[43merrors[49m[43m,[49m
+[32m    878[39m [43m            [49m[43mnewline[49m[43m=[49m[33;43m"[39;49m[33;43m"[39;49m[43m,[49m
+[32m    879[39m [43m        [49m[43m)[49m
+[32m    880[39m     [38;5;28;01melse[39;00m:
+[32m    881[39m         [38;5;66;03m# Binary mode[39;00m
+[32m    882[39m         handle = [38;5;28mopen[39m(handle, ioargs.mode)
+
+[31mFileNotFoundError[39m: [Errno 2] No such file or directory: 'data/data.csv'
+
+current working directory:  /Users/happy2na/Desktop/NotesFromMushrooms
+PERF|RERUN ALL | Set-Up Kernel and Language Info. time: 944.655833998695ms
+

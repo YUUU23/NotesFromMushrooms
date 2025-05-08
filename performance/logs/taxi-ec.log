@@ -1,0 +1,156 @@
+673.33e0289dbee089055fc1.js?v=33e0289dbee089055fc1:1 JupyterLab extension jupyterlab_autosave_on_focus_change is activated!
+
+                
+          
+          
+          
+         Chrome is moving towards a new experience that allows users to choose to browse without third-party cookies.
+rerunExecutionCount.ts:62 rrOption 1
+rerunExecutionCount.ts:290 ACTIVE CELL AFTER UPDATE:  e0f26b31-c0d1-4c80-a132-7bae5298371c
+jlab_core.5aa373b4d2384b44ed86.js?v=5aa373b4d2384b44ed86:1 History was unable to be retrieved
+(anonymous) @ jlab_core.5aa373b4d2384b44ed86.js?v=5aa373b4d2384b44ed86:1
+Promise.catch
+_retrieveHistory @ jlab_core.5aa373b4d2384b44ed86.js?v=5aa373b4d2384b44ed86:1
+_handleKernel @ jlab_core.5aa373b4d2384b44ed86.js?v=5aa373b4d2384b44ed86:1
+m @ jlab_core.5aa373b4d2384b44ed86.js?v=5aa373b4d2384b44ed86:1
+l @ jlab_core.5aa373b4d2384b44ed86.js?v=5aa373b4d2384b44ed86:1
+emit @ jlab_core.5aa373b4d2384b44ed86.js?v=5aa373b4d2384b44ed86:1
+_handleNewSession @ jlab_core.5aa373b4d2384b44ed86.js?v=5aa373b4d2384b44ed86:1
+_initialize @ jlab_core.5aa373b4d2384b44ed86.js?v=5aa373b4d2384b44ed86:1
+await in _initialize
+initialize @ jlab_core.5aa373b4d2384b44ed86.js?v=5aa373b4d2384b44ed86:1
+_populate @ jlab_core.5aa373b4d2384b44ed86.js?v=5aa373b4d2384b44ed86:1
+await in _populate
+(anonymous) @ jlab_core.5aa373b4d2384b44ed86.js?v=5aa373b4d2384b44ed86:1
+Promise.then
+_revert @ jlab_core.5aa373b4d2384b44ed86.js?v=5aa373b4d2384b44ed86:1
+initialize @ jlab_core.5aa373b4d2384b44ed86.js?v=5aa373b4d2384b44ed86:1
+(anonymous) @ jlab_core.5aa373b4d2384b44ed86.js?v=5aa373b4d2384b44ed86:1
+Promise.then
+_createOrOpenDocument @ jlab_core.5aa373b4d2384b44ed86.js?v=5aa373b4d2384b44ed86:1
+open @ jlab_core.5aa373b4d2384b44ed86.js?v=5aa373b4d2384b44ed86:1
+openOrReveal @ jlab_core.5aa373b4d2384b44ed86.js?v=5aa373b4d2384b44ed86:1
+(anonymous) @ jlab_core.5aa373b4d2384b44ed86.js?v=5aa373b4d2384b44ed86:1
+Promise.then
+execute @ jlab_core.5aa373b4d2384b44ed86.js?v=5aa373b4d2384b44ed86:1
+execute @ jlab_core.5aa373b4d2384b44ed86.js?v=5aa373b4d2384b44ed86:1
+(anonymous) @ jlab_core.5aa373b4d2384b44ed86.js?v=5aa373b4d2384b44ed86:1
+restore @ jlab_core.5aa373b4d2384b44ed86.js?v=5aa373b4d2384b44ed86:1
+await in restore
+restore @ jlab_core.5aa373b4d2384b44ed86.js?v=5aa373b4d2384b44ed86:1
+restore @ jlab_core.5aa373b4d2384b44ed86.js?v=5aa373b4d2384b44ed86:1
+Ie @ jlab_core.5aa373b4d2384b44ed86.js?v=5aa373b4d2384b44ed86:1
+(anonymous) @ jlab_core.5aa373b4d2384b44ed86.js?v=5aa373b4d2384b44ed86:1
+Promise.then
+activatePlugin @ jlab_core.5aa373b4d2384b44ed86.js?v=5aa373b4d2384b44ed86:1
+resolveRequiredService @ jlab_core.5aa373b4d2384b44ed86.js?v=5aa373b4d2384b44ed86:1
+(anonymous) @ jlab_core.5aa373b4d2384b44ed86.js?v=5aa373b4d2384b44ed86:1
+activatePlugin @ jlab_core.5aa373b4d2384b44ed86.js?v=5aa373b4d2384b44ed86:1
+(anonymous) @ jlab_core.5aa373b4d2384b44ed86.js?v=5aa373b4d2384b44ed86:1
+activatePlugins @ jlab_core.5aa373b4d2384b44ed86.js?v=5aa373b4d2384b44ed86:1
+start @ jlab_core.5aa373b4d2384b44ed86.js?v=5aa373b4d2384b44ed86:1
+D @ 6180.fc7de057fa46a06cc871.js?v=fc7de057fa46a06cc871:1
+jlab_core.5aa373b4d2384b44ed86.js?v=5aa373b4d2384b44ed86:1 Uncaught (in promise) Error: Canceled future for kernel_info_request message before replies were done
+    at h.dispose (jlab_core.5aa373b4d2384b44ed86.js?v=5aa373b4d2384b44ed86:1:1437800)
+    at jlab_core.5aa373b4d2384b44ed86.js?v=5aa373b4d2384b44ed86:1:1431441
+    at Map.forEach (<anonymous>)
+    at b._clearKernelState (jlab_core.5aa373b4d2384b44ed86.js?v=5aa373b4d2384b44ed86:1:1431426)
+    at b.restart (jlab_core.5aa373b4d2384b44ed86.js?v=5aa373b4d2384b44ed86:1:1425073)
+    at b.restartKernel (jlab_core.5aa373b4d2384b44ed86.js?v=5aa373b4d2384b44ed86:1:142403)
+    at y.restart (jlab_core.5aa373b4d2384b44ed86.js?v=5aa373b4d2384b44ed86:1:151059)
+    at async execute (jlab_core.5aa373b4d2384b44ed86.js?v=5aa373b4d2384b44ed86:1:1118465)
+dispose @ jlab_core.5aa373b4d2384b44ed86.js?v=5aa373b4d2384b44ed86:1
+(anonymous) @ jlab_core.5aa373b4d2384b44ed86.js?v=5aa373b4d2384b44ed86:1
+_clearKernelState @ jlab_core.5aa373b4d2384b44ed86.js?v=5aa373b4d2384b44ed86:1
+restart @ jlab_core.5aa373b4d2384b44ed86.js?v=5aa373b4d2384b44ed86:1
+restartKernel @ jlab_core.5aa373b4d2384b44ed86.js?v=5aa373b4d2384b44ed86:1
+restart @ jlab_core.5aa373b4d2384b44ed86.js?v=5aa373b4d2384b44ed86:1
+await in restart
+execute @ jlab_core.5aa373b4d2384b44ed86.js?v=5aa373b4d2384b44ed86:1
+execute @ jlab_core.5aa373b4d2384b44ed86.js?v=5aa373b4d2384b44ed86:1
+g @ jlab_core.5aa373b4d2384b44ed86.js?v=5aa373b4d2384b44ed86:1
+Ws.r @ jlab_core.5aa373b4d2384b44ed86.js?v=5aa373b4d2384b44ed86:1
+Ue @ 961.29c067b15a524e556eed.js?v=29c067b15a524e556eed:2
+Qe @ 961.29c067b15a524e556eed.js?v=29c067b15a524e556eed:2
+je @ 961.29c067b15a524e556eed.js?v=29c067b15a524e556eed:2
+al @ 961.29c067b15a524e556eed.js?v=29c067b15a524e556eed:2
+ul @ 961.29c067b15a524e556eed.js?v=29c067b15a524e556eed:2
+(anonymous) @ 961.29c067b15a524e556eed.js?v=29c067b15a524e556eed:2
+Os @ 961.29c067b15a524e556eed.js?v=29c067b15a524e556eed:2
+De @ 961.29c067b15a524e556eed.js?v=29c067b15a524e556eed:2
+dl @ 961.29c067b15a524e556eed.js?v=29c067b15a524e556eed:2
+lt @ 961.29c067b15a524e556eed.js?v=29c067b15a524e556eed:2
+tt @ 961.29c067b15a524e556eed.js?v=29c067b15a524e556eed:2
+jlab_core.5aa373b4d2384b44ed86.js?v=5aa373b4d2384b44ed86:1 Connection lost, reconnecting in 0 seconds.
+_reconnect @ jlab_core.5aa373b4d2384b44ed86.js?v=5aa373b4d2384b44ed86:1
+reconnect @ jlab_core.5aa373b4d2384b44ed86.js?v=5aa373b4d2384b44ed86:1
+restart @ jlab_core.5aa373b4d2384b44ed86.js?v=5aa373b4d2384b44ed86:1
+await in restart
+restartKernel @ jlab_core.5aa373b4d2384b44ed86.js?v=5aa373b4d2384b44ed86:1
+restart @ jlab_core.5aa373b4d2384b44ed86.js?v=5aa373b4d2384b44ed86:1
+await in restart
+execute @ jlab_core.5aa373b4d2384b44ed86.js?v=5aa373b4d2384b44ed86:1
+execute @ jlab_core.5aa373b4d2384b44ed86.js?v=5aa373b4d2384b44ed86:1
+g @ jlab_core.5aa373b4d2384b44ed86.js?v=5aa373b4d2384b44ed86:1
+Ws.r @ jlab_core.5aa373b4d2384b44ed86.js?v=5aa373b4d2384b44ed86:1
+Ue @ 961.29c067b15a524e556eed.js?v=29c067b15a524e556eed:2
+Qe @ 961.29c067b15a524e556eed.js?v=29c067b15a524e556eed:2
+je @ 961.29c067b15a524e556eed.js?v=29c067b15a524e556eed:2
+al @ 961.29c067b15a524e556eed.js?v=29c067b15a524e556eed:2
+ul @ 961.29c067b15a524e556eed.js?v=29c067b15a524e556eed:2
+(anonymous) @ 961.29c067b15a524e556eed.js?v=29c067b15a524e556eed:2
+Os @ 961.29c067b15a524e556eed.js?v=29c067b15a524e556eed:2
+De @ 961.29c067b15a524e556eed.js?v=29c067b15a524e556eed:2
+dl @ 961.29c067b15a524e556eed.js?v=29c067b15a524e556eed:2
+lt @ 961.29c067b15a524e556eed.js?v=29c067b15a524e556eed:2
+tt @ 961.29c067b15a524e556eed.js?v=29c067b15a524e556eed:2
+rerunExecutionCount.ts:249 finished rerun routine:  Map(15) {'a56069f2-111d-4ae8-9f62-4237d6a486bf' => 1, 'bafdc073-f2e4-480b-87b8-5e89863887cb' => 2, '6730877e-5824-46b1-9ef0-514226ad241f' => 3, 'f35d94ff-7129-4db5-ac9c-722299999f2e' => 4, '414f97b3-aa5c-4c9f-8d4c-823ab28ea2ef' => 5, …}[[Entries]]0: {"a56069f2-111d-4ae8-9f62-4237d6a486bf" => 1}1: {"bafdc073-f2e4-480b-87b8-5e89863887cb" => 2}2: {"6730877e-5824-46b1-9ef0-514226ad241f" => 3}3: {"f35d94ff-7129-4db5-ac9c-722299999f2e" => 4}4: {"414f97b3-aa5c-4c9f-8d4c-823ab28ea2ef" => 5}5: {"6180dd4d-c320-466c-bf4f-7d93384303b8" => 6}6: {"21a3e4e1-ccdd-4a28-917e-d0594a27c965" => 7}7: {"afa76181-1f11-47fd-8eaa-2c3b777418ab" => 8}8: {"41a5afc5-2f3b-4dad-b614-aab1173b0207" => 9}9: {"c9a61da6-fbeb-4705-9a73-97a60dae91ac" => 10}10: {"f4e26e0c-9f7f-4b7b-9265-61b188471167" => 11}11: {"8d99575b-79fd-40a6-a7bd-7c657aee0b54" => 12}12: {"9c6c5cb1-325b-45fb-8bdd-d5eb1298a388" => 13}13: {"75306ffe-37a1-44da-9c58-7efe72ddbc7d" => 0}14: {"22909d25-9285-4778-b3a3-9b419c54ed76" => 0}size: 15[[Prototype]]: Map
+rerunExecutionCount.ts:249 finished rerun routine:  Map(15) {'a56069f2-111d-4ae8-9f62-4237d6a486bf' => 1, 'bafdc073-f2e4-480b-87b8-5e89863887cb' => 2, '6730877e-5824-46b1-9ef0-514226ad241f' => 3, 'f35d94ff-7129-4db5-ac9c-722299999f2e' => 4, '414f97b3-aa5c-4c9f-8d4c-823ab28ea2ef' => 5, …}
+rerunExecutionCount.ts:249 finished rerun routine:  Map(15) {'a56069f2-111d-4ae8-9f62-4237d6a486bf' => 1, 'bafdc073-f2e4-480b-87b8-5e89863887cb' => 2, '6730877e-5824-46b1-9ef0-514226ad241f' => 3, 'f35d94ff-7129-4db5-ac9c-722299999f2e' => 4, '414f97b3-aa5c-4c9f-8d4c-823ab28ea2ef' => 5, …}
+rerunExecutionCount.ts:249 finished rerun routine:  Map(15) {'a56069f2-111d-4ae8-9f62-4237d6a486bf' => 1, 'bafdc073-f2e4-480b-87b8-5e89863887cb' => 2, '6730877e-5824-46b1-9ef0-514226ad241f' => 3, 'f35d94ff-7129-4db5-ac9c-722299999f2e' => 4, '414f97b3-aa5c-4c9f-8d4c-823ab28ea2ef' => 5, …}[[Entries]]0: {"a56069f2-111d-4ae8-9f62-4237d6a486bf" => 1}1: {"bafdc073-f2e4-480b-87b8-5e89863887cb" => 2}2: {"6730877e-5824-46b1-9ef0-514226ad241f" => 3}3: {"f35d94ff-7129-4db5-ac9c-722299999f2e" => 4}4: {"414f97b3-aa5c-4c9f-8d4c-823ab28ea2ef" => 5}5: {"6180dd4d-c320-466c-bf4f-7d93384303b8" => 6}6: {"21a3e4e1-ccdd-4a28-917e-d0594a27c965" => 7}7: {"afa76181-1f11-47fd-8eaa-2c3b777418ab" => 8}8: {"41a5afc5-2f3b-4dad-b614-aab1173b0207" => 9}9: {"c9a61da6-fbeb-4705-9a73-97a60dae91ac" => 10}10: {"f4e26e0c-9f7f-4b7b-9265-61b188471167" => 11}11: {"8d99575b-79fd-40a6-a7bd-7c657aee0b54" => 12}12: {"9c6c5cb1-325b-45fb-8bdd-d5eb1298a388" => 13}13: {"75306ffe-37a1-44da-9c58-7efe72ddbc7d" => 0}14: {"22909d25-9285-4778-b3a3-9b419c54ed76" => 0}size: 15[[Prototype]]: Map
+rerunExecutionCount.ts:249 finished rerun routine:  Map(15) {'a56069f2-111d-4ae8-9f62-4237d6a486bf' => 1, 'bafdc073-f2e4-480b-87b8-5e89863887cb' => 2, '6730877e-5824-46b1-9ef0-514226ad241f' => 3, 'f35d94ff-7129-4db5-ac9c-722299999f2e' => 4, '414f97b3-aa5c-4c9f-8d4c-823ab28ea2ef' => 5, …}
+rerunExecutionCount.ts:249 finished rerun routine:  Map(15) {'a56069f2-111d-4ae8-9f62-4237d6a486bf' => 1, 'bafdc073-f2e4-480b-87b8-5e89863887cb' => 2, '6730877e-5824-46b1-9ef0-514226ad241f' => 3, 'f35d94ff-7129-4db5-ac9c-722299999f2e' => 4, '414f97b3-aa5c-4c9f-8d4c-823ab28ea2ef' => 5, …}
+rerunExecutionCount.ts:249 finished rerun routine:  Map(15) {'a56069f2-111d-4ae8-9f62-4237d6a486bf' => 1, 'bafdc073-f2e4-480b-87b8-5e89863887cb' => 2, '6730877e-5824-46b1-9ef0-514226ad241f' => 3, 'f35d94ff-7129-4db5-ac9c-722299999f2e' => 4, '414f97b3-aa5c-4c9f-8d4c-823ab28ea2ef' => 5, …}
+rerunExecutionCount.ts:249 finished rerun routine:  Map(15) {'a56069f2-111d-4ae8-9f62-4237d6a486bf' => 1, 'bafdc073-f2e4-480b-87b8-5e89863887cb' => 2, '6730877e-5824-46b1-9ef0-514226ad241f' => 3, 'f35d94ff-7129-4db5-ac9c-722299999f2e' => 4, '414f97b3-aa5c-4c9f-8d4c-823ab28ea2ef' => 5, …}
+rerunExecutionCount.ts:249 finished rerun routine:  Map(15) {'a56069f2-111d-4ae8-9f62-4237d6a486bf' => 1, 'bafdc073-f2e4-480b-87b8-5e89863887cb' => 2, '6730877e-5824-46b1-9ef0-514226ad241f' => 3, 'f35d94ff-7129-4db5-ac9c-722299999f2e' => 4, '414f97b3-aa5c-4c9f-8d4c-823ab28ea2ef' => 5, …}
+rerunExecutionCount.ts:249 finished rerun routine:  Map(15) {'a56069f2-111d-4ae8-9f62-4237d6a486bf' => 1, 'bafdc073-f2e4-480b-87b8-5e89863887cb' => 2, '6730877e-5824-46b1-9ef0-514226ad241f' => 3, 'f35d94ff-7129-4db5-ac9c-722299999f2e' => 4, '414f97b3-aa5c-4c9f-8d4c-823ab28ea2ef' => 5, …}
+rerunExecutionCount.ts:249 finished rerun routine:  Map(15) {'a56069f2-111d-4ae8-9f62-4237d6a486bf' => 1, 'bafdc073-f2e4-480b-87b8-5e89863887cb' => 2, '6730877e-5824-46b1-9ef0-514226ad241f' => 3, 'f35d94ff-7129-4db5-ac9c-722299999f2e' => 4, '414f97b3-aa5c-4c9f-8d4c-823ab28ea2ef' => 5, …}
+rerunExecutionCount.ts:249 finished rerun routine:  Map(15) {'a56069f2-111d-4ae8-9f62-4237d6a486bf' => 1, 'bafdc073-f2e4-480b-87b8-5e89863887cb' => 2, '6730877e-5824-46b1-9ef0-514226ad241f' => 3, 'f35d94ff-7129-4db5-ac9c-722299999f2e' => 4, '414f97b3-aa5c-4c9f-8d4c-823ab28ea2ef' => 5, …}
+rerunExecutionCount.ts:249 finished rerun routine:  Map(15) {'a56069f2-111d-4ae8-9f62-4237d6a486bf' => 1, 'bafdc073-f2e4-480b-87b8-5e89863887cb' => 2, '6730877e-5824-46b1-9ef0-514226ad241f' => 3, 'f35d94ff-7129-4db5-ac9c-722299999f2e' => 4, '414f97b3-aa5c-4c9f-8d4c-823ab28ea2ef' => 5, …}[[Entries]]0: {"a56069f2-111d-4ae8-9f62-4237d6a486bf" => 1}1: {"bafdc073-f2e4-480b-87b8-5e89863887cb" => 2}2: {"6730877e-5824-46b1-9ef0-514226ad241f" => 3}3: {"f35d94ff-7129-4db5-ac9c-722299999f2e" => 4}4: {"414f97b3-aa5c-4c9f-8d4c-823ab28ea2ef" => 5}5: {"6180dd4d-c320-466c-bf4f-7d93384303b8" => 6}6: {"21a3e4e1-ccdd-4a28-917e-d0594a27c965" => 7}7: {"afa76181-1f11-47fd-8eaa-2c3b777418ab" => 8}8: {"41a5afc5-2f3b-4dad-b614-aab1173b0207" => 9}9: {"c9a61da6-fbeb-4705-9a73-97a60dae91ac" => 10}10: {"f4e26e0c-9f7f-4b7b-9265-61b188471167" => 11}11: {"8d99575b-79fd-40a6-a7bd-7c657aee0b54" => 12}12: {"9c6c5cb1-325b-45fb-8bdd-d5eb1298a388" => 13}13: {"75306ffe-37a1-44da-9c58-7efe72ddbc7d" => 0}14: {"22909d25-9285-4778-b3a3-9b419c54ed76" => 0}size: 15[[Prototype]]: Map
+rerunExecutionCount.ts:249 finished rerun routine:  Map(15) {'a56069f2-111d-4ae8-9f62-4237d6a486bf' => 1, 'bafdc073-f2e4-480b-87b8-5e89863887cb' => 2, '6730877e-5824-46b1-9ef0-514226ad241f' => 3, 'f35d94ff-7129-4db5-ac9c-722299999f2e' => 4, '414f97b3-aa5c-4c9f-8d4c-823ab28ea2ef' => 5, …}
+rerunExecutionCount.ts:249 finished rerun routine:  Map(15) {'a56069f2-111d-4ae8-9f62-4237d6a486bf' => 1, 'bafdc073-f2e4-480b-87b8-5e89863887cb' => 2, '6730877e-5824-46b1-9ef0-514226ad241f' => 3, 'f35d94ff-7129-4db5-ac9c-722299999f2e' => 4, '414f97b3-aa5c-4c9f-8d4c-823ab28ea2ef' => 5, …}[[Entries]]0: {"a56069f2-111d-4ae8-9f62-4237d6a486bf" => 1}1: {"bafdc073-f2e4-480b-87b8-5e89863887cb" => 2}2: {"6730877e-5824-46b1-9ef0-514226ad241f" => 3}3: {"f35d94ff-7129-4db5-ac9c-722299999f2e" => 4}4: {"414f97b3-aa5c-4c9f-8d4c-823ab28ea2ef" => 5}5: {"6180dd4d-c320-466c-bf4f-7d93384303b8" => 6}6: {"21a3e4e1-ccdd-4a28-917e-d0594a27c965" => 7}7: {"afa76181-1f11-47fd-8eaa-2c3b777418ab" => 8}8: {"41a5afc5-2f3b-4dad-b614-aab1173b0207" => 9}9: {"c9a61da6-fbeb-4705-9a73-97a60dae91ac" => 10}10: {"f4e26e0c-9f7f-4b7b-9265-61b188471167" => 11}11: {"8d99575b-79fd-40a6-a7bd-7c657aee0b54" => 12}12: {"9c6c5cb1-325b-45fb-8bdd-d5eb1298a388" => 13}13: {"75306ffe-37a1-44da-9c58-7efe72ddbc7d" => 14}14: {"22909d25-9285-4778-b3a3-9b419c54ed76" => 15}size: 15[[Prototype]]: Map
+rerunECPlugin.ts:50 active cell c9a61da6-fbeb-4705-9a73-97a60dae91ac
+rerunExecutionCount.ts:290 ACTIVE CELL AFTER UPDATE:  c9a61da6-fbeb-4705-9a73-97a60dae91ac
+rerunExecutionCount.ts:171 ACT. CELL EC CHANGED:  c9a61da6-fbeb-4705-9a73-97a60dae91ac old:  10 new:  16
+rerunExecutionCount.ts:149 cells to rerun:  (5) ['f4e26e0c-9f7f-4b7b-9265-61b188471167', '8d99575b-79fd-40a6-a7bd-7c657aee0b54', '9c6c5cb1-325b-45fb-8bdd-d5eb1298a388', '75306ffe-37a1-44da-9c58-7efe72ddbc7d', '22909d25-9285-4778-b3a3-9b419c54ed76']
+log.ts:3 PERF|Scheduled time=222230.6000000015|exec id=11|cell id=f4e26e0c-9f7f-4b7b-9265-61b188471167|rrID=0
+log.ts:3 PERF|Scheduled time=222232|exec id=12|cell id=8d99575b-79fd-40a6-a7bd-7c657aee0b54|rrID=0
+log.ts:3 PERF|Scheduled time=222233|exec id=13|cell id=9c6c5cb1-325b-45fb-8bdd-d5eb1298a388|rrID=0
+log.ts:3 PERF|Scheduled time=222233.6000000015|exec id=14|cell id=75306ffe-37a1-44da-9c58-7efe72ddbc7d|rrID=0
+log.ts:3 PERF|Scheduled time=222234.19999999925|exec id=15|cell id=22909d25-9285-4778-b3a3-9b419c54ed76|rrID=0
+log.ts:3 PERF|Rerun start=222230|Rerun cells=f4e26e0c-9f7f-4b7b-9265-61b188471167,8d99575b-79fd-40a6-a7bd-7c657aee0b54,9c6c5cb1-325b-45fb-8bdd-d5eb1298a388,75306ffe-37a1-44da-9c58-7efe72ddbc7d,22909d25-9285-4778-b3a3-9b419c54ed76|rrId=0
+rerunExecutionCount.ts:249 finished rerun routine:  Map(15) {'a56069f2-111d-4ae8-9f62-4237d6a486bf' => 1, 'bafdc073-f2e4-480b-87b8-5e89863887cb' => 2, '6730877e-5824-46b1-9ef0-514226ad241f' => 3, 'f35d94ff-7129-4db5-ac9c-722299999f2e' => 4, '414f97b3-aa5c-4c9f-8d4c-823ab28ea2ef' => 5, …}
+log.ts:3 PERF|Executed time=222251|exec_id=17|cell_id=f4e26e0c-9f7f-4b7b-9265-61b188471167|rrId=0
+rerunExecutionCount.ts:249 finished rerun routine:  Map(15) {'a56069f2-111d-4ae8-9f62-4237d6a486bf' => 1, 'bafdc073-f2e4-480b-87b8-5e89863887cb' => 2, '6730877e-5824-46b1-9ef0-514226ad241f' => 3, 'f35d94ff-7129-4db5-ac9c-722299999f2e' => 4, '414f97b3-aa5c-4c9f-8d4c-823ab28ea2ef' => 5, …}
+log.ts:3 PERF|Executed time=223715|exec_id=18|cell_id=8d99575b-79fd-40a6-a7bd-7c657aee0b54|rrId=0
+rerunExecutionCount.ts:249 finished rerun routine:  Map(15) {'a56069f2-111d-4ae8-9f62-4237d6a486bf' => 1, 'bafdc073-f2e4-480b-87b8-5e89863887cb' => 2, '6730877e-5824-46b1-9ef0-514226ad241f' => 3, 'f35d94ff-7129-4db5-ac9c-722299999f2e' => 4, '414f97b3-aa5c-4c9f-8d4c-823ab28ea2ef' => 5, …}
+log.ts:3 PERF|Executed time=224029|exec_id=19|cell_id=9c6c5cb1-325b-45fb-8bdd-d5eb1298a388|rrId=0
+rerunExecutionCount.ts:249 finished rerun routine:  Map(15) {'a56069f2-111d-4ae8-9f62-4237d6a486bf' => 1, 'bafdc073-f2e4-480b-87b8-5e89863887cb' => 2, '6730877e-5824-46b1-9ef0-514226ad241f' => 3, 'f35d94ff-7129-4db5-ac9c-722299999f2e' => 4, '414f97b3-aa5c-4c9f-8d4c-823ab28ea2ef' => 5, …}
+log.ts:3 PERF|Executed time=270346.6000000015|exec_id=20|cell_id=75306ffe-37a1-44da-9c58-7efe72ddbc7d|rrId=0
+rerunExecutionCount.ts:249 finished rerun routine:  Map(15) {'a56069f2-111d-4ae8-9f62-4237d6a486bf' => 1, 'bafdc073-f2e4-480b-87b8-5e89863887cb' => 2, '6730877e-5824-46b1-9ef0-514226ad241f' => 3, 'f35d94ff-7129-4db5-ac9c-722299999f2e' => 4, '414f97b3-aa5c-4c9f-8d4c-823ab28ea2ef' => 5, …}
+log.ts:3 PERF|Executed time=276677.30000000075|exec_id=21|cell_id=22909d25-9285-4778-b3a3-9b419c54ed76|rrId=0
+log.ts:3 PERF|Rerun end=276677.40000000224|rrId=0
+rerunExecutionCount.ts:231 checking correctness
+checkCorrectness.ts:9 RELATIVE:  performance/notebooks
+checkCorrectness.ts:28 service:  get-correctness
+checkCorrectness.ts:29 nbPath,  performance/notebooks
+rerunExecutionCount.ts:249 finished rerun routine:  Map(15) {'a56069f2-111d-4ae8-9f62-4237d6a486bf' => 1, 'bafdc073-f2e4-480b-87b8-5e89863887cb' => 2, '6730877e-5824-46b1-9ef0-514226ad241f' => 3, 'f35d94ff-7129-4db5-ac9c-722299999f2e' => 4, '414f97b3-aa5c-4c9f-8d4c-823ab28ea2ef' => 5, …}
+checkCorrectness.ts:32 DATA Found:  Notebook sent in: performance/notebooks results: Traceback (most recent call last):
+  File "/Users/happy2na/Desktop/NotesFromMushrooms/performance/notebooks/correctness.py", line 153, in <module>
+    diffs = load_and_rerun_notebook(args.notebookpath)
+  File "/Users/happy2na/Desktop/NotesFromMushrooms/performance/notebooks/correctness.py", line 129, in load_and_rerun_notebook
+    with open(notebook_path) as fd:
+         ~~~~^^^^^^^^^^^^^^^
+IsADirectoryError: [Errno 21] Is a directory: 'performance/notebooks'
+current working directory:  /Users/happy2na/Desktop/NotesFromMushrooms
+

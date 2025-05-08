@@ -19,7 +19,7 @@ class RouteHandler(APIHandler):
                 "data": "No notebook found. Notebook sent in: " + nb + " | END"
             }))
         else: 
-            script = 'performance/correctness.py'
+            script = 'performance/notebooks/correctness.py'
             if not script or not os.path.exists(script): 
                 self.finish(json.dumps({
                     "data": "No paths found for the script"
