@@ -80,7 +80,7 @@ Toggle once for rerun with execution count. Toggle once more to disable rerun.
 5. Refresh the browser if the toggle button visual is not changing after clicks -- this can be flaky at times as the visual updated by locating the `HTML` tags. 
 
 ## [Optional] Running Rerun All and Correctness Script (3a)
-After each modification made while rerunning execution count is active, you may choose to run the correctness script that checks correctness and takes performance measurements of running the entire notebook after modification in a blank kernel, top-to-bottom. The script, `performance/notebooks/correctness.py`, can be ran manually or automatically (after each modification and following reruns) with a backend server (see [instructions](#optional-install-backend-server-extension-3)). 
+After each modification made while rerunning execution count is active, you may choose to run the correctness script that checks correctness and takes performance measurements of running the entire notebook after modification in a blank kernel, top-to-bottom. The script, `performance/notebooks/correctness.py`, can be ran manually or automatically (after each modification and following reruns) with a backend server (see [instructions](#optional-install-backend-server-extension-3b)). 
 
 To run the script manually, run 
 ```
