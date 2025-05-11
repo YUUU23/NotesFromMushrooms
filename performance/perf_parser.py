@@ -2,10 +2,7 @@ from dataclasses import dataclass, field
 from copy import copy
 import matplotlib.pyplot as plt
 import numpy as np
-
-# After performing a set of modifications to a notebook, 
-# save the browser console logs to a file and insert it here. 
-perf_log_file = "performance/logs/taxi-ec-exp.log"
+import argparse
 
 # Type definitions: 
 CellID = str
@@ -82,7 +79,6 @@ class PerfStat:
         """
         # First token is always PERF, skip
         tokens = line.split(self.PERF_LINE_DELIM)[1:] # => Scheduled time=...|exec id=...|cell_id_token=...
-        print(tokens)
         event_name_token = tokens[0] # Scheduled time
         name, value = event_name_token.split("=") # => Scheduled time, TIME 
         if name == "Scheduled time":
@@ -351,6 +347,14 @@ def plot_average_runtime_chart(rerun: RerunPerfStat) -> None:
         plt.tight_layout()
 
 if __name__ == "__main__": 
+    parser = argparse.ArgumentParser()
+    parser.add_argument('notebookpath')
+    args = parser.parse_args()
+    # After performing a set of modifications to a notebook, 
+    # save the browser console logs to a file and insert it here. 
+    perf_log_file = args.notebookpath
+    
+    
     stat = PerfStat(perf_log_file) # Defined up there ^^
     stat.pretty_print_rerun_stats()
 
