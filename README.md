@@ -165,8 +165,8 @@ Accuracy: 0.92
 Once all modifications and rerun experiments has been made to a notebook,
 
 1. Open the `inspect` tool in a Chrome Browser.
-2. Save the `console` output to a file.
-3. In `performance/perf_parser.py`, modify line 8 to define `perf_log_file` as the path to the file saved in step 2. For example, we saved the console output as `logs/map-ec.log`, so we will define `perf_log_file` as `logs/map-ec.log`. Below is line 8 from `perf_log_file`, 
+2. Save the `console` output to a file by right clicking in the `console` region and clicking `save as...`.
+3. In `performance/perf_parser.py`, modify line 8 to define `perf_log_file` as the path to the file saved in step 2. For example, we saved the console output as `logs/map-ec.log`, so we will define `perf_log_file` as `logs/map-ec.log` (_The script will be modifed to take in file as args soon_). Below is line 8 from `performance/perf_parser.py`, 
 
 ```Python
 perf_log_file = "logs/map-ec.log"
