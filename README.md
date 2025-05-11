@@ -154,7 +154,7 @@ Accuracy: 0.92
 <p align="center">
     <img width="1017" alt="Screenshot 2025-05-11 at 01 18 27" src="https://github.com/user-attachments/assets/5bf95944-ea08-4e4d-81cb-8b38599e3cb1" />
 </p>
-4. See the [correctness issue](https://github.com/YUUU23/NotesFromMushrooms/issues/8#issuecomment-2860391026) for current caveats on correctness measurements. 
+4. See the [correctness issue comment](https://github.com/YUUU23/NotesFromMushrooms/issues/8#issuecomment-2860391026) for current caveats on correctness measurements. 
 
 ## Running Performance Parser
 
@@ -162,11 +162,9 @@ Once all modifications and rerun experiments has been made to a notebook,
 
 1. Open the `inspect` tool in a Chrome Browser.
 2. Save the `console` output to a file.
-3. In `performance/perf_parser.py`, modify line 8 to define `perf_log_file` as the path to the file saved in step 2. For example, we saved the console output as `logs/map-ec.log`, so we will define `perf_log_file` as `logs/map-ec.log`.
+3. In `performance/perf_parser.py`, modify line 8 to define `perf_log_file` as the path to the file saved in step 2. For example, we saved the console output as `logs/map-ec.log`, so we will define `perf_log_file` as `logs/map-ec.log`. Below is line 8 from `perf_log_file`, 
 
 ```Python
-# After performing a set of modifications to a notebook,
-# save the browser console logs to a file and insert it here.
 perf_log_file = "logs/map-ec.log"
 ```
 
