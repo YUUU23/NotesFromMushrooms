@@ -176,7 +176,6 @@ class CellRerun {
       this.doingRerun = false;
       console.log('checking correctness');
       checkCellCorrectness(this.panel);
-      console.log('CHECK CORRECTNESS -- DONE');
     }
 
     return cellIdsReran;
@@ -218,7 +217,6 @@ class CellRerun {
             this.doingRerun = false;
             console.log('checking correctness');
             checkCellCorrectness(this.panel);
-            console.log('CHECK CORRECTNESS -- DONE');
           }
         }
 
