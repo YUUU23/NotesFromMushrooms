@@ -7,7 +7,7 @@ some exploration for computational notebook reactivity 🍄
 1. [Environment Set-Up](#install-conda-environment-1)
 2. [Install Frontend Extension](#install-frontend-extension-2)
 4. [Install Backend Extension](#optional-install-backend-server-extension-3)
-5. [Run Performance Parser](#running-performance-parser)
+5. [Run Performance Parser](#running-performance-parser-4)
 
 ## Install conda environment (1)
 
@@ -156,7 +156,7 @@ Accuracy: 0.92
 </p>
 4. See the [correctness issue comment](https://github.com/YUUU23/NotesFromMushrooms/issues/8#issuecomment-2860391026) for current caveats on correctness measurements. 
 
-## Running Performance Parser
+## Running Performance Parser (4) 
 
 Once all modifications and rerun experiments has been made to a notebook,
 
