@@ -62,7 +62,7 @@ JupyterLab v4.4.1
         ext v0.1.0 enabled OK (python, ext)
 ```
 
-3. Open Jupyter lab by running
+3. Open Jupyter lab by running, 
 ```
 jupyter lab
 ```
