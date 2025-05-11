@@ -6,7 +6,7 @@ some exploration for computational notebook reactivity 🍄
 
 1. [Environment Set-Up](#install-conda-environment-1)
 2. [Install Frontend Extension](#install-frontend-extension-2)
-3. [Run Rerun All and Correctness Script](#running-rerun-all-and-correctness-script-3a)
+3. [Run Rerun All and Correctness Script](#optional-running-rerun-all-and-correctness-script-3a)
 4. [Install Backend Extension](#optional-install-backend-server-extension-3b)
 5. [Run Performance Parser](#running-performance-parser-4)
 
