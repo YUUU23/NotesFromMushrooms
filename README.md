@@ -62,8 +62,12 @@ JupyterLab v4.4.1
         ext v0.1.0 enabled OK (python, ext)
 ```
 
-3. Open Jupyter lab by running `jupyter lab`. If the extension installed successfully, you should see the `rerun on` toggle button on the top right,
+3. Open Jupyter lab by running
+```
+jupyter lab
+```
 
+4. If the extension installed successfully, you should see the `rerun on` toggle button on the top right,
 <p align="center">
     <img width="959" alt="Screenshot 2025-05-09 at 22 00 44" src="https://github.com/user-attachments/assets/72547b0a-069f-45ad-82ea-a5cbc354d32f" />
 </p>
