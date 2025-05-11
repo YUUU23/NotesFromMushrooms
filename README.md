@@ -24,14 +24,18 @@ conda create -n jupyterlab-ext --override-channels --strict-channel-priority -c 
 ```
 
 3. Run to activate environment.
-
 ```
 conda activate jupyterlab-ext
 ```
 
+4. Change into the code repository with, 
+```
+cd NotesFromMushrooms
+```
+
 ## Install Frontend Extension (2)
 
-Inside `jupyterlab-ext` environment, to install the rerun extension using rerun with execution count, run the following,
+1. Inside `jupyterlab-ext` environment, to install the rerun extension using rerun with execution count, run the following,
 
 ```
 cd ext
@@ -39,7 +43,7 @@ pip install -e .
 cd ..
 ```
 
-Run to confirm that the extension installed successfully.
+2. Run to confirm that the extension installed successfully.
 
 ```
 jupyter labextension list
@@ -57,7 +61,7 @@ JupyterLab v4.4.1
         ext v0.1.0 enabled OK (python, ext)
 ```
 
-Open Jupyter lab by running `jupyter lab`. If the extension installed successfully, you should see the `rerun on` toggle button on the top right,
+3. Open Jupyter lab by running `jupyter lab`. If the extension installed successfully, you should see the `rerun on` toggle button on the top right,
 
 <p align="center">
     <img width="959" alt="Screenshot 2025-05-09 at 22 00 44" src="https://github.com/user-attachments/assets/72547b0a-069f-45ad-82ea-a5cbc354d32f" />
@@ -78,7 +82,7 @@ Toggle once for rerun with execution count. Toggle once more to disable rerun.
 
 The backend server is necessary for rerunning the entire notebook with a new kernel after each modification, triggering a backend script for this functionality when rerun with execution count is active. This is for checking correctness and taking performance measurements of running the entire notebook top-to-bottom.
 
-Inside `jupyterlab-ext` environment from above, to install the backend extension, run the following, 
+1. Inside `jupyterlab-ext` environment and from the root repository from above, to install the backend extension, run the following, 
 
 ```
 cd server
@@ -86,7 +90,7 @@ pip install -e .
 cd ..
 ```
 
-Run to confirm that the extension installed successfully.
+2. Run to confirm that the extension installed successfully.
 
 ```
 jupyter lab extension list
@@ -100,20 +104,20 @@ rerun_server enabled
       rerun_server 0.1.0 OK
 ```
 
-The backend server extension will be running in the background. Open Jupyter lab from the root directory by running,
+3. The backend server extension will be running in the background. Open Jupyter lab from the root directory by running,
 
 ```
 jupyter lab
 ```
 
-Turn rerun with execution count on, after each modification, the backend server API will be accessed to
+4. Turn rerun with execution count on, after each modification, the backend server API will be accessed to
 
 1. save the current code and cell content of the notebook,
 2. run the notebook top-to-bottom with a new kernel,
 3. run the correctness script and time for performance of rerunning all cells, 
 4. send back result to frontend API to be printed to the console
 
-With the `inspect` tool in a Chrome browser, the console output should look something like,
+5. With the `inspect` tool in a Chrome browser, the console output should look something like,
 
 ```
 DATA Found:  Notebook sent in: performance/notebooks/taxi_dest_predict_param.ipynb results: current working directory:  /Users/happy2na/Desktop/NotesFromMushrooms
