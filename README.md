@@ -6,8 +6,8 @@ some exploration for computational notebook reactivity 🍄
 
 1. [Environment Set-Up](#install-conda-environment-1)
 2. [Install Frontend Extension](#install-frontend-extension-2)
-3. [Install Backend Extension](#optional-install-backend-server-extension-3)
-4. [Run Performance Parser](#running-performance-parser)
+4. [Install Backend Extension](#optional-install-backend-server-extension-3)
+5. [Run Performance Parser](#running-performance-parser)
 
 ## Install conda environment (1)
 
@@ -145,7 +145,7 @@ Accuracy: 0.92
 ----Decision Tree Training Data results (2015 data set)----
 ```
 
-**IMPORTANT NOTES:**
+### **IMPORTANT NOTES:**
 
 1. To ensure that the notebook state stays consistent, do not make further modifications before you see console outputs for correctness and rerunning all. 
 2. Ensure that your notebook resides inside the `performance/notebooks` directory when running and making modifications. 
