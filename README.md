@@ -112,10 +112,10 @@ jupyter lab
 
 4. Turn rerun with execution count on, after each modification, the backend server API will be accessed to
 
-1. save the current code and cell content of the notebook,
-2. run the notebook top-to-bottom with a new kernel,
-3. run the correctness script and time for performance of rerunning all cells, 
-4. send back result to frontend API to be printed to the console
+        1. save the current code and cell content of the notebook,
+        2. run the notebook top-to-bottom with a new kernel,
+        3. run the correctness script and time for performance of rerunning all cells, 
+        4. send back result to frontend API to be printed to the console
 
 5. With the `inspect` tool in a Chrome browser, the console output should look something like,
 
