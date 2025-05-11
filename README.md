@@ -6,7 +6,8 @@ some exploration for computational notebook reactivity 🍄
 
 1. [Environment Set-Up](#install-conda-environment-1)
 2. [Install Frontend Extension](#install-frontend-extension-2)
-4. [Install Backend Extension](#optional-install-backend-server-extension-3)
+3. [Run Rerun All and Correctness Script](#running-rerun-all-and-correctness-script-3a)
+4. [Install Backend Extension](#optional-install-backend-server-extension-3b)
 5. [Run Performance Parser](#running-performance-parser-4)
 
 ## Install conda environment (1)
@@ -78,9 +79,17 @@ Toggle once for rerun with execution count. Toggle once more to disable rerun.
    - To resolve this, toggle rerun off when using the built-in rerun all.
 5. Refresh the browser if the toggle button visual is not changing after clicks -- this can be flaky at times as the visual updated by locating the `HTML` tags. 
 
-## [Optional] Install Backend Server Extension (3)
+## [Optional] Running Rerun All and Correctness Script (3a)
+After each modification made while rerunning execution count is active, you may choose to run the correctness script that checks correctness and takes performance measurements of running the entire notebook after modification in a blank kernel, top-to-bottom. The script, `performance/notebooks/correctness.py`, can be ran manually or automatically (after each modification and following reruns) with a backend server (see [instructions](#optional-install-backend-server-extension-3)). 
 
-The backend server is necessary for rerunning the entire notebook with a new kernel after each modification, triggering a backend script for this functionality when rerun with execution count is active. This is for checking correctness and taking performance measurements of running the entire notebook top-to-bottom.
+To run the script manually, run 
+```
+python performance/notebooks/correctness.py [path to notebook]
+```
+
+## [Optional] Install Backend Server Extension (3b)
+
+The backend server is necessary for automatically rerunning the entire notebook with a new kernel after each modification, triggering a backend script for this functionality when rerun with execution count is active. 
 
 1. Inside `jupyterlab-ext` environment and from the root repository from above, to install the backend extension, run the following, 
 
