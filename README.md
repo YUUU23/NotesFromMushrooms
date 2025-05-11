@@ -6,8 +6,9 @@ some exploration for computational notebook reactivity 🍄
 
 1. [Environment Set-Up](#install-conda-environment-1)
 2. [Install Frontend Extension](#install-frontend-extension-2)
-3. [Install Backend Extension](#optional-install-backend-server-extension-3)
-4. [Run Performance Parser](#running-performance-parser)
+3. [Run Rerun All and Correctness Script - Optional](#optional-running-rerun-all-and-correctness-script-3a)
+4. [Install Backend Extension - Optional](#optional-install-backend-server-extension-3b)
+5. [Run Performance Parser](#running-performance-parser-4)
 
 ## Install conda environment (1)
 
@@ -17,21 +18,25 @@ some exploration for computational notebook reactivity 🍄
 git clone https://github.com/YUUU23/NotesFromMushrooms
 ```
 
-2. Run to create a conda environment named `jupyterlab-ext`. This will install all dependencies to run jupyter lab.
+2. Run to create a conda environment, the example environment will be named `jupyterlab-ext`. This will install all dependencies to run jupyter lab.
 
 ```
 conda create -n jupyterlab-ext --override-channels --strict-channel-priority -c conda-forge -c nodefaults jupyterlab=4 nodejs=20 git copier=9 jinja2-time
 ```
 
 3. Run to activate environment.
-
 ```
 conda activate jupyterlab-ext
 ```
 
+4. Change into the code repository with, 
+```
+cd NotesFromMushrooms
+```
+
 ## Install Frontend Extension (2)
 
-Inside `jupyterlab-ext` environment, to install the rerun extension using rerun with execution count, run
+1. Inside `jupyterlab-ext` environment, to install the rerun extension using rerun with execution count, run the following,
 
 ```
 cd ext
@@ -39,7 +44,7 @@ pip install -e .
 cd ..
 ```
 
-Run to confirm that the extension installed successfully.
+2. Run to confirm that the extension installed successfully.
 
 ```
 jupyter labextension list
@@ -57,26 +62,36 @@ JupyterLab v4.4.1
         ext v0.1.0 enabled OK (python, ext)
 ```
 
-Open Jupyter lab by running `jupyter lab`. If the extension installed successfully, you should see the `rerun on` toggle button on the top right,
+3. Open Jupyter lab by running `jupyter lab`. If the extension installed successfully, you should see the `rerun on` toggle button on the top right,
 
 <p align="center">
     <img width="959" alt="Screenshot 2025-05-09 at 22 00 44" src="https://github.com/user-attachments/assets/72547b0a-069f-45ad-82ea-a5cbc354d32f" />
 </p>
 Toggle once for rerun with execution count. Toggle once more to disable rerun.
 
-**IMPORTANT NOTES:**
 
-1. Please do not make further modifications while any cells are still running
-2. Please make sure that your notebook opened is the first tab in the Jupyter lab interface. Currently, this extension does not support multiple notebooks in different Jupyter lab tabs opened at the same time
-3. Please note that if you toggle the extension on and then use the Jupyter built-in rerun all, rerun will be triggered once your current active cell finishes running with rerun all, which may cause unexpected execution counts
-   - To resolve this, toggle rerun off when using the built-in rerun all
-4. Refresh the browser if the toggle button visual is not changing after clicks -- this can be flaky at times as the visual updated by locating the HTML tags
+### **IMPORTANT NOTES:**
 
-## [Optional] Install Backend Server Extension (3)
+1. Please do not make further modifications while any cells are still running.
+2. If this is the first time running your notebook with a new kernel, use the Jupyter built-in rerun all once before toggling on the execution rerun tool. 
+3. Please make sure that your notebook opened is the first tab in the Jupyter lab interface. Currently, this extension does not support multiple notebooks in different Jupyter lab tabs opened at the same time. 
+4. Please note that if you toggle the extension on and then use the Jupyter built-in rerun all, rerun will be triggered once your current active cell finishes running with rerun all, which may cause unexpected execution counts.
+   - To resolve this, toggle rerun off when using the built-in rerun all.
+5. Refresh the browser if the toggle button visual is not changing after clicks -- this can be flaky at times as the visual updated by locating the `HTML` tags. 
 
-The backend server is necessary for rerunning the entire notebook with a new kernel after each modification, when rerun with execution count is on. This is for checking correctness and taking performance measurements of running the entire notebook top-to-bottom.
+## [Optional] Running Rerun All and Correctness Script (3a)
+After each modification made while rerunning execution count is active, you may choose to run the correctness script that checks correctness and takes performance measurements of running the entire notebook after modification in a blank kernel, top-to-bottom. The script, `performance/notebooks/correctness.py`, can be ran manually or automatically (after each modification and following reruns) with a backend server (see [instructions](#optional-install-backend-server-extension-3b)). 
 
-Inside `jupyterlab-ext` environment, to install the backend extension, run
+To run the script manually, run 
+```
+python performance/notebooks/correctness.py [path to notebook]
+```
+
+## [Optional] Install Backend Server Extension (3b)
+
+The backend server is necessary for automatically rerunning the entire notebook with a new kernel after each modification, triggering a backend script for this functionality when rerun with execution count is active. 
+
+1. Inside `jupyterlab-ext` environment and from the root repository from above, to install the backend extension, run the following, 
 
 ```
 cd server
@@ -84,7 +99,7 @@ pip install -e .
 cd ..
 ```
 
-Run to confirm that the extension installed successfully.
+2. Run to confirm that the extension installed successfully.
 
 ```
 jupyter lab extension list
@@ -98,19 +113,20 @@ rerun_server enabled
       rerun_server 0.1.0 OK
 ```
 
-The backend server extension will be running in the background. Open Jupyter lab from the root directory by running,
+3. The backend server extension will be running in the background. Open Jupyter lab from the root directory by running,
 
 ```
 jupyter lab
 ```
 
-Turn rerun with execution count on, after each modification, the backend server API will be accessed to
+4. Turn rerun with execution count on, after each modification, the backend server API will be accessed to
 
-1. save the current code and cell content of the notebook,
-2. run the notebook top-to-bottom with a new kernel,
-3. run the correctness script and time for performance of rerunning all cells
+        1. save the current code and cell content of the notebook,
+        2. run the notebook top-to-bottom with a new kernel,
+        3. run the correctness script and time for performance of rerunning all cells, 
+        4. send back result to frontend API to be printed to the console
 
-With the `inspect` tool in a Chrome browser, the console output should look something like,
+5. With the `inspect` tool in a Chrome browser, the console output should look something like,
 
 ```
 DATA Found:  Notebook sent in: performance/notebooks/taxi_dest_predict_param.ipynb results: current working directory:  /Users/happy2na/Desktop/NotesFromMushrooms
@@ -140,32 +156,29 @@ shrink factor:  22
 Accuracy: 0.92
 ----Decision Tree Test Data results (2016 data set)----
 ----Decision Tree Training Data results (2015 data set)----
+
+CHECK CORRECTNESS -- DONE
 ```
 
-**IMPORTANT NOTES:**
+### **IMPORTANT NOTES:**
 
-1. To ensure that the notebook state stays consistent, do not make further modifications before you see console outputs for correctness and rerunning all
-2. Ensure that your notebook resides inside the `performance/notebooks` directory while running and making modifications
-3. Ensure that you see the notebook's path on the top of the browser
-   - If the path is not showing up, change to another notebook and change back should make the path show up
-4. See the [correctness issue](https://github.com/YUUU23/NotesFromMushrooms/issues/8#issuecomment-2860391026) for current caveats on correctness measurements
+1. To ensure that the notebook state stays consistent, do not make further modifications before you see console outputs for correctness and rerunning all -- this is signaled by seeing a `CHECK CORRECTNESS -- DONE` print in the console output. 
+2. Ensure that your notebook resides inside the `performance/notebooks` directory when running and making modifications. 
+3. Ensure that you see the notebook's path on the top of the browser. 
+   - If the path is not showing up, change to another notebook and change back should make the path show up.
+<p align="center">
+    <img width="1017" alt="Screenshot 2025-05-11 at 01 18 27" src="https://github.com/user-attachments/assets/5bf95944-ea08-4e4d-81cb-8b38599e3cb1" />
+</p>
+4. See the [correctness issue comment](https://github.com/YUUU23/NotesFromMushrooms/issues/8#issuecomment-2860391026) for current caveats on correctness measurements. 
 
-## Running Performance Parser
+## Running Performance Parser (4) 
 
 Once all modifications and rerun experiments has been made to a notebook,
 
 1. Open the `inspect` tool in a Chrome Browser.
-2. Save the `console` output to a file.
-3. In `performance/perf_parser.py`, modify line 8 to define `perf_log_file` as the path to the file saved in step 2. For example, we saved the console output as `logs/map-ec.log`, so we will define `perf_log_file` as `logs/map-ec.log`.
-
-```Python
-# After performing a set of modifications to a notebook,
-# save the browser console logs to a file and insert it here.
-perf_log_file = "logs/map-ec.log"
-```
-
-4. Run the performance parser with,
+2. Save the console output to a file by right clicking in the console region and clicking "save as...".
+3. Run the performance parser with,
 
 ```
-python performance/perf_parser.py
+python performance/perf_parser.py [path to saved log from step 2]
 ```
