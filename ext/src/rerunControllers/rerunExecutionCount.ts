@@ -8,8 +8,7 @@ import { checkCellCorrectness } from '../rerunControllers/checkCorrectness';
 
 enum RerunOption {
   NONE,
-  RERUNEC,
-  RERUNALL
+  RERUNEC
 }
 
 // On cell execution:
@@ -49,9 +48,6 @@ class CellRerun {
         this.rerunState = RerunOption.RERUNEC;
         break;
       case RerunOption.RERUNEC:
-        this.rerunState = RerunOption.RERUNALL;
-        break;
-      case RerunOption.RERUNALL:
         this.rerunState = RerunOption.NONE;
         break;
       default:
@@ -72,12 +68,6 @@ class CellRerun {
       switch (this.rerunState) {
         case RerunOption.NONE:
           element.textContent = '✅ Activate Rerun EC';
-          break;
-        case RerunOption.RERUNEC:
-          element.textContent = '🔄 Activate Rerun All';
-          break;
-        case RerunOption.RERUNALL:
-          element.textContent = '❌ Deactivate Rerun';
           break;
         default:
           element.textContent = '❌ Deactivate Rerun';
@@ -135,16 +125,17 @@ class CellRerun {
           this.curReRunSet.add(id);
         }
       });
-    } else if (this.rerunState == RerunOption.RERUNALL) {
-      // Rerun all cells in the current notebook.
-      for (const [id, cell] of this.idToCodeCell) {
-        if (id !== this.activeCellId) {
-          idsToRR.push(id);
-          cellToRun.push(cell);
-          this.curReRunSet.add(id);
-        }
-      }
     }
+    // } else if (this.rerunState == RerunOption.RERUNALL) {
+    //   // Rerun all cells in the current notebook.
+    //   for (const [id, cell] of this.idToCodeCell) {
+    //     if (id !== this.activeCellId) {
+    //       idsToRR.push(id);
+    //       cellToRun.push(cell);
+    //       this.curReRunSet.add(id);
+    //     }
+    //   }
+    // }
 
     console.log('cells to rerun: ', idsToRR);
     if (idsToRR.length > 0) {
@@ -206,11 +197,7 @@ class CellRerun {
 
         // Perf event: We need to know whenver a cell finished executing --
         // just in case it's the cells we have scheduled for reran.
-        if (
-          this.doingRerun &&
-          (this.rerunState == RerunOption.RERUNALL ||
-            this.rerunState == RerunOption.RERUNEC)
-        ) {
+        if (this.doingRerun && this.rerunState == RerunOption.RERUNEC) {
           PERFLOG('Executed time=%f|exec_id=%d|cell_id=%s|rrId=%d', [
             executedTime,
             c.model.executionCount,
@@ -233,11 +220,7 @@ class CellRerun {
           }
         }
 
-        if (
-          id == this.activeCellId &&
-          (this.rerunState == RerunOption.RERUNEC ||
-            this.rerunState == RerunOption.RERUNALL)
-        ) {
+        if (id == this.activeCellId && this.rerunState == RerunOption.RERUNEC) {
           // Only call the rerun routine if the cell on executed
           // is the current active cell.
           this.startRerun(c, id);
@@ -265,11 +248,7 @@ class CellRerun {
         // + the cell ID will help us determine when the first cell we want
         // to rerun starts rerunning.
         const scheduledTime = performance.now();
-        if (
-          this.doingRerun &&
-          (this.rerunState == RerunOption.RERUNEC ||
-            this.rerunState == RerunOption.RERUNALL)
-        ) {
+        if (this.doingRerun && this.rerunState == RerunOption.RERUNEC) {
           PERFLOG('Scheduled time=%f|exec id=%d|cell id=%s|rrID=%d', [
             scheduledTime,
             c.model.executionCount,

@@ -5,7 +5,7 @@ import numpy as np
 
 # After performing a set of modifications to a notebook, 
 # save the browser console logs to a file and insert it here. 
-perf_log_file = "logs/map-ec.log"
+perf_log_file = "performance/logs/taxi-ec-exp.log"
 
 # Type definitions: 
 CellID = str
